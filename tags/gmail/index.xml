@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gmail on An analysis of random things</title>
+    <link>/tags/gmail/</link>
+    <description>Recent content in Gmail on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Sep 2014 02:05:07 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What mining my own emails told me about myself</title>
+      <link>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</link>
+      <pubDate>Tue, 02 Sep 2014 02:05:07 +0000</pubDate>
+      
+      <guid>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</guid>
+      <description>On Tuesday last week, I attended a data visualization meetup organized by Data Science LA and the topic was about the most recent Eyeo Festival. Of all the talks that Amelia shared with us, what impressed me and inspired me the most was Nicholas Felton&amp;rsquo;s personal data projects. In case you are not familiar with him, every year he publishes an annual report that documents his personal data projects / experiments conducted throughout the year.</description>
+    </item>
+    
+  </channel>
+</rss>

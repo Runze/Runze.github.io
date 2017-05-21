@@ -6,10 +6,131 @@
     <description>Recent content in Data Analysis on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2014 02:04:42 +0000</lastBuildDate>
     
 	<atom:link href="/categories/data-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Predicting Yelp ratings using textual reviews</title>
+      <link>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</link>
+      <pubDate>Tue, 30 Dec 2014 02:04:42 +0000</pubDate>
+      
+      <guid>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</guid>
+      <description>Internet is truly full of free and fascinating datasets! I found this Yelp Dataset Challenge the other day that includes, among others, over 1 million reviews (most of which are recent) along with their respective 5-star ratings - excellent text mining material! Although to enter the competition (which ends on 12/31/14), you have to be a current student (which I&amp;rsquo;m not), but everyone is welcome to play around with the data.</description>
+    </item>
+    
+    <item>
+      <title>Notes to machine learning</title>
+      <link>/2014/11/15/notes-to-machine-learning/</link>
+      <pubDate>Sat, 15 Nov 2014 22:21:43 +0000</pubDate>
+      
+      <guid>/2014/11/15/notes-to-machine-learning/</guid>
+      <description>Below are my notes to machine learning when I was learning the subject myself (the two primary books I referenced are included in the notes below). As I&amp;rsquo;ve been reviewing the subject a lot these days, I decided to organize them and host them in a central place. They are still subject to revision as I learn more about it.
+[iframe src=&amp;ldquo;http://rpubs.com/runzemc/ml_notes&amp;quot; width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;21200&amp;rdquo;]</description>
+    </item>
+    
+    <item>
+      <title>Quora challenge - answer classification</title>
+      <link>/2014/11/15/answer_classification/</link>
+      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
+      
+      <guid>/2014/11/15/answer_classification/</guid>
+      <description>Last night I tried my hands on a Quora challenge that classifies user-submitted answers into &amp;lsquo;good&amp;rsquo; and &amp;lsquo;bad.&amp;rsquo; All the information is anonymized, including the variable names, but you can tell by looking at their values what some of them may represent. For example, some appear to be count data or some summary statistics based on them, and, given that many of the values are 0 and heavily right-skewed, they seem to be some measure of the writers&amp;rsquo; reputations, the number of upvotes an answer received, or the follow-up comments.</description>
+    </item>
+    
+    <item>
+      <title>Building a book recommender</title>
+      <link>/2014/10/04/building-a-book-recommender/</link>
+      <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
+      
+      <guid>/2014/10/04/building-a-book-recommender/</guid>
+      <description>Lately, I&amp;rsquo;ve become very interested in text mining and topic modeling, and have played around with some popular algorithms like LDA. However, so far my projects have all been centered around what I can learn from a giant chunk of texts and usually stopped after I extracted some revealing and, if I&amp;rsquo;m lucky, thought-provoking topics from them. In other words, what I&amp;rsquo;ve been doing so far is all inference but no predictions.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing 八零后 (China&#39;s post-80s )</title>
+      <link>/2014/09/26/analyzing-chinas-post-80s/</link>
+      <pubDate>Fri, 26 Sep 2014 17:31:57 +0000</pubDate>
+      
+      <guid>/2014/09/26/analyzing-chinas-post-80s/</guid>
+      <description>If you are not from China or living there, you are probably not familiar with the term 八零后, or post-80s, but if you are, like me, I think you&amp;rsquo;ll agree that this is probably one of the most widely used and abused terms in modern China. Quite literally, it refers to Chinese people who were born in the 1980s (me included) and the reason it gained so much attention and exposure as compared to, say, 九零后 (post-90s) or 零零后 (post-00s), I think, stems from the fact that our generation has simply seen and been through way too many things that have never been seen or experienced by prior generations and are simply taken as norms for later ones.</description>
+    </item>
+    
+    <item>
+      <title>What mining my own emails told me about myself</title>
+      <link>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</link>
+      <pubDate>Tue, 02 Sep 2014 02:05:07 +0000</pubDate>
+      
+      <guid>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</guid>
+      <description>On Tuesday last week, I attended a data visualization meetup organized by Data Science LA and the topic was about the most recent Eyeo Festival. Of all the talks that Amelia shared with us, what impressed me and inspired me the most was Nicholas Felton&amp;rsquo;s personal data projects. In case you are not familiar with him, every year he publishes an annual report that documents his personal data projects / experiments conducted throughout the year.</description>
+    </item>
+    
+    <item>
+      <title>Random acts of pizza - a Kaggle competition</title>
+      <link>/2014/08/19/random-acts-of-pizza/</link>
+      <pubDate>Tue, 19 Aug 2014 06:22:28 +0000</pubDate>
+      
+      <guid>/2014/08/19/random-acts-of-pizza/</guid>
+      <description>This weekend, I participated in a Kaggle not-for-prize competition that uses data obtained from Reddit&amp;rsquo;s Random Acts of Pizza forum to analyze and predict the outcome of a request for pizza, and it was heaps of fun (I always wanted to say that)! Compared with other Kaggle competitions I had tried before, I found this one a bit easier because the dataset is not very large (~5,000 records) and is hence perfect for model experimenting, and, more importantly, the competition is based on a real research done by a couple Stanford researchers, which provides me with a lot of guidelines in how to proceed.</description>
+    </item>
+    
+    <item>
+      <title>Filtering twitter timeline</title>
+      <link>/2014/08/12/filtered-twitter-timeline/</link>
+      <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
+      
+      <guid>/2014/08/12/filtered-twitter-timeline/</guid>
+      <description>Ever felt your twitter newsfeed has too much going on that you don&amp;rsquo;t have time to read them all, let alone digest? I certainly do, even though I only follow like 20 people. Whenever I open the app, I was &amp;ldquo;bombarded&amp;rdquo; by all the new tweets and, even after scrolling through all of them (as I feel obligated to), I don&amp;rsquo;t feel I have actually taken any new information in. How nice would it be if someone handpicked and highlighted all the useful information for us?</description>
+    </item>
+    
+    <item>
+      <title>Location search using Factual and interactive maps using Leaflet</title>
+      <link>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
+      <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
+      
+      <guid>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
+      <description>The code for this project has been uploaded to [github](https://github.com/Runze/factual). Leaflet is a popular javascript library for making interactive maps. Don&amp;rsquo;t know how to code in js? No problem, thanks to Ramnath Vaidyanathan, you can now use rCharts to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&amp;rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (example1, example2)!</description>
+    </item>
+    
+    <item>
+      <title>How Californians reacted to the Brazil vs. Germany game</title>
+      <link>/2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/</link>
+      <pubDate>Thu, 10 Jul 2014 07:49:59 +0000</pubDate>
+      
+      <guid>/2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/</guid>
+      <description>Unless you&amp;rsquo;ve been living under a rock, there is no way you haven&amp;rsquo;t heard about the game between Brazil and Germany yesterday (7/8/14), and chances are you have also seen this twitter heat map video that went viral today. While watching it, I realized I have all the data to do such an analysis myself too (as I&amp;rsquo;ve been collecting tweets for another project). So I did.
+The caveat is that the tweets that I collected are only those originated from California (and thus my twist).</description>
+    </item>
+    
+    <item>
+      <title>State sentiment analysis using twitter live stream and R</title>
+      <link>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
+      <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
+      
+      <guid>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
+      <description>The R code used to create this project has been uploaded to [github](https://github.com/Runze/twitter_sentiment). This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
+    </item>
+    
+    <item>
+      <title>No more finding out about a concert too late</title>
+      <link>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</link>
+      <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
+      
+      <guid>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</guid>
+      <description>The R code used to create this app has been uploaded to [github](https://github.com/Runze/pitchfork). After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
+https://runzemc.shinyapps.io/pitchfork/
+This R Shiny app I made pulls data from pitchfork automatically every time it&amp;rsquo;s open and shows the upcoming shows per city and per artist (indie artist, to be precise).</description>
+    </item>
+    
+    <item>
+      <title>An analysis of the most played artists on KCRW</title>
+      <link>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</link>
+      <pubDate>Sun, 22 Jun 2014 04:32:24 +0000</pubDate>
+      
+      <guid>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</guid>
+      <description>The code to web-crawl the playlist and to create the shiny app has been uploaded to [github](https://github.com/Runze/kcrw). R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education.</description>
+    </item>
     
     <item>
       <title>An analysis of Artsy’s twitter followers</title>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Oct 2014 20:53:36 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Books</title>
+      <link>/tags/books/</link>
+      <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
+      
+      <guid>/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coursera</title>
+      <link>/tags/coursera/</link>
+      <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
+      
+      <guid>/tags/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Factual</title>
+      <link>/tags/factual/</link>
+      <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
+      
+      <guid>/tags/factual/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gephi</title>
@@ -21,29 +48,164 @@
     </item>
     
     <item>
+      <title>Gmail</title>
+      <link>/tags/gmail/</link>
+      <pubDate>Tue, 02 Sep 2014 02:05:07 +0000</pubDate>
+      
+      <guid>/tags/gmail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kaggle</title>
+      <link>/tags/kaggle/</link>
+      <pubDate>Tue, 19 Aug 2014 06:22:28 +0000</pubDate>
+      
+      <guid>/tags/kaggle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kcrw</title>
+      <link>/tags/kcrw/</link>
+      <pubDate>Sun, 22 Jun 2014 04:32:24 +0000</pubDate>
+      
+      <guid>/tags/kcrw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lda</title>
+      <link>/tags/lda/</link>
+      <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
+      
+      <guid>/tags/lda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leaflet</title>
+      <link>/tags/leaflet/</link>
+      <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
+      
+      <guid>/tags/leaflet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Sat, 15 Nov 2014 22:21:43 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pitchfork</title>
+      <link>/tags/pitchfork/</link>
+      <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
+      
+      <guid>/tags/pitchfork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/tags/python/</link>
-      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 30 Dec 2014 02:04:42 +0000</pubDate>
       
       <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Quora</title>
+      <link>/tags/quora/</link>
+      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
+      
+      <guid>/tags/quora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Rcharts</title>
+      <link>/tags/rcharts/</link>
+      <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
+      
+      <guid>/tags/rcharts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment</title>
+      <link>/tags/sentiment/</link>
+      <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
+      
+      <guid>/tags/sentiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Mining</title>
+      <link>/tags/text-mining/</link>
+      <pubDate>Tue, 30 Dec 2014 02:04:42 +0000</pubDate>
+      
+      <guid>/tags/text-mining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topic Modeling</title>
+      <link>/tags/topic-modeling/</link>
+      <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
+      
+      <guid>/tags/topic-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Twitter</title>
       <link>/tags/twitter/</link>
-      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
       
       <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weibo</title>
+      <link>/tags/weibo/</link>
+      <pubDate>Fri, 26 Sep 2014 17:31:57 +0000</pubDate>
+      
+      <guid>/tags/weibo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>World Cup</title>
+      <link>/tags/world-cup/</link>
+      <pubDate>Thu, 10 Jul 2014 07:49:59 +0000</pubDate>
+      
+      <guid>/tags/world-cup/</guid>
       <description></description>
     </item>
     

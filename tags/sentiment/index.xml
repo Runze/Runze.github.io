@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sentiment on An analysis of random things</title>
+    <link>/tags/sentiment/</link>
+    <description>Recent content in Sentiment on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2014 03:33:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sentiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State sentiment analysis using twitter live stream and R</title>
+      <link>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
+      <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
+      
+      <guid>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
+      <description>The R code used to create this project has been uploaded to [github](https://github.com/Runze/twitter_sentiment). This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
+    </item>
+    
+  </channel>
+</rss>

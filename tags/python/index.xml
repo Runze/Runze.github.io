@@ -6,10 +6,37 @@
     <description>Recent content in Python on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2014 02:04:42 +0000</lastBuildDate>
     
 	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Predicting Yelp ratings using textual reviews</title>
+      <link>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</link>
+      <pubDate>Tue, 30 Dec 2014 02:04:42 +0000</pubDate>
+      
+      <guid>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</guid>
+      <description>Internet is truly full of free and fascinating datasets! I found this Yelp Dataset Challenge the other day that includes, among others, over 1 million reviews (most of which are recent) along with their respective 5-star ratings - excellent text mining material! Although to enter the competition (which ends on 12/31/14), you have to be a current student (which I&amp;rsquo;m not), but everyone is welcome to play around with the data.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing 八零后 (China&#39;s post-80s )</title>
+      <link>/2014/09/26/analyzing-chinas-post-80s/</link>
+      <pubDate>Fri, 26 Sep 2014 17:31:57 +0000</pubDate>
+      
+      <guid>/2014/09/26/analyzing-chinas-post-80s/</guid>
+      <description>If you are not from China or living there, you are probably not familiar with the term 八零后, or post-80s, but if you are, like me, I think you&amp;rsquo;ll agree that this is probably one of the most widely used and abused terms in modern China. Quite literally, it refers to Chinese people who were born in the 1980s (me included) and the reason it gained so much attention and exposure as compared to, say, 九零后 (post-90s) or 零零后 (post-00s), I think, stems from the fact that our generation has simply seen and been through way too many things that have never been seen or experienced by prior generations and are simply taken as norms for later ones.</description>
+    </item>
+    
+    <item>
+      <title>What mining my own emails told me about myself</title>
+      <link>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</link>
+      <pubDate>Tue, 02 Sep 2014 02:05:07 +0000</pubDate>
+      
+      <guid>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</guid>
+      <description>On Tuesday last week, I attended a data visualization meetup organized by Data Science LA and the topic was about the most recent Eyeo Festival. Of all the talks that Amelia shared with us, what impressed me and inspired me the most was Nicholas Felton&amp;rsquo;s personal data projects. In case you are not familiar with him, every year he publishes an annual report that documents his personal data projects / experiments conducted throughout the year.</description>
+    </item>
     
     <item>
       <title>An analysis of Artsy’s twitter followers</title>

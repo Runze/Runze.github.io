@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>Location search using Factual and interactive maps using Leaflet &middot; An analysis of random things</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="../../../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Location search using Factual and interactive maps using Leaflet</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Aug 2014, 06:27</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/factual">Factual</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/leaflet">Leaflet</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/rcharts">rCharts</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/shiny">Shiny</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <blockquote>The code for this project has been uploaded to [github](https://github.com/Runze/factual).</blockquote>
+
+<p><a href="http://leafletjs.com">Leaflet</a> is a popular javascript library for making interactive maps. Don&rsquo;t know how to code in js? No problem, thanks to <a href="https://github.com/ramnathv">Ramnath Vaidyanathan</a>, you can now use <a href="http://rcharts.io">rCharts</a> to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (<a href="http://ramnathv.github.io/bikeshare/">example1</a>, <a href="http://shiny.rstudio.com/gallery/superzip-example.html">example2</a>)!</p>
+
+<p>As for my first leaflet app, I decided to make a yelp-like app that takes the user&rsquo;s current address as input and displays points of interests nearby such as restaurants and libraries per user&rsquo;s choice. Instead of using yelp&rsquo;s data directly, I opted to using <a href="https://www.factual.com">Factual</a>&rsquo;s. To those who are not familiar with Factual, it&rsquo;s a 3-year old company headquartered in LA (yeah!) that is specialized in aggregating location data. I think yelp, among other app makers, is actually one of their customers. If you are interested, you can request an API key from their <a href="http://developer.factual.com">website</a>, which is free of charge and can be used to query up to 10,000 times a day (each individual query, though, is capped at 50 results). You can find all the place categories that are covered <a href="http://developer.factual.com/working-with-categories/">here</a> and check out their sample data by playing around with its API.</p>
+
+<p>And here is my app :-)</p>
+
+<p><a href="http://runzemc.shinyapps.io/factual/">http://runzemc.shinyapps.io/factual/</a></p>
+
+<p><a href="http://www.runzemc.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-7.17.52-PM.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-7.17.52-PM-1024x599.png" alt="Screen Shot 2014-08-18 at 7.17.52 PM" /></a></p>
+
+<p><strong>Data query using Factual API</strong></p>
+
+<p>On Factual&rsquo;s developer website, you can find all the API drivers it currently offers. Unfortunately, R is not one of them. I spent some time trying to figure out how to query data in R &ldquo;manually&rdquo; using the <a href="http://cran.r-project.org/web/packages/httr/httr.pdf">httr</a> or similar packages, but couldn&rsquo;t work out the 2-legged oauth part (there is indeed an R package called <a href="http://cran.us.r-project.org/web/packages/factualR/factualR.pdf">factualR</a> but it looks like it&rsquo;s using an older version of the API). Factual does provide a simple unauthenticated method to query its data, but the rate limit is much lower. Luckily, <a href="http://cran.r-project.org/web/packages/rPython/rPython.pdf">rPython</a> saved the day :-)</p>
+
+<p>Without sounding too fanboy-ish, I believe rPython is the best thing that happened to the humanity. It lets you easily execute python commands, call python functions and scripts solely within R! One caveat is that it can only be installed on unix-based OS at this stage, but we&rsquo;ll let it fly. Below is my code for performing the oauth and querying the data using Factual&rsquo;s python <a href="https://github.com/Factual/factual-python-driver">module</a>:</p>
+
+<p>[splus]
+#add factual and oauth modules to a folder under the app directory (to be bundled together when deployed)
+python.exec(&lsquo;import sys&rsquo;)
+python.exec(&ldquo;sys.path.extend([&lsquo;package&rsquo;])&ldquo;)
+[/splus]</p>
+
+<p>[splus]
+#perform oauth
+python.exec(&lsquo;from factual import Factual&rsquo;)
+python.exec(&ldquo;factual = Factual(&rsquo;<api key>&rsquo;, &lsquo;<api secret>&rsquo;)&ldquo;)
+[/splus]</p>
+
+<p>[splus]
+#function to resolve address
+python.exec(&ldquo;def resolve(address, locality, region, postcode):
+               return factual.resolve(&lsquo;places&rsquo;, {&lsquo;address&rsquo;:address,&lsquo;locality&rsquo;:locality,&lsquo;region&rsquo;:region,&lsquo;postcode&rsquo;:postcode}).data()&ldquo;)
+[/splus]</p>
+
+<p>[splus]
+#function to filter based on category, latitude, and longitude
+python.exec(&ldquo;places = factual.table(&lsquo;places&rsquo;)&rdquo;)
+python.exec(&lsquo;from factual.utils import circle&rsquo;)
+python.exec(&ldquo;def filter(category, lat, lon, radius):
+               return places.filters({&lsquo;category_ids&rsquo;:{&lsquo;$includes&rsquo;:category}}).geo(circle(lat, lon, radius)).limit(50).data()&ldquo;)
+[/splus]</p>
+
+<p>[splus]
+#function to filter based on keyword, latitude, and longitude
+python.exec(&ldquo;def search(kw, lat, lon, radius):
+               return places.search(kw).geo(circle(lat, lon, radius)).limit(50).data()&ldquo;)
+[/splus]</p>
+
+<p>These three python functions (i.e., resolving address, searching based on category, and based on keywords), which are later called in the program using python.call(), are all the core queries I implemented, although, to resolve address, I also relied on <a href="http://cran.r-project.org/web/packages/ggmap/ggmap.pdf">google maps API</a> which I found to be very robust to missing information in user-entered location:</p>
+
+<p>[splus]
+#if not found, try to use google maps to resolve
+if (nrow(df_resolve) == 0) {
+ full_addr = paste(address, city, state, zipcode)
+ gg_res = geocode(full_addr)
+ df_resolve = data.frame(gg_res$lat, gg_res$lon)
+}
+[/splus]</p>
+
+<p><strong>Creating a leaflet map</strong></p>
+
+<p>Now that we have the data, we can finally show them on a pretty leaflet map. When doing this, I found Ramnath&rsquo;s bike-sharing <a href="http://ramnathv.github.io/bikeshare/">app / tutorial</a> most helpful. Honestly, I pretty much just stole his code and spent the majority of the time trying to decide on the best color combination for the circles on the map (can you tell the border of the circles is of a slightly lighter color than the filling?). Therefore, I&rsquo;ll defer to him, the author of rCharts, to demonstrate the use of the package. Although I&rsquo;ll add that he is very helpful and responsive to questions and issues, and is very active in the R community.</p>
+
+<p>The rest of the steps, including parsing the retrieved data and putting together all the pieces and wrapping them in Shiny, are all pretty standard and can be found in my <a href="https://github.com/Runze/factual">github</a>. In addition to creating the map, I also showed the data in a table on another tab using Shiny&rsquo;s built-in renderDataTable() function. You are welcome.</p>
+
+<p>Isn&rsquo;t that fun?</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../../../2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../../../2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/">How Californians reacted to the Brazil vs. Germany game</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="../../../../2014/08/12/filtered-twitter-timeline/">Filtering twitter timeline</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="../../../../2014/08/12/filtered-twitter-timeline/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="../../../../js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

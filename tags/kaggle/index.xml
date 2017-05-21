@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kaggle on An analysis of random things</title>
+    <link>/tags/kaggle/</link>
+    <description>Recent content in Kaggle on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Aug 2014 06:22:28 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/kaggle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Random acts of pizza - a Kaggle competition</title>
+      <link>/2014/08/19/random-acts-of-pizza/</link>
+      <pubDate>Tue, 19 Aug 2014 06:22:28 +0000</pubDate>
+      
+      <guid>/2014/08/19/random-acts-of-pizza/</guid>
+      <description>This weekend, I participated in a Kaggle not-for-prize competition that uses data obtained from Reddit&amp;rsquo;s Random Acts of Pizza forum to analyze and predict the outcome of a request for pizza, and it was heaps of fun (I always wanted to say that)! Compared with other Kaggle competitions I had tried before, I found this one a bit easier because the dataset is not very large (~5,000 records) and is hence perfect for model experimenting, and, more importantly, the competition is based on a real research done by a couple Stanford researchers, which provides me with a lot of guidelines in how to proceed.</description>
+    </item>
+    
+  </channel>
+</rss>

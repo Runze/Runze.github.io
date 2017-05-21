@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leaflet on An analysis of random things</title>
+    <link>/tags/leaflet/</link>
+    <description>Recent content in Leaflet on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Aug 2014 06:27:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Location search using Factual and interactive maps using Leaflet</title>
+      <link>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
+      <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
+      
+      <guid>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
+      <description>The code for this project has been uploaded to [github](https://github.com/Runze/factual). Leaflet is a popular javascript library for making interactive maps. Don&amp;rsquo;t know how to code in js? No problem, thanks to Ramnath Vaidyanathan, you can now use rCharts to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&amp;rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (example1, example2)!</description>
+    </item>
+    
+  </channel>
+</rss>

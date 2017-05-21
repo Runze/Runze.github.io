@@ -7,6 +7,71 @@
   </url>
   
   <url>
+    <loc>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</loc>
+    <lastmod>2014-12-30T02:04:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/11/15/notes-to-machine-learning/</loc>
+    <lastmod>2014-11-15T22:21:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/11/15/answer_classification/</loc>
+    <lastmod>2014-11-15T22:15:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/10/04/building-a-book-recommender/</loc>
+    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/09/26/analyzing-chinas-post-80s/</loc>
+    <lastmod>2014-09-26T17:31:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</loc>
+    <lastmod>2014-09-02T02:05:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/08/19/random-acts-of-pizza/</loc>
+    <lastmod>2014-08-19T06:22:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/08/12/filtered-twitter-timeline/</loc>
+    <lastmod>2014-08-12T06:49:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</loc>
+    <lastmod>2014-08-01T06:27:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/</loc>
+    <lastmod>2014-07-10T07:49:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</loc>
+    <lastmod>2014-07-07T03:33:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</loc>
+    <lastmod>2014-07-01T06:40:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</loc>
+    <lastmod>2014-06-22T04:32:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2014/05/07/an-analysis-of-artsy-s-twitter-followers/</loc>
     <lastmod>2014-05-07T00:00:00+00:00</lastmod>
   </url>
@@ -18,13 +83,31 @@
   </url>
   
   <url>
+    <loc>/tags/books/</loc>
+    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/coursera/</loc>
+    <lastmod>2014-07-07T03:33:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/data-analysis/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-12-30T02:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/factual/</loc>
+    <lastmod>2014-08-01T06:27:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,32 +118,122 @@
   </url>
   
   <url>
+    <loc>/tags/gmail/</loc>
+    <lastmod>2014-09-02T02:05:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/kaggle/</loc>
+    <lastmod>2014-08-19T06:22:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/kcrw/</loc>
+    <lastmod>2014-06-22T04:32:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/lda/</loc>
+    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/leaflet/</loc>
+    <lastmod>2014-08-01T06:27:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2014-11-15T22:21:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pitchfork/</loc>
+    <lastmod>2014-07-01T06:40:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-12-30T02:04:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/python/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-12-30T02:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/quora/</loc>
+    <lastmod>2014-11-15T22:15:22+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-11-15T22:15:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rcharts/</loc>
+    <lastmod>2014-08-01T06:27:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sentiment/</loc>
+    <lastmod>2014-07-07T03:33:22+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2014-08-12T06:49:26+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/text-mining/</loc>
+    <lastmod>2014-12-30T02:04:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/topic-modeling/</loc>
+    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/twitter/</loc>
-    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <lastmod>2014-08-12T06:49:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/weibo/</loc>
+    <lastmod>2014-09-26T17:31:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/world-cup/</loc>
+    <lastmod>2014-07-10T07:49:59+00:00</lastmod>
     <priority>0</priority>
   </url>
   

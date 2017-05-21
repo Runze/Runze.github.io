@@ -1,228 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.20.7" />
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
 
-  <title>Building a book recommender &middot; An analysis of random things</title>
+<title>Building a book recommender - An analysis of random things</title>
+<meta property="og:title" content="Building a book recommender - An analysis of random things">
 
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
 
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="../../../../css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="../../../../css/side-menu.css">
-  <!--<![endif]-->
-
-  <link rel="stylesheet" href="../../../../css/blackburn.css">
-
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  
 
   
 
-  <link rel="shortcut icon" href="../../../../img/favicon.ico" type="image/x-icon" />
-
-  
-  
-
-</head>
 
 
-<body>
-<div id="layout">
 
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
 
-  
 
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../">Home</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../about/">About</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
-      
-        </li>
-      
-    </ul>
-  </div>
 
-  <div class="pure-menu social">
-  <ul class="pure-menu-list">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/Puppy.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
     
-
+    <li><a href="../../../../">Home</a></li>
     
-
+    <li><a href="../../../../about/">About</a></li>
     
-
+    <li><a href="https://github.com/Runze">GitHub</a></li>
     
-
+    <li><a href="https://twitter.com/runze_w">Twitter</a></li>
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
   </ul>
-</div>
+</nav>
+
+      </header>
 
 
-  <div>
-  <div class="small-print">
-    <small></small>
-  </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
-  </div>
-</div>
+<main class="content" role="main">
 
-</div>
-
-
-  <div id="main">
-
-
-<div class="header">
-  <h1>Building a book recommender</h1>
-  <h2></h2>
-</div>
-<div class="content">
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>04 Oct 2014, 20:53</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <article class="article">
     
-      <a class="post-taxonomy-tag" href="../../../../tags/books">Books</a>&nbsp;&#47;
+    <span class="article-duration">13 min read</span>
     
-      <a class="post-taxonomy-tag" href="../../../../tags/lda">LDA</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../../../tags/r">R</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../../../tags/topic-modeling">Topic Modeling</a>
-    
-  </div>
-  
-  
 
-</div>
+    <h1 class="article-title">Building a book recommender</h1>
 
-  <p>Lately, I&rsquo;ve become very interested in text mining and topic modeling, and have played around with some popular algorithms like LDA. However, so far my projects have all been centered around what I can learn from a giant chunk of texts and usually stopped after I extracted some revealing and, if I&rsquo;m lucky, thought-provoking topics from them. In other words, what I&rsquo;ve been doing so far is all inference but no predictions. Hence, I&rsquo;ve been toying with the idea of taking it to the next level by applying the topics and knowledge the model learned to future problems, and the idea that interested me the most is to use them to build a recommending system.</p>
+    
+    <span class="article-date">2014/10/04</span>
+    
+
+    <div class="article-content">
+      <p>Lately, I&rsquo;ve become very interested in text mining and topic modeling, and have played around with some popular algorithms like LDA. However, so far my projects have all been centered around what I can learn from a giant chunk of texts and usually stopped after I extracted some revealing and, if I&rsquo;m lucky, thought-provoking topics from them. In other words, what I&rsquo;ve been doing so far is all inference but no predictions. Hence, I&rsquo;ve been toying with the idea of taking it to the next level by applying the topics and knowledge the model learned to future problems, and the idea that interested me the most is to use them to build a recommending system.</p>
 
 <p>To me, it is truly a fascinating application. I still remember the amazement I felt when I first discovered Pandora and, even earlier, last.fm radio. Now as I learned more about it, I have developed a more concrete understanding of how the system works. To my knowledge, there are two main approaches towards building such a recommender, one is gathering as many attributes about the subject as possible, which, in the case of music, may include genre, years, and frequency and, in the case of artwork, may mean style, colors, pixels, and patterns, and clustering them together based on common attributes; the other approach is collaborative filtering, i.e., recommending items that other people, who showed interests in the same items that you enjoyed, expressed interests in. Per my understanding, Pandora took the first route and Spotify initially took the second but is now actively developing the first too because the problem with collaborative filtering is that you place a whole lot of faith on the tastes of your users, which inevitably limits the variety and potential to discover new materials. Besides these two machine learning-based approaches, there have also been many alternatives that rely on human curators entirely. <a href="http://songza.com">Songza</a>, for example, has a group of in-house music experts that make playlists all day and <a href="http://8tracks.com">8tracks</a> has its users make and share playlists themselves. After trying both, I have to say I do enjoy the human-crafted playlists a lot more than the machine-generated ones. I think it&rsquo;s because taste is a complex thing and many of us have drastically different tastes when it comes to different subjects. Hence, it may be too difficult to have a machine learn and adapt to the whimsical nature of human tastes.</p>
 
@@ -324,51 +168,31 @@
 
 <p>That&rsquo;s it. Read more!</p>
 
-
-  
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="../../../../2014/09/26/analyzing-chinas-post-80s/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="../../../../2014/09/26/analyzing-chinas-post-80s/">Analyzing 八零后 (China&#39;s post-80s )</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="../../../../2014/11/15/answer_classification/">Quora challenge - answer classification</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="../../../../2014/11/15/answer_classification/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+    </div>
+  </article>
 
   
 
-</div>
 
-</div>
-</div>
-<script src="../../../../js/ui.js"></script>
+</main>
 
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
 
+    </div>
+    
 
+    
 
-</body>
+    
+  </body>
 </html>
 

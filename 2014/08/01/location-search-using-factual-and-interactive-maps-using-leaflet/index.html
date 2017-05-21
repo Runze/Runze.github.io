@@ -1,230 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.20.7" />
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.20.7" />
 
-  <title>Location search using Factual and interactive maps using Leaflet &middot; An analysis of random things</title>
+<title>Location search using Factual and interactive maps using Leaflet - An analysis of random things</title>
+<meta property="og:title" content="Location search using Factual and interactive maps using Leaflet - An analysis of random things">
 
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
 
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="../../../../css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="../../../../css/side-menu.css">
-  <!--<![endif]-->
-
-  <link rel="stylesheet" href="../../../../css/blackburn.css">
-
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  
 
   
 
-  <link rel="shortcut icon" href="../../../../img/favicon.ico" type="image/x-icon" />
-
-  
-  
-
-</head>
 
 
-<body>
-<div id="layout">
 
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
 
-  
 
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../">Home</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../about/">About</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
-      
-        </li>
-      
-    </ul>
-  </div>
 
-  <div class="pure-menu social">
-  <ul class="pure-menu-list">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/Puppy.jpg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
     
-
+    <li><a href="../../../../">Home</a></li>
     
-
+    <li><a href="../../../../about/">About</a></li>
     
-
+    <li><a href="https://github.com/Runze">GitHub</a></li>
     
-
+    <li><a href="https://twitter.com/runze_w">Twitter</a></li>
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
   </ul>
-</div>
+</nav>
+
+      </header>
 
 
-  <div>
-  <div class="small-print">
-    <small></small>
-  </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
-  </div>
-</div>
+<main class="content" role="main">
 
-</div>
-
-
-  <div id="main">
-
-
-<div class="header">
-  <h1>Location search using Factual and interactive maps using Leaflet</h1>
-  <h2></h2>
-</div>
-<div class="content">
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>01 Aug 2014, 06:27</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <article class="article">
     
-      <a class="post-taxonomy-tag" href="../../../../tags/factual">Factual</a>&nbsp;&#47;
+    <span class="article-duration">4 min read</span>
     
-      <a class="post-taxonomy-tag" href="../../../../tags/leaflet">Leaflet</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../../../tags/r">R</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../../../tags/rcharts">rCharts</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../../../tags/shiny">Shiny</a>
-    
-  </div>
-  
-  
 
-</div>
+    <h1 class="article-title">Location search using Factual and interactive maps using Leaflet</h1>
 
-  <blockquote>The code for this project has been uploaded to [github](https://github.com/Runze/factual).</blockquote>
+    
+    <span class="article-date">2014/08/01</span>
+    
+
+    <div class="article-content">
+      <blockquote>The code for this project has been uploaded to [github](https://github.com/Runze/factual).</blockquote>
 
 <p><a href="http://leafletjs.com">Leaflet</a> is a popular javascript library for making interactive maps. Don&rsquo;t know how to code in js? No problem, thanks to <a href="https://github.com/ramnathv">Ramnath Vaidyanathan</a>, you can now use <a href="http://rcharts.io">rCharts</a> to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (<a href="http://ramnathv.github.io/bikeshare/">example1</a>, <a href="http://shiny.rstudio.com/gallery/superzip-example.html">example2</a>)!</p>
 
@@ -293,51 +135,42 @@ if (nrow(df_resolve) == 0) {
 
 <p>Isn&rsquo;t that fun?</p>
 
-
-  
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="../../../../2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="../../../../2014/07/10/how-californians-reacted-to-the-brazil-vs-germany-game/">How Californians reacted to the Brazil vs. Germany game</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="../../../../2014/08/12/filtered-twitter-timeline/">Filtering twitter timeline</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="../../../../2014/08/12/filtered-twitter-timeline/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+    </div>
+  </article>
 
   
 
-</div>
 
-</div>
-</div>
-<script src="../../../../js/ui.js"></script>
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-
-
-</body>
+    
+  </body>
 </html>
 

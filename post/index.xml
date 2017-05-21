@@ -26,8 +26,7 @@
       <pubDate>Sat, 15 Nov 2014 22:21:43 +0000</pubDate>
       
       <guid>/2014/11/15/notes-to-machine-learning/</guid>
-      <description>Below are my notes to machine learning when I was learning the subject myself (the two primary books I referenced are included in the notes below). As I&amp;rsquo;ve been reviewing the subject a lot these days, I decided to organize them and host them in a central place. They are still subject to revision as I learn more about it.
-[iframe src=&amp;ldquo;http://rpubs.com/runzemc/ml_notes&amp;quot; width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;21200&amp;rdquo;]</description>
+      <description>Data transformation Resampling techniques Regression models Smoothing Neural networks Support vector machines K-nearest neighbors Trees Random forests Gradient boosting trees Cubist Measuring performace in classification models Linear classificatoin models Latent Dirichlet allocation   These are the notes I took while reading An Introduction to Statistical Learning and Applied Predictive Modeling. Some of the notes also came from other sources, but the majority of them are from these two books.</description>
     </item>
     
     <item>

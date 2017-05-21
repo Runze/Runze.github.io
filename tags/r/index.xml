@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on An analysis of random things</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An analysis of Artsy’s twitter followers</title>
+      <link>/2014/05/07/an-analysis-of-artsy-s-twitter-followers/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/2014/05/07/an-analysis-of-artsy-s-twitter-followers/</guid>
+      <description>This weekend I decided to learn more about twitter and its handy API. My subject of the analysis is Artsy, a fine-art website that provides a pandora-like service. The subjects I was curious to find out are where their followers are from, what their twitter activities are like, what other interests they have, and, specifically, what kind of stereotypes clusters they fall into because, you know, it’s important and I didn’t have anything better to do.</description>
+    </item>
+    
+  </channel>
+</rss>

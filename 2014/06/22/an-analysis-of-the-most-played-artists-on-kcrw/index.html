@@ -66,9 +66,7 @@
     
 
     <div class="article-content">
-      <blockquote>The code to web-crawl the playlist and to create the shiny app has been uploaded to [github](https://github.com/Runze/kcrw).</blockquote>
-
-<p><a href="http://shiny.rstudio.com/">R Shiny</a> is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education. Take this <a href="http://shiny.rstudio.com/gallery/kmeans-example.html">k-means app</a> for instance, I wish I had a chance to play with this interactive app when learning about the algorithm myself.</p>
+      <p><a href="http://shiny.rstudio.com/">R Shiny</a> is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education. Take this <a href="http://shiny.rstudio.com/gallery/kmeans-example.html">k-means app</a> for instance, I wish I had a chance to play with this interactive app when learning about the algorithm myself.</p>
 
 <p>This weekend, I decided to finally try my hands on it and this is the result!</p>
 
@@ -88,17 +86,17 @@
 
 <p>After getting the data ready, the first thing I was eager to find out is who the top artists are. Below is the output from my app showing the top 20 artists covering the entire period:</p>
 
-<p><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.21.43-PM.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.21.43-PM-1024x521.png" alt="Screen Shot 2014-08-18 at 7.21.43 PM" /></a><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-22-at-12.06.15-PM.png">
-</a><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-21-at-8.02.43-PM.png">
-</a>The legend is ordered by the ranking (in the descending order) and goes from top to bottom and then left to right. To be honest, I was a little surprised that Beck took the crown jewel. In fact, looking at the data, I found that he was played consistently throughout the whole time. Nevertheless, some of my favorite artists (e.g., Phoenix, Disclosure, Bonobo, Vampire Weekend, and James Blake) did make it to the top 20.</p>
+<p><img src="https://raw.githubusercontent.com/Runze/kcrw/master/screenshot.png" alt="alt text" width="700"></p>
+
+<p>The legend is ordered by the ranking (in the descending order) and goes from top to bottom and then left to right. To be honest, I was a little surprised that Beck took the crown jewel. In fact, looking at the data, I found that he was played consistently throughout the whole time. Nevertheless, some of my favorite artists (e.g., Phoenix, Disclosure, Bonobo, Vampire Weekend, and James Blake) did make it to the top 20.</p>
 
 <p>Above we looked at the all-day playlists, but is there a difference between the music played during the daytime and night? To answer this question, I split the data into 2 parts based on the timestamp, i.e., one for the daytime (6 am - 6 pm) and one for the night (6 pm - 6 am). Because afternoon and early evening are usually taken by news at KCRW, we don&rsquo;t have any problem for the cutoff time (there is rarely any music played around either 6 am or 6 pm). First, let&rsquo;s look at the daytime:</p>
 
-<p><a href="http://www.runzemc.com/wp-content/uploads/2014/06/daytime.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/06/daytime-1024x591.png" alt="daytime" /></a></p>
+<p><img src="https://raw.githubusercontent.com/Runze/kcrw/master/daytime.png" alt="alt text" width="700"></p>
 
 <p>And then during the night:</p>
 
-<p><a href="http://www.runzemc.com/wp-content/uploads/2014/06/nighttime.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/06/nighttime-1024x596.png" alt="nighttime" /></a></p>
+<p><img src="https://raw.githubusercontent.com/Runze/kcrw/master/nighttime.png" alt="alt text" width="700"></p>
 
 <p>Despite the overlaps, we do see a lot of variation. For example, Disclosure is much more heavily played at night, which makes sense (really, I can&rsquo;t imagine anyone turning down <a href="https://www.youtube.com/watch?v=n0FOPTYJPXw&amp;feature=kp">this</a> at night). Similarly, Daft Punk is a nighttime favorite as well. As for the daytime, indie pop/rock bands such as Vampire Weekend and Phantogram are apparently more popular.</p>
 
@@ -106,15 +104,15 @@
 
 <p>Starting with Beck (note only the top 10 songs of his are shown):</p>
 
-<p><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.42.43-PM.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.42.43-PM-1024x590.png" alt="Screen Shot 2014-08-18 at 7.42.43 PM" /></a></p>
+<p><img src="https://raw.githubusercontent.com/Runze/kcrw/master/screenshot_beck.png" alt="alt text" width="700"></p>
 
 <p>Looking at this chart, I can finally see why he was consistently ranked the highest: whenever one of his songs fell out of favor, almost immediately another song would catch up. I should really start to listen to him more.</p>
 
 <p>Let&rsquo;s look at another artist: Lorde. Although not among the top 20, she was ranked 26.</p>
 
-<p><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.42.58-PM.png"><img src="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-08-18-at-7.42.58-PM-1024x590.png" alt="Screen Shot 2014-08-18 at 7.42.58 PM" /></a><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-22-at-12.12.41-PM.png">
-</a><a href="http://www.runzemc.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-21-at-8.59.18-PM.png">
-</a>Interestingly, after Royals had an impressive debut in May 2013, it quickly dropped but rebounded again in August. I wonder if that was around the time when she was recognized by the mass, or maybe it was with the help of the Magnifik Remix that peaked in July (which, in my humble opinion, is pretty awful, especially given the original was so good). I&rsquo;m a little sad that 400 Lux and Tennis Court did not get as many plays though.</p>
+<p><img src="https://raw.githubusercontent.com/Runze/kcrw/master/screenshot_lorde.png" alt="alt text" width="700"></p>
+
+<p>Interestingly, after Royals had an impressive debut in May 2013, it quickly dropped but rebounded again in August. I wonder if that was around the time when she was recognized by the mass, or maybe it was with the help of the Magnifik Remix that peaked in July (which, in my humble opinion, is pretty awful, especially given the original was so good). I&rsquo;m a little sad that 400 Lux and Tennis Court did not get as many plays though.</p>
 
 <p><strong>Conclusion and Future Work</strong></p>
 

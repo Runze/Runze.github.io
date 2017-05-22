@@ -17,7 +17,7 @@
       <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
       
       <guid>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</guid>
-      <description>The R code used to create this app has been uploaded to [github](https://github.com/Runze/pitchfork). After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
+      <description>After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
 https://runzemc.shinyapps.io/pitchfork/
 This R Shiny app I made pulls data from pitchfork automatically every time it&amp;rsquo;s open and shows the upcoming shows per city and per artist (indie artist, to be precise).</description>
     </item>

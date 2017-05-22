@@ -80,7 +80,7 @@
       <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
       
       <guid>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
-      <description>The R code used to create this project has been uploaded to [github](https://github.com/Runze/twitter_sentiment). This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
+      <description>This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@
       <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
       
       <guid>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</guid>
-      <description>The R code used to create this app has been uploaded to [github](https://github.com/Runze/pitchfork). After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
+      <description>After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
 https://runzemc.shinyapps.io/pitchfork/
 This R Shiny app I made pulls data from pitchfork automatically every time it&amp;rsquo;s open and shows the upcoming shows per city and per artist (indie artist, to be precise).</description>
     </item>
@@ -100,7 +100,7 @@ This R Shiny app I made pulls data from pitchfork automatically every time it&am
       <pubDate>Sun, 22 Jun 2014 04:32:24 +0000</pubDate>
       
       <guid>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</guid>
-      <description>The code to web-crawl the playlist and to create the shiny app has been uploaded to [github](https://github.com/Runze/kcrw). R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education.</description>
+      <description>R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education. Take this k-means app for instance, I wish I had a chance to play with this interactive app when learning about the algorithm myself.</description>
     </item>
     
     <item>

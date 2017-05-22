@@ -17,7 +17,7 @@
       <pubDate>Sun, 22 Jun 2014 04:32:24 +0000</pubDate>
       
       <guid>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</guid>
-      <description>The code to web-crawl the playlist and to create the shiny app has been uploaded to [github](https://github.com/Runze/kcrw). R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education.</description>
+      <description>R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education. Take this k-means app for instance, I wish I had a chance to play with this interactive app when learning about the algorithm myself.</description>
     </item>
     
   </channel>

@@ -1,72 +1,241 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.20.7" />
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>State sentiment analysis using twitter live stream and R &middot; An analysis of random things</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/true.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="../../../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
 
 
-<title>State sentiment analysis using twitter live stream and R - An analysis of random things</title>
-<meta property="og:title" content="State sentiment analysis using twitter live stream and R - An analysis of random things">
+<head>
+  <link rel="stylesheet" href="../../../../css/github.css">
+  <script src="../../../../js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 
+<body>
+<div id="layout">
 
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
 
   
 
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
+      
+        </li>
+      
+    </ul>
+  </div>
 
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
 
-
-
-
-
-<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
-<link rel="stylesheet" href="../../../../css/main.css" media="all">
-
-
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <nav class="nav">
-  <a href="../../../../" class="nav-logo">
-    <img src="../../../../images/Puppy.jpg"
-         width="50"
-         height="50"
-         alt="Logo">
-  </a>
-
-  <ul class="nav-links">
     
-    <li><a href="../../../../">Home</a></li>
+
     
-    <li><a href="../../../../about/">About</a></li>
+
     
-    <li><a href="https://github.com/Runze">GitHub</a></li>
+
     
-    <li><a href="https://twitter.com/runze_w">Twitter</a></li>
+
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
   </ul>
-</nav>
-
-      </header>
+</div>
 
 
-<main class="content" role="main">
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
 
-  <article class="article">
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>State sentiment analysis using twitter live stream and R</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>07 Jul 2014, 03:33</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
     
-    <span class="article-duration">8 min read</span>
+      <a class="post-taxonomy-tag" href="../../../../tags/coursera">Coursera</a>&nbsp;&#47;
     
-
-    <h1 class="article-title">State sentiment analysis using twitter live stream and R</h1>
-
+      <a class="post-taxonomy-tag" href="../../../../tags/r">R</a>&nbsp;&#47;
     
-    <span class="article-date">2014/07/07</span>
+      <a class="post-taxonomy-tag" href="../../../../tags/sentiment">Sentiment</a>&nbsp;&#47;
     
+      <a class="post-taxonomy-tag" href="../../../../tags/shiny">Shiny</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../../../tags/twitter">Twitter</a>
+    
+  </div>
+  
+  
 
-    <div class="article-content">
-      <p>This week I started taking this Coursera <a href="https://class.coursera.org/datasci-002">class</a> called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction <a href="https://class.coursera.org/datasci-002/assignment/view?assignment_id=3">here</a> and clone the git <a href="https://class.coursera.org/datasci-002/wiki/GithubInstructions">here</a> (I believe you can access it without signing up for the class, but the course is free anyway). The assignment is given in Python, and, despite a few wrapper functions, students are required to write the majority of the code, which, needless to say, was a very good exercise to me (and to anyone who&rsquo;s learning Python).</p>
+</div>
+
+  <p>This week I started taking this Coursera <a href="https://class.coursera.org/datasci-002">class</a> called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction <a href="https://class.coursera.org/datasci-002/assignment/view?assignment_id=3">here</a> and clone the git <a href="https://class.coursera.org/datasci-002/wiki/GithubInstructions">here</a> (I believe you can access it without signing up for the class, but the course is free anyway). The assignment is given in Python, and, despite a few wrapper functions, students are required to write the majority of the code, which, needless to say, was a very good exercise to me (and to anyone who&rsquo;s learning Python).</p>
 
 <p>Okay, so much for the class itself. One particular assignment that prompted me to start this project and write this post is the one about estimating the overall sentiment of people from different states based on the messages they tweet and finding the happiest state. To complete this task, we were given a list of positive words and a list of negative ones along with their individual scores indicating certain words are more positive/negative than the others (the lists are included in the git). Then for each tweet, we were asked to calculate the total score for it based on the matches from the 2 lists, and sum up all the scores for each state to determine the &ldquo;happiest&rdquo; state corresponding to the highest score. A pretty simple idea, and it turns out you can do a lot of interesting research based on this approach (or some variations of it), and draw a lot of good insights from it. For example, the course website links to this <a href="http://www.ccs.neu.edu/home/amislove/twittermood/">research</a> performed by researchers at Northeastern and Harvard University, which shows the mood of the Americans throughout a day. If you don&rsquo;t want to read the whole thing, at least watch this <a href="https://www.youtube.com/watch?v=ujcrJZRSGkg">video</a> they made showing the mood evolvement. It&rsquo;s very, very interesting.</p>
 
@@ -108,31 +277,60 @@
 
 <p>Stay happy!</p>
 
-    </div>
-  </article>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../../../2014/07/01/no-more-finding-out-about-a-concert-too-late/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../../../2014/07/01/no-more-finding-out-about-a-concert-too-late/">No more finding out about a concert too late</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="../../../../2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/">Location search using Factual and interactive maps using Leaflet</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="../../../../2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
 
   
 
+</div>
 
-</main>
+</div>
+</div>
+<script src="../../../../js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-      <footer class="footer">
-        <ul class="footer-links">
-          <li>
-            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
-          </li>
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
 
-    </div>
-    
 
-    
 
-    
-  </body>
+</body>
 </html>
-

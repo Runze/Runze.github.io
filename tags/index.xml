@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Deep Learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Duolingo</title>
       <link>/tags/duolingo/</link>
       <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
@@ -111,11 +120,29 @@
     </item>
     
     <item>
+      <title>Lstm</title>
+      <link>/tags/lstm/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Machine Learning</title>
       <link>/tags/machine-learning/</link>
       <pubDate>Sat, 15 Nov 2014 22:21:43 +0000</pubDate>
       
       <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nlp</title>
+      <link>/tags/nlp/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nlp/</guid>
       <description></description>
     </item>
     
@@ -161,6 +188,15 @@
       <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
       
       <guid>/tags/rcharts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rnn</title>
+      <link>/tags/rnn/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rnn/</guid>
       <description></description>
     </item>
     

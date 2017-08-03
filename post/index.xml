@@ -6,10 +6,19 @@
     <description>Recent content in Posts on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>
+      <link>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</guid>
+      <description>Background Lately I&amp;rsquo;ve been spending a lot of time learning about deep learning, particularly its applications in natural language processing, a field I have been immensely interested in. Before deep learning, my foray into NLP has been mainly about sentiment analysis1 and topic modeling.2 These projects are fun but they are all limited in analyzing an existing corpus of text whereas I&amp;rsquo;m also interested in applications that generate texts themselves.</description>
+    </item>
     
     <item>
       <title>An analysis of foreign language learning using Duolingo&#39;s data</title>

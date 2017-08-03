@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lstm on An analysis of random things</title>
+    <link>/tags/lstm/</link>
+    <description>Recent content in Lstm on An analysis of random things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lstm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>
+      <link>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</link>
+      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</guid>
+      <description>Background Lately I&amp;rsquo;ve been spending a lot of time learning about deep learning, particularly its applications in natural language processing, a field I have been immensely interested in. Before deep learning, my foray into NLP has been mainly about sentiment analysis1 and topic modeling.2 These projects are fun but they are all limited in analyzing an existing corpus of text whereas I&amp;rsquo;m also interested in applications that generate texts themselves.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,19 @@
     <description>Recent content in Nlp on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First attempt at building a language translator</title>
+      <link>/2017/08/14/first-attempt-at-building-a-language-translator/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/08/14/first-attempt-at-building-a-language-translator/</guid>
+      <description>Background After having tried my hands on LSTM and built a text generater, I became interested in the sequence-to-sequence models, particularly their applications in language translations. It all started with this TensorFlow tutorial where the authors demonstrated how they built an English-to-French translator using such a model and successfully translated &amp;ldquo;Who is the president of the United States?&amp;rdquo; into French with the correct grammar (&amp;ldquo;Qui est le président des États-Unis?</description>
+    </item>
     
     <item>
       <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>

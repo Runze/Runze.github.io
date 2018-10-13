@@ -6,30 +6,10 @@
     <description>Recent content in Posts on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Second attempt at building a language translator</title>
-      <link>/2017/09/07/second-attempt-at-building-a-language-translator/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/09/07/second-attempt-at-building-a-language-translator/</guid>
-      <description>Update Recently, upon various trials and errors, I have finally implemented the same model in Keras (GitHub), largely thanks to the deep learning course offered by Andrew Ng on Coursera (especially the one on sequence models) and, obviously, Stack Overflow. 🙏
-Below are the original post:
- ———— Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about.</description>
-    </item>
-    
-    <item>
-      <title>First attempt at building a language translator</title>
-      <link>/2017/08/14/first-attempt-at-building-a-language-translator/</link>
-      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/08/14/first-attempt-at-building-a-language-translator/</guid>
-      <description>Background After having tried my hands on LSTM and built a text generater, I became interested in the sequence-to-sequence models, particularly their applications in language translations. It all started with this TensorFlow tutorial where the authors demonstrated how they built an English-to-French translator using such a model and successfully translated &amp;ldquo;Who is the president of the United States?&amp;rdquo; into French with the correct grammar (&amp;ldquo;Qui est le président des États-Unis?</description>
-    </item>
     
     <item>
       <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>
@@ -38,15 +18,6 @@ Below are the original post:
       
       <guid>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</guid>
       <description>Background Lately I&amp;rsquo;ve been spending a lot of time learning about deep learning, particularly its applications in natural language processing, a field I have been immensely interested in. Before deep learning, my foray into NLP has been mainly about sentiment analysis1 and topic modeling.2 These projects are fun but they are all limited in analyzing an existing corpus of text whereas I&amp;rsquo;m also interested in applications that generate texts themselves.</description>
-    </item>
-    
-    <item>
-      <title>An analysis of foreign language learning using Duolingo&#39;s data</title>
-      <link>/2017/07/02/an-analysis-of-foreign-language-learning-using-duolingo-data/</link>
-      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/07/02/an-analysis-of-foreign-language-learning-using-duolingo-data/</guid>
-      <description>Background Earlier this year, I decided to learn French, something I&amp;rsquo;ve been thinking about for a long time. Foreign language learning has always been something magical to me: I had a great time learning English when I was at school (my mother tongue is Mandarin Chinese), so much that I would devote all my time to it and ignore my other subjects (not recommended). Hence, when I signed up for a beginner&amp;rsquo;s class in my local Alliance Française and started taking classes regularly, it felt homecoming to me.</description>
     </item>
     
     <item>

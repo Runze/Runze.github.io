@@ -6,10 +6,30 @@
     <description>Recent content in Nlp on An analysis of random things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second attempt at building a language translator</title>
+      <link>/2017/09/07/second-attempt-at-building-a-language-translator/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/07/second-attempt-at-building-a-language-translator/</guid>
+      <description>Update Recently, upon various trials and errors, I have finally implemented the same model in Keras (GitHub), largely thanks to the deep learning course offered by Andrew Ng on Coursera (especially the one on sequence models) and, obviously, Stack Overflow. 🙏
+Below are the original post:
+ ———— Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about.</description>
+    </item>
+    
+    <item>
+      <title>First attempt at building a language translator</title>
+      <link>/2017/08/14/first-attempt-at-building-a-language-translator/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/08/14/first-attempt-at-building-a-language-translator/</guid>
+      <description>Background After having tried my hands on LSTM and built a text generater, I became interested in the sequence-to-sequence models, particularly their applications in language translations. It all started with this TensorFlow tutorial where the authors demonstrated how they built an English-to-French translator using such a model and successfully translated &amp;ldquo;Who is the president of the United States?&amp;rdquo; into French with the correct grammar (&amp;ldquo;Qui est le président des États-Unis?</description>
+    </item>
     
     <item>
       <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>

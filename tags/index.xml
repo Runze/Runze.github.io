@@ -32,9 +32,18 @@
     <item>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Duolingo</title>
+      <link>/tags/duolingo/</link>
+      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/duolingo/</guid>
       <description></description>
     </item>
     
@@ -84,6 +93,15 @@
     </item>
     
     <item>
+      <title>Languages</title>
+      <link>/tags/languages/</link>
+      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lda</title>
       <link>/tags/lda/</link>
       <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
@@ -104,7 +122,7 @@
     <item>
       <title>Lstm</title>
       <link>/tags/lstm/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/lstm/</guid>
       <description></description>
@@ -122,7 +140,7 @@
     <item>
       <title>Nlp</title>
       <link>/tags/nlp/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/nlp/</guid>
       <description></description>
@@ -158,7 +176,7 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
+      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -176,7 +194,7 @@
     <item>
       <title>Rnn</title>
       <link>/tags/rnn/</link>
-      <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/rnn/</guid>
       <description></description>

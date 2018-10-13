@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2017/09/07/second-attempt-at-building-a-language-translator/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/08/14/first-attempt-at-building-a-language-translator/</loc>
+    <lastmod>2017-08-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</loc>
     <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/07/02/an-analysis-of-foreign-language-learning-using-duolingo-data/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,7 +93,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,13 +116,19 @@
   
   <url>
     <loc>/categories/data-analysis/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/duolingo/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -142,6 +163,12 @@
   </url>
   
   <url>
+    <loc>/tags/languages/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/lda/</loc>
     <lastmod>2014-10-04T20:53:36+00:00</lastmod>
     <priority>0</priority>
@@ -155,7 +182,7 @@
   
   <url>
     <loc>/tags/lstm/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -167,7 +194,7 @@
   
   <url>
     <loc>/tags/nlp/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -179,7 +206,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -197,7 +224,7 @@
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2014-11-15T22:15:22+00:00</lastmod>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -209,7 +236,7 @@
   
   <url>
     <loc>/tags/rnn/</loc>
-    <lastmod>2017-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

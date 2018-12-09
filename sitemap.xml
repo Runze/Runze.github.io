@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/2018/11/26/second-language-acquisition-modeling/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/2018/11/26/second-language-acquisition-modeling/</loc>
@@ -122,8 +128,16 @@
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>/tags/books/</loc>
     <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+||||||| merged common ancestors
+    <loc>/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+=======
+    <loc>/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+>>>>>>> d87c22a6902abb3cfceca419cbebab6553de94fe
     <priority>0</priority>
   </url>
   

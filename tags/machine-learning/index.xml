@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Nov 2014 22:21:43 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notes to machine learning</title>
+      <link>/2014/11/15/notes-to-machine-learning/</link>
+      <pubDate>Sat, 15 Nov 2014 22:21:43 +0000</pubDate>
+      
+      <guid>/2014/11/15/notes-to-machine-learning/</guid>
+      <description>Data transformation Resampling techniques Regression models Smoothing Neural networks Support vector machines K-nearest neighbors Trees Random forests Gradient boosting trees Cubist Measuring performace in classification models Linear classificatoin models Latent Dirichlet allocation   These are the notes I took while reading An Introduction to Statistical Learning and Applied Predictive Modeling. Some of the notes also came from other sources, but the majority of them are from these two books.</description>
+    </item>
+    
+    <item>
+      <title>Quora challenge - answer classification</title>
+      <link>/2014/11/15/answer_classification/</link>
+      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
+      
+      <guid>/2014/11/15/answer_classification/</guid>
+      <description>Last night I tried my hands on a Quora challenge that classifies user-submitted answers into &amp;lsquo;good&amp;rsquo; and &amp;lsquo;bad.&amp;rsquo; All the information is anonymized, including the variable names, but you can tell by looking at their values what some of them may represent. For example, some appear to be count data or some summary statistics based on them, and, given that many of the values are 0 and heavily right-skewed, they seem to be some measure of the writers&amp;rsquo; reputations, the number of upvotes an answer received, or the follow-up comments.</description>
+    </item>
+    
+    <item>
+      <title>Random acts of pizza - a Kaggle competition</title>
+      <link>/2014/08/19/random-acts-of-pizza/</link>
+      <pubDate>Tue, 19 Aug 2014 06:22:28 +0000</pubDate>
+      
+      <guid>/2014/08/19/random-acts-of-pizza/</guid>
+      <description>This weekend, I participated in a Kaggle not-for-prize competition that uses data obtained from Reddit&amp;rsquo;s Random Acts of Pizza forum to analyze and predict the outcome of a request for pizza, and it was heaps of fun (I always wanted to say that)! Compared with other Kaggle competitions I had tried before, I found this one a bit easier because the dataset is not very large (~5,000 records) and is hence perfect for model experimenting, and, more importantly, the competition is based on a real research done by a couple Stanford researchers, which provides me with a lot of guidelines in how to proceed.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -12,7 +12,6 @@
     
     
     <item>
-<<<<<<< HEAD
       <title>Second Language Acquisition Modeling using Duolingo&#39;s Data</title>
       <link>/2018/11/26/second-language-acquisition-modeling/</link>
       <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
@@ -70,18 +69,6 @@ Au début, c’était que j’avais peur de ne pas avoir étudié assez de stati
     </item>
     
     <item>
-||||||| merged common ancestors
-=======
-      <title>Second Language Acquisition Modeling using Duolingo&#39;s Data</title>
-      <link>/2018/11/26/second-language-acquisition-modeling/</link>
-      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/11/26/second-language-acquisition-modeling/</guid>
-      <description>Background Recently, I have discovered the Second Language Acquisition Modeling (SLAM) challenge hosted by Duolingo earlier this year, where they had asked the participants to predict the per-token error rate for a given language learner based on his/her past learning history. To conclude the competition, the team has also written a paper to summarize the results and the approaches that were taken by the various participants and their respective effectiveness.</description>
-    </item>
-    
-    <item>
->>>>>>> d87c22a6902abb3cfceca419cbebab6553de94fe
       <title>Second attempt at building a language translator</title>
       <link>/2017/09/07/second-attempt-at-building-a-language-translator/</link>
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>

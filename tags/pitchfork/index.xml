@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pitchfork on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/pitchfork/</link>
+    <description>Recent content in Pitchfork on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jul 2014 06:40:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pitchfork/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>No more finding out about a concert too late</title>
+      <link>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</link>
+      <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
+      
+      <guid>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</guid>
+      <description>After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
+https://runzemc.shinyapps.io/pitchfork/
+This R Shiny app I made pulls data from pitchfork automatically every time it&amp;rsquo;s open and shows the upcoming shows per city and per artist (indie artist, to be precise).</description>
+    </item>
+    
+  </channel>
+</rss>

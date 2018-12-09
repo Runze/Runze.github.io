@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quora on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/quora/</link>
+    <description>Recent content in Quora on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Nov 2014 22:15:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/quora/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quora challenge - answer classification</title>
+      <link>/2014/11/15/answer_classification/</link>
+      <pubDate>Sat, 15 Nov 2014 22:15:22 +0000</pubDate>
+      
+      <guid>/2014/11/15/answer_classification/</guid>
+      <description>Last night I tried my hands on a Quora challenge that classifies user-submitted answers into &amp;lsquo;good&amp;rsquo; and &amp;lsquo;bad.&amp;rsquo; All the information is anonymized, including the variable names, but you can tell by looking at their values what some of them may represent. For example, some appear to be count data or some summary statistics based on them, and, given that many of the values are 0 and heavily right-skewed, they seem to be some measure of the writers&amp;rsquo; reputations, the number of upvotes an answer received, or the follow-up comments.</description>
+    </item>
+    
+  </channel>
+</rss>

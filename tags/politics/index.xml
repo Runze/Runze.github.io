@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Politics on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/politics/</link>
+    <description>Recent content in Politics on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Les lobbys aux Etats-Unis</title>
+      <link>/2018/10/03/les-lobbys-aux-etats-unis/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/03/les-lobbys-aux-etats-unis/</guid>
+      <description>En théorie (du moins d’après les lobbys eux-mêmes), le gouvernement a besoin des lobbys parce qu’il faut avoir toutes les informations et toutes les opinions avant de prendre une décision. Donc, avoir des lobbys indépendants qui représentent les intérêts de nombreuses parties est une condition fondamentale pour la démocratie. Le problème, pourtant, c’est en réalité les lobbys ne sont ni indépendants ni représentatifs des citoyens.
+La National Rifle Association (NRA), l’un des plus grands et plus puissants lobbys aux Etats-Unis, illustre clairement comment ce système fonctionne en réalité.</description>
+    </item>
+    
+  </channel>
+</rss>

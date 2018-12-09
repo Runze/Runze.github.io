@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/2018/11/26/second-language-acquisition-modeling/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/10/03/les-lobbys-aux-etats-unis/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/09/21/le-projet-de-cr%C3%A9dit-social-en-chine/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/09/09/l-assimilation-vs-le-multiculturalisme/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/05/06/la-joie-d-%C3%AAtre-%C3%A9tranger/</loc>
+    <lastmod>2018-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/04/08/syndrome-de-l-imposteur/</loc>
+    <lastmod>2018-04-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/09/07/second-attempt-at-building-a-language-translator/</loc>
     <lastmod>2017-09-07T00:00:00+00:00</lastmod>
   </url>
@@ -92,12 +122,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/books/</loc>
     <lastmod>2014-10-04T20:53:36+00:00</lastmod>
     <priority>0</priority>
@@ -109,20 +133,32 @@
   </url>
   
   <url>
+    <loc>/tags/china/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/coursera/</loc>
     <lastmod>2014-07-07T03:33:22+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/culture/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/data-analysis/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,8 +169,20 @@
   </url>
   
   <url>
+    <loc>/categories/essay/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/factual/</loc>
     <lastmod>2014-08-01T06:27:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/french/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -147,6 +195,24 @@
   <url>
     <loc>/tags/gmail/</loc>
     <lastmod>2014-09-02T02:05:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/history/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/immigration/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/impostor-syndrome/</loc>
+    <lastmod>2018-04-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -181,6 +247,12 @@
   </url>
   
   <url>
+    <loc>/tags/life-story/</loc>
+    <lastmod>2018-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/lstm/</loc>
     <lastmod>2017-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -194,7 +266,7 @@
   
   <url>
     <loc>/tags/nlp/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,8 +277,14 @@
   </url>
   
   <url>
+    <loc>/tags/politics/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -236,7 +314,7 @@
   
   <url>
     <loc>/tags/rnn/</loc>
-    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -249,6 +327,12 @@
   <url>
     <loc>/tags/shiny/</loc>
     <lastmod>2014-08-12T06:49:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/society/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -277,8 +361,20 @@
   </url>
   
   <url>
+    <loc>/tags/usa/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/weibo/</loc>
     <lastmod>2014-09-26T17:31:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Impostor Syndrome on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/impostor-syndrome/</link>
+    <description>Recent content in Impostor Syndrome on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/impostor-syndrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syndrome de l’imposteur</title>
+      <link>/2018/04/08/syndrome-de-l-imposteur/</link>
+      <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/04/08/syndrome-de-l-imposteur/</guid>
+      <description>Ça fait longtemps que j’ai voulu écrire quelque chose sur le syndrome de l’imposteur. Enfin c’est un sujet très personnel pour moi. Oui, je me sens comme un imposteur pendant toute ma carrière en tant que data scientist. Donc, je crois que j’ai beaucoup d’expérience à partager.
+Au début, c’était que j’avais peur de ne pas avoir étudié assez de statistiques à l’université, ce qui fait qu’il fallait que j’en apprenne beaucoup sur travail.</description>
+    </item>
+    
+  </channel>
+</rss>

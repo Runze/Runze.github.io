@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on An analysis of random things</title>
+    <title>Tags on What I talk about when I don&#39;t talk about me</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on An analysis of random things</description>
+    <description>Recent content in Tags on What I talk about when I don&#39;t talk about me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Oct 2014 20:53:36 +0000</lastBuildDate>
@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>China</title>
+      <link>/tags/china/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/china/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Coursera</title>
       <link>/tags/coursera/</link>
       <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
@@ -30,9 +39,18 @@
     </item>
     
     <item>
+      <title>Culture</title>
+      <link>/tags/culture/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/deep-learning/</guid>
       <description></description>
@@ -57,6 +75,15 @@
     </item>
     
     <item>
+      <title>French</title>
+      <link>/tags/french/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/french/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gephi</title>
       <link>/tags/gephi/</link>
       <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
@@ -71,6 +98,33 @@
       <pubDate>Tue, 02 Sep 2014 02:05:07 +0000</pubDate>
       
       <guid>/tags/gmail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/tags/history/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Immigration</title>
+      <link>/tags/immigration/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/immigration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impostor Syndrome</title>
+      <link>/tags/impostor-syndrome/</link>
+      <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/impostor-syndrome/</guid>
       <description></description>
     </item>
     
@@ -120,6 +174,15 @@
     </item>
     
     <item>
+      <title>Life Story</title>
+      <link>/tags/life-story/</link>
+      <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/life-story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lstm</title>
       <link>/tags/lstm/</link>
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
@@ -140,7 +203,7 @@
     <item>
       <title>Nlp</title>
       <link>/tags/nlp/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/nlp/</guid>
       <description></description>
@@ -152,6 +215,15 @@
       <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
       
       <guid>/tags/pitchfork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>/tags/politics/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/politics/</guid>
       <description></description>
     </item>
     
@@ -194,7 +266,7 @@
     <item>
       <title>Rnn</title>
       <link>/tags/rnn/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/rnn/</guid>
       <description></description>
@@ -215,6 +287,15 @@
       <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
       
       <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Society</title>
+      <link>/tags/society/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/society/</guid>
       <description></description>
     </item>
     
@@ -242,6 +323,15 @@
       <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
       
       <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usa</title>
+      <link>/tags/usa/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/usa/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content in Deep Learning on What I talk about when I don&#39;t talk about me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do I really need attention in my seq2seq model?</title>
+      <link>/2018/12/17/do-i-really-need-attention/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/17/do-i-really-need-attention/</guid>
+      <description>Background Since the origin of the idea of the attention mechanism (Bahdanau et al., 2015), it has become a norm to try to add it in a seq2seq model, especially in translations. It is such an intuitive and powerful idea (not to mention the added benefit of peaking into a blackbox model by visualizing its attention weights) that many tutorials and blog posts made it sound like one should not even bother with a simpler model without it as the results would for sure be inferior.</description>
+    </item>
     
     <item>
       <title>Second Language Acquisition Modeling using Duolingo&#39;s Data</title>
@@ -26,9 +35,7 @@
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/07/second-attempt-at-building-a-language-translator/</guid>
-      <description>Update Recently, upon various trials and errors, I have finally implemented the same model in Keras (GitHub), largely thanks to the deep learning course offered by Andrew Ng on Coursera (especially the one on sequence models) and, obviously, Stack Overflow. 🙏
-Below are the original post:
- ———— Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about.</description>
+      <description>Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about. After many, many research, I came across (quite accidentally) this MOOC series offered by fast.ai, where on Lesson 13, instructor Jeremy Howard walked the students through a practical implementation of the attention mechanism using PyTorch.</description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A website built through Hugo and blogdown.">
-  <meta name="generator" content="Hugo 0.20.7" />
+  <meta name="generator" content="Hugo 0.25.1" />
 
   <title>Deep Learning &middot; What I talk about when I don&#39;t talk about me</title>
 
@@ -212,6 +212,56 @@
   
     <article>
   <header>
+    <h2><a href="../../2018/12/17/do-i-really-need-attention/">Do I really need attention in my seq2seq model?</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018-12-17</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../tags/deep-learning">Deep Learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/nlp">NLP</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/rnn">RNN</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Background Since the origin of the idea of the attention mechanism (Bahdanau et al., 2015), it has become a norm to try to add it in a seq2seq model, especially in translations. It is such an intuitive and powerful idea (not to mention the added benefit of peaking into a blackbox model by visualizing its attention weights) that many tutorials and blog posts made it sound like one should not even bother with a simpler model without it as the results would for sure be inferior.
+  </p>
+
+  
+  <footer>
+    <a href="../../2018/12/17/do-i-really-need-attention/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="../../2018/11/26/second-language-acquisition-modeling/">Second Language Acquisition Modeling using Duolingo&#39;s Data</a></h2>
 
     <div class="post-meta">
@@ -301,9 +351,7 @@
   </header>
 
   <p>
-  Update Recently, upon various trials and errors, I have finally implemented the same model in Keras (GitHub), largely thanks to the deep learning course offered by Andrew Ng on Coursera (especially the one on sequence models) and, obviously, Stack Overflow. 🙏
-Below are the original post:
- ———— Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about.
+  Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about. After many, many research, I came across (quite accidentally) this MOOC series offered by fast.ai, where on Lesson 13, instructor Jeremy Howard walked the students through a practical implementation of the attention mechanism using PyTorch.
   </p>
 
   

@@ -17,9 +17,7 @@
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/09/07/second-attempt-at-building-a-language-translator/</guid>
-      <description>Update Recently, upon various trials and errors, I have finally implemented the same model in Keras (GitHub), largely thanks to the deep learning course offered by Andrew Ng on Coursera (especially the one on sequence models) and, obviously, Stack Overflow. 🙏
-Below are the original post:
- ———— Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about.</description>
+      <description>Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about. After many, many research, I came across (quite accidentally) this MOOC series offered by fast.ai, where on Lesson 13, instructor Jeremy Howard walked the students through a practical implementation of the attention mechanism using PyTorch.</description>
     </item>
     
     <item>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/2018/12/17/do-i-really-need-attention/</loc>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/2018/11/26/second-language-acquisition-modeling/</loc>
@@ -152,13 +158,13 @@
   
   <url>
     <loc>/categories/data-analysis/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -266,7 +272,7 @@
   
   <url>
     <loc>/tags/nlp/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,7 +290,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -314,7 +320,7 @@
   
   <url>
     <loc>/tags/rnn/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -374,7 +380,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

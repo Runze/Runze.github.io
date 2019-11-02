@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on What I talk about when I don&#39;t talk about me</title>
+    <link>/tags/education/</link>
+    <description>Recent content in Education on What I talk about when I don&#39;t talk about me</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The education system in China</title>
+      <link>/other-musings/the-education-system-in-china/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/other-musings/the-education-system-in-china/</guid>
+      <description>Growing up in China, one of my favorite conversational topics is to complain about its education system. For context, I have 16 years of survival experience and, even though it has been more than a decade since I graduated from high school, I still have regular nightmares about failing an important exam or being punished for talking too loud during a class break (both of which have actually happened). Hence, I do consider myself a subject expert.</description>
+    </item>
+    
+  </channel>
+</rss>

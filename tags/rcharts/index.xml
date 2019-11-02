@@ -13,10 +13,10 @@
     
     <item>
       <title>Location search using Factual and interactive maps using Leaflet</title>
-      <link>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
+      <link>/technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
       <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
       
-      <guid>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
+      <guid>/technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
       <description>Leaflet is a popular javascript library for making interactive maps. Don&amp;rsquo;t know how to code in js? No problem, thanks to Ramnath Vaidyanathan, you can now use rCharts to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&amp;rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (example1, example2)!</description>
     </item>
     

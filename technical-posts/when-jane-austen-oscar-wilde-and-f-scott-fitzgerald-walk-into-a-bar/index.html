@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="in a season &#34;crowded with white lips and dim butterflies.&#34;">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar &middot; What I talk about when I don&#39;t talk about me</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<head>
+  <link rel="stylesheet" href="../../css/github-gist.css">
+  <script src="../../js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../technical-posts/">Technical Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../other-musings/">Other Musings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.linkedin.com/in/runze-wang-413a091a/">LinkedIn</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</h1>
+  <h2>in a season &#34;crowded with white lips and dim butterflies.&#34;</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017-07-27</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../tags/deep-learning">Deep Learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/rnn">RNN</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/lstm">LSTM</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/nlp">NLP</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h3 id="background">Background</h3>
+
+<p>Lately I&rsquo;ve been spending a lot of time learning about deep learning, particularly its applications in natural language processing, a field I have been immensely interested in. Before deep learning, my foray into NLP has been mainly about sentiment analysis<sup class="footnote-ref" id="fnref:Like-this-projec"><a rel="footnote" href="#fn:Like-this-projec">1</a></sup> and topic modeling.<sup class="footnote-ref" id="fnref:Like-this-simple"><a rel="footnote" href="#fn:Like-this-simple">2</a></sup> These projects are fun but they are all limited in analyzing an existing corpus of text whereas I&rsquo;m also interested in applications that generate texts themselves. While researching this topic, inevitably, I came across this famous blog <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">post</a> written by Andrej Karpathy that showcases the &ldquo;unreasonable effectiveness&rdquo; of recurrent neural networks (&ldquo;RNN&rdquo;) with models that output Shakespeare sonnets, Wikipedia articles, well-formatted LaTeX and source code, and even music notes! It is impossible not to get excited about this seemingly magic model and I was well motivated to learn more.</p>
+
+<p>I had learned about the basic neural networks before but RNN was still new to me; I also needed to learn the new tools that have been developed for these purposes, so I took the quick Udacity&rsquo;s deep learning <a href="https://classroom.udacity.com/courses/ud730">class</a> using TensorFlow.<sup class="footnote-ref" id="fnref:I-have-uploaded"><a rel="footnote" href="#fn:I-have-uploaded">3</a></sup> Overall, I highly recommend it but be aware that it is more of a hands-on course that focuses more on learning while doing and is sometimes rather light on theory. As a result, many times I got confused just by watching the video itself and had to resort to Google searches to really understand a concept. Honestly, this is not a bad process as it often helps by learning the same subject from different teachers, but just be prepared to put in the extra work from elsewhere (especially since the course is deceptively short). That said, one thing I especially appreciated about the class is its assignment code: not only is it ready to use and re-purpose, when explaining a specific network structure, it avoids using a pre-defined wrapper function - instead, it writes out all the steps behind the scene (at least the essential part), which helps you understand the theory better. Obviously in real life, you are more likely to call a high-level function directly, but being able to recall what&rsquo;s really going on is arguably still better.</p>
+
+<p>After finishing the class, I was eager to apply what I had learned to a project, particularly one that would use RNN to generate text as Karpathy did in that blog post. Because of my love for classical literature,<sup class="footnote-ref" id="fnref:There-is-just-so"><a rel="footnote" href="#fn:There-is-just-so">4</a></sup> I decided to train a model using the public <a href="https://www.gutenberg.org/">Gutenberg data</a>, which includes a large collection of books that are no longer under copyright protection and are hence free to download. Yet I don&rsquo;t want to just use <em>anyone&rsquo;s</em> work, so I decided to pick a few of my favorite authors, each with their own distinctive style, and mix them together. In the end, I settled on Jane Austen, Oscar Wilde, and F. Scott Fitzgerald, hoping my model would be able to pick up some of Austen&rsquo;s sassiness (&ldquo;I always deserve the best treatment because I never put up with any other.&rdquo; - <em>Emma</em>), Wilde&rsquo;s mischievous wittiness (&ldquo;It is absurd to divide people into good and bad. People are either charming or tedious.&rdquo; - <em>Lady Windermere&rsquo;s Fan</em>), and Fitzgerald&rsquo;s beautiful melancholy (&ldquo;So we beat on, boats against the current, borne back ceaselessly into the past.&rdquo; - <em>The Great Gatsby</em>).</p>
+
+<p>In the following sections, I&rsquo;m going to detail my methodology, from data collection to model training. It was one of my favorite projects and I hope my passion is able to make the remaining post fun to read :-)</p>
+
+<h3 id="downloading-and-pre-processing-data">Downloading and pre-processing data</h3>
+
+<p>I could&rsquo;ve downloaded the raw Gutenberg data directly but David Robinson has a very handy R package called <a href="https://github.com/ropenscilabs/gutenbergr"><code>gutenbergr</code></a> which allows me to look up and download multiple works at the same time with ease. It also returns data in a tidy format, which makes the pre-processing a joy too.</p>
+
+<p>I&rsquo;ll go through this section quickly (you can find the entire code <a href="https://github.com/Runze/rnn-lstm-gutenberg/blob/master/download_gutenburg.R">here</a>): first I downloaded all the works by the three authors in one batch using <code>gutenberg_download</code>:</p>
+
+<pre><code class="language-r"># Select books to download
+# (stored in pre-defined dataframes `oscar_wilde`, `jane_austen`, and `f_scott_fitzgerald`)
+works_to_download = oscar_wilde %&gt;%
+  bind_rows(jane_austen) %&gt;%
+  bind_rows(f_scott_fitzgerald)
+
+# Download
+works = gutenberg_download(works_to_download$gutenberg_id, meta_fields = 'title')
+</code></pre>
+
+<p>This returns a tidy dataframe with the text broken arbitrarily into rows. Ultimately, I need to feed a sequence of words broken out individually to TensorFlow, which I can achieve by applying the <code>unnest_tokens</code> function from Julia Silge and David Robinson&rsquo;s <a href="https://github.com/juliasilge/tidytext"><code>tidytext</code></a> package.<sup class="footnote-ref" id="fnref:tidytext-is-a-ve"><a rel="footnote" href="#fn:tidytext-is-a-ve">5</a></sup> However, before I do that, I need to decide where to split the whole text into training, validation, and test sets. The easiest way would be to cut the chain of words themselves into three portions, but I tried to avoid doing that because I didn&rsquo;t want to break the sequence of a running theme, which I was hoping RNN, a sequential model, would be able to learn. Hence, instead I first broke the text into paragraphs and keep the corpus intact within a paragraph and only split it in between. By so doing, I hope a nice running sequence is not badly interrupted.</p>
+
+<pre><code class="language-r"># Break into paragraphs
+works_paragraphs = works %&gt;%
+  unnest_tokens(paragraph, text, token = 'paragraphs')
+
+# Additional processing omitted...
+# Seperate paragraphs into training, validation, and testing on a per-title basis
+works_paragraphs = works_paragraphs %&gt;%
+  group_by(title) %&gt;%
+  mutate(rn = row_number(),
+         n = n(),
+         grp = ifelse(rn / n &lt;= .8, 'train', ifelse(rn / n &lt;= .9, 'valid', 'test')))
+</code></pre>
+
+<p>With some additional processing (e.g., converting punctuation marks to words so that <code>tidytext</code> would not remove them), I was finally able to safely break paragraphs into words and pass them on.</p>
+
+<p>Aside from this initial processing, the rest of the analysis is done in Python with code adapted from this TensorFlow <a href="https://github.com/tensorflow/models/tree/master/tutorials/rnn/ptb">tutorial</a> and an extension contributed by this blog <a href="http://deeplearningathome.com/2016/10/Text-generation-using-deep-recurrent-neural-networks.html">post</a>. My code is written in a Jupyter Notebook and is hosted <a href="https://github.com/Runze/rnn-lstm-gutenberg/blob/master/rnn_lstm_gutenberg.ipynb">here</a>.</p>
+
+<p>It is true that, given the amount of code I&rsquo;m reusing (or stealing) from the tutorial, I could have simply pointed to the original and skipped the lengthy explanation, but a big part of the reason that I chose to still go through it here is to help myself understand it better by trying to explain it, in my own words, to my imaginary friend, so bear with me :-)</p>
+
+<p>Before feeding words directly into the model, to make the processing easy, it is better to first convert each word to a unique identifier. The following snippet does that by using each word&rsquo;s frequency as its identifier and creating mappings for both directions (note there are about 38,000 unique words in our data, which is our <code>vocab_size</code>):</p>
+
+<pre><code class="language-python"># Create word-to-ID mapping
+counter = collections.Counter(data['word'])
+count_pairs = sorted(counter.items(), key=lambda x: (-x[1], x[0]))
+
+words, _ = list(zip(*count_pairs))
+word_to_id = dict(zip(words, range(len(words))))
+id_to_word = dict(zip(range(len(words)), words))
+
+vocab_size = len(word_to_id)
+vocab_size  # 38115
+</code></pre>
+
+<p>Next, I split the word IDs into training, validation, and test sets as defined in the R code above:</p>
+
+<pre><code class="language-python"># Separate data into training, valid, and testing
+train_data = [word_to_id[w] for w in list(data['word'][data['grp'] == 'train'])]
+valid_data = [word_to_id[w] for w in list(data['word'][data['grp'] == 'valid'])]
+test_data = [word_to_id[w] for w in list(data['word'][data['grp'] == 'test'])]
+
+len(train_data), len(valid_data), len(test_data)
+# (1842988, 206542, 218819)
+</code></pre>
+
+<h3 id="the-basics-of-rnn-and-lstm">The basics of RNN and LSTM</h3>
+
+<p>To understand RNN and its extension, Long Short Term Memory (&ldquo;LSTM&rdquo;), the single best resource I have found is this blog <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">post</a> written by Christopher Olah. Instead of repeating what Olah has explained so eloquently, I&rsquo;ll just summarize the key ideas below based on my understanding.</p>
+
+<p>At its core, RNN is a sequential model, meaning that its input has a meaningful sequence that should be kept the same when feeding into the model. In this project, I am training a word-based model so each word in a sequence is inputted as a training data point, with the next word used as the targeting label. Using the famous opening line from <em>The Great Gatsby</em>, &ldquo;in my younger and more vulnerable years my father gave me some advice that I&rsquo;ve been turning over in my mind ever since,&rdquo; the process looks like this:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/rnn-lstm-gutenberg/master/illustrations/rnn_illustration.png" alt="alt text" width="750"></p>
+
+<p>Note each model unit takes input from both the current word and the previous unit. Specifically, the input from the previous model unit is called the <em>cell state</em>, which can be thought of as the accumulated memory of what has been fed so far (e.g., the subject pronoun, the verb, the open quote) and is the key reason why RNN is able to remember contexts and syntaxes and, thus, able to generate meaningful sentences. Without memory, the model can still generate texts simply based on the previous word only, but it would be hardly meaningful.</p>
+
+<p>Another key idea of RNN is using shared weights across time. Even though when you &ldquo;unroll&rdquo; an RNN, there are multiple model units connected with each other (i.e., each &ldquo;M&rdquo; in the illustration above), each of them actually share the same weights. This is similar to Convolutional Neural Networks (&ldquo;CNN&rdquo;), which shares weights across space as it is applied to image recognition.</p>
+
+<p>However, because RNN shares weights, during its backpropagation process, we are applying all these derivatives to the same parameters, which creates a lot of correlated updates and may result in exploding gradients and vanishing gradients. To prevent exploding gradients, we can simply apply a cap to all gradients; to prevent the vanishing problem, which makes it hard for the model to remember the previous information, we can replace the plain RNN unit with LSTM, which helps the model keep its memory longer when it needs to, and ignore things when it should.</p>
+
+<p>Olah&rsquo;s post has an excellent section that walks through each component of LSTM step by step. Here, I&rsquo;ll just summarize the key steps:</p>
+
+<ol>
+<li><p>When new information comes in (e.g., a new word), LSTM first uses it to decide which part of the stored information (i.e., the previous cell state) is no longer relevant (e.g., an old subject pronoun) and constructs a <em>forget gate</em> by wrapping a sigmoid function around this new input (along with the previous prediction output) so that the resulting values range from 0 to 1. It then applies the forget gate to each value in the cell state in a pointwise multiplication to selectively forgets (if a value from the forget gate is 0) and remembers them (if it&rsquo;s above 1).</p></li>
+
+<li><p>After deciding what to forget, the model also needs to decide what new information to store, and it does so by applying another sigmoid function, known as the <em>input gate</em>, to the input (along with the previous output) so that the result is a filtered version of the input.</p></li>
+
+<li><p>Next, it updates the cell state by removing the information the forget gate decides to forget and adding the new information the input gate decides to add.</p></li>
+
+<li><p>Finally, it needs to decide what to output based on the cell state that was just updated by applying another sigmoid function to it (It doesn&rsquo;t need to output all the accumulated information so far because not all of them may be relevant to what is coming next). This output is then compared with the target label (e.g., the next word) to compute losses, which are later minimized using gradient descent.</p></li>
+</ol>
+
+<p>Obviously, this is a very high-level overview. To understand what goes behind the scene, I recommend reading this sample <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/udacity/6_lstm.ipynb">code</a> in Udacity&rsquo;s assignment, where, instead of calling the wrapper function <code>tf.contrib.rnn.BasicLSTMCell</code>, it writes out a basic LSTM cell itself, including the entire updating process explained above. It certainly helped me a lot to combine the high-level intuition with the actual implementation.</p>
+
+<h3 id="generating-batches">Generating batches</h3>
+
+<p>With the model structure in mind, I&rsquo;m going to demonstrate the key steps of building an RNN model with the LSTM cells below, again using code adapted from TensorFlow&rsquo;s tutorial linked above.</p>
+
+<p>Instead of feeding the entire training data to the model all at once, to speed up the process, we can use stochastic gradient descent by feeding a small random sample at a time. Each sample is called a <em>batch</em> and its size is determined by the hyperparameter <code>batch_size</code>. In my implementation, I set <code>batch_size</code> to be 20, so I&rsquo;m feeding 20 word sequences at a time.</p>
+
+<p>The length of each sequence is defined by another parameter called <code>num_steps</code>.<sup class="footnote-ref" id="fnref:It-s-called-num"><a rel="footnote" href="#fn:It-s-called-num">6</a></sup> Here I set <code>num_steps</code> to be 35, so each sequence has exactly 35 words in it. The length of the sequence is a trade-off: if it&rsquo;s too short, the model doesn&rsquo;t have enough information to predict the next word; if it&rsquo;s too long, the model needs to carry a lot of unnecessary information that is not relevant anymore. However, LSTM, with its selective update, is able to mitigate the latter problem.</p>
+
+<p>To demonstrate the whole batch producing process,</p>
+
+<ul>
+<li>Suppose our training data has <code>data_len</code> words, to generate a batch of <code>batch_size</code> sequences at a time and make sure they don&rsquo;t overlap, we can slice the data into <code>data_len / batch_size</code> slices and generate sequences that are <code>data_len / batch_size</code> words apart:</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/Runze/rnn-lstm-gutenberg/master/illustrations/batch_illustration_1.png" alt="alt text" width="800"></p>
+
+<ul>
+<li>After spliting the raw data into slices, it is useful to know how many sequences we can generate in total within each slice. Since the length of each sequence is <code>num_steps</code>, the answer is <code>(data_len / batch_size) / num_steps</code>, known as <code>epoch_size</code>:</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/Runze/rnn-lstm-gutenberg/master/illustrations/batch_illustration_2.png" alt="alt text" width="800"></p>
+
+<ul>
+<li><p>The reason the number of sequences inside a batch is called <code>epoch_size</code> is that the number of iterations it takes to go through our entire training set is called an <em>epoch</em>. Imagine in the beginning of the first iteration, our cursors are at the start of each slices. Then at each iteration, we make a strike of <code>num_steps</code> long, and it will take us <code>epoch_size</code> iterations to finish feeding all the training data into our model.</p></li>
+
+<li><p>There is just one snag though: as demonstrated in the first diagram above, we shift the training data by one word to create the target labels. If we use the hyperparameters defined above, we may run into the risk of not having a label for the last training word. Hence, to prevent this situation, we drop the last word when computing <code>epoch_size</code>, so instead of <code>(data_len / batch_size) / num_steps</code>, we do <code>(data_len / batch_size - 1) / num_steps</code>.</p></li>
+</ul>
+
+<p>To summarize, at a given iteration, our input data to the model is of shape <code>[batch_size, num_steps]</code> (so is our label data), and we iterate <code>(data_len / batch_size - 1) / num_steps</code> times to cover the entire dataset.</p>
+
+<p>In the code, this process is defined in a function called <code>batch_producer</code> and is used to create a model input object (defined in class <code>ModelInput</code>), including <code>input_data</code>, <code>targets</code>, and such hyperparameters as <code>batch_size</code> and <code>epoch_size</code>.</p>
+
+<h3 id="defining-model">Defining model</h3>
+
+<p>In this section, I&rsquo;m going to go through the key components in defining the model.</p>
+
+<h4 id="word-embeddings">Word embeddings</h4>
+
+<p>Without doing anything, our input data right now is a sequence of word IDs that have <code>vocab_size</code> unique values. If we apply one-hot encoding to them and feed the resulting matrix to the model, it is very inefficient and resource-intensive. A common solution is to convert each word into a dense vector called <code>word embedding</code> and feed them into the model instead.</p>
+
+<p>Word embedding is a very interesting topic in itself, and Google&rsquo;s word2vec is a famous implementation of the idea and is able to produce meaningful word vectors such that words with similar meanings are close to each other in cosine distance (e.g., although &ldquo;dog&rdquo; and &ldquo;puppy&rdquo; are spelled very differently and no character-based encoding would be able to group them together, the vectors produced by word2vec are able to). Despite its magic-like results, the theory behind is actually very simple: for a given word input (e.g., &ldquo;dog&rdquo;), the model first initializes a random embedding for it. Then it takes the whole context this word appears in (e.g., &ldquo;dog barks&rdquo;) and trains a model to predict its adjacent words one by one (e.g., &ldquo;dog&rdquo; -&gt; &ldquo;barks&rdquo;). Meanwhile, if there is another word that tends to appear in the same context (e.g., &ldquo;puppy&rdquo; as in &ldquo;puppy barks&rdquo;), in order to achieve high accuracy in predicting this same context (e.g., &ldquo;barks&rdquo;), the model is motivated to optimize the the two words&rsquo; embeddings in such a way that the resulting vectors are highly similar to each other.<sup class="footnote-ref" id="fnref:Described-is-a-s"><a rel="footnote" href="#fn:Described-is-a-s">7</a></sup></p>
+
+<p>In our RNN model, although the objective function is different, we can still borrow the idea of embeddings to reduce dimensions. The desired embedding size is determined by the parameter <code>hidden_size</code> and, in my project, I set it to 256. It&rsquo;s called <code>hidden_size</code> because it also defines the number of hidden units outputted by each LSTM cell, so without adding another hidden layer, we simply set the embedding size equal to the size of the hidden units.</p>
+
+<p>Recall our input data is of shape <code>[batch_size, num_steps]</code>. After mapping each word to a embedding of length <code>hidden_size</code>, the shape becomes <code>[batch_size, num_steps, hidden_size]</code>.</p>
+
+<pre><code class="language-python">embedding = tf.get_variable(&quot;embedding&quot;, [vocab_size, hidden_size], dtype=tf.float32)
+input_embeddings = tf.nn.embedding_lookup(embedding, input_data)
+</code></pre>
+
+<h4 id="dropout">Dropout</h4>
+
+<p>Dropout is a regularization technique that randomly sets a portion of the activation nodes to 0, thereby forcing the remaining nodes to learn on their own of sometimes the redundant information, eventually making the network more robust and preventing overfitting. After training, because there are multiple nodes that were trained to learn the same thing, a consensus is generated by averaging the outputs. The idea is very similar to ensemble learning.</p>
+
+<p>In the code, we first add dropout to the input embeddings based on pre-defined <code>keep_prob</code> (Note we only implement dropout in the training process, not in validation or testing):</p>
+
+<pre><code class="language-python"># Implement dropout to input embedding data
+if is_training and keep_prob &lt; 1:
+  input_embeddings = tf.nn.dropout(input_embeddings, keep_prob)
+</code></pre>
+
+<p>Then, we also add dropout to the outputs of the LSTM cells. Assuming we have already defined a basic LSTM cell using <code>tf.contrib.rnn.BasicLSTMCell</code>, we can simply call <code>tf.contrib.rnn.DropoutWrapper</code>:</p>
+
+<pre><code class="language-python"># Implement dropout to the outputs of LSTM cells
+if is_training and keep_prob &lt; 1:
+  def attn_cell():
+    return tf.contrib.rnn.DropoutWrapper(lstm_cell(), output_keep_prob=keep_prob)
+</code></pre>
+
+<h4 id="stacking-multiple-lstms">Stacking multiple LSTMs</h4>
+
+<p>To improve model performance, we can stack multiple LSTM cells together so that the output of the previous one becomes the input of the next. The number of layers is determined by <code>num_layers</code> and I set it to 2 in my implementation. In TensorFlow, we can call <code>tf.contrib.rnn.MultiRNNCell</code> to do that:</p>
+
+<pre><code class="language-python"># Stacking multiple LSTMs
+attn_cells = [attn_cell() for _ in range(num_layers)]  # attn_cell() is a single-layer LSTM cell
+stacked_lstm = tf.contrib.rnn.MultiRNNCell(attn_cells, state_is_tuple=True)
+</code></pre>
+
+<p>Note we set <code>state_is_tuple=True</code> in defining multiple LSTMs, and it&rsquo;s simply saying that the output, namely, the new cell state and cell output (also known as the hidden state), is returned in a tuple (i.e., <code>(cell_state, cell_output)</code>).</p>
+
+<h4 id="unrolling-lstm">Unrolling LSTM</h4>
+
+<p>Next, using this stacked LSTM, we feed one word to it at a time as described above. This process is called <em>unrolling</em>. The essential code is like this:</p>
+
+<pre><code class="language-python">outputs = []
+
+# Initialize states with zeros
+initial_state = stacked_lstm.zero_state(batch_size, tf.float32)
+state = initial_state
+
+for time_step in range(num_steps):
+  # Recall that `input_embeddings` is shaped [batch_size, num_steps, hidden_size]
+  (cell_output, state) = stacked_lstm(input_embeddings[:, time_step, :], state)
+  outputs.append(cell_output)
+</code></pre>
+
+<p>Note <code>stacked_lstm</code> returns a tuple of <code>(cell_output, state)</code>, where <code>state</code> itself is a tuple of <code>(cell_state, cell_output)</code> (as explained previously) so the return value is <code>(cell_output, (cell_state, cell_output))</code>. <code>state</code> is fed to the next cell unit as the previous state while the <code>cell_output</code> is saved separately in a list called <code>outputs</code>, which is going to be compared with the target labels later. This process continues until we finish processing all the words in a word sequence.</p>
+
+<h4 id="computing-output-logits">Computing output logits</h4>
+
+<p>For each output produced by a LSTM cell, shaped <code>[batch_size, hidden_size]</code>, in order to compare with the target label to compute loss, we produce a logit that is shaped <code>[batch_size, vocab_size]</code>, by multiplying a weight matrix shaped <code>[hidden_size, vocab_size]</code>. Because the output we produced above (i.e., <code>outputs</code>) is a list of <code>num_steps</code> elements, we need to first resize it into a two-dimensional matrix:</p>
+
+<pre><code class="language-python"># Resize the ouput into a [batch_size * num_steps, hidden_size] matrix.
+output = tf.reshape(tf.stack(axis=1, values=outputs), [-1, hidden_size])
+
+# Compute logits
+softmax_w = tf.get_variable(&quot;softmax_w&quot;, [hidden_size, vocab_size], dtype=tf.float32)
+softmax_b = tf.get_variable(&quot;softmax_b&quot;, [vocab_size], dtype=tf.float32)
+
+logits = tf.matmul(output, softmax_w) + softmax_b
+# The resulting shape of `logits` is [batch_size * num_steps, vocab_size]
+</code></pre>
+
+<p>This so far is good enough to compute losses and evaluate against the validation and test sets, but to generate text, which is our ultimate goal, we need to add a sampling function here that returns an actual word as the prediction and the input to the next one. This is realized by calling the <code>tf.multinomial</code> function, which draws samples from a multinomial distribution based on the size of the different logit outputs (i.e., the higher the prediction value for a given word is, the more likely the function is going to select it):</p>
+
+<pre><code class="language-python">logits_sample = tf.multinomial(logits, 1)
+</code></pre>
+
+<p>Note the reason we sample instead of always taking the word with the largest logit value (by using <code>np.argmax(logits)</code>) is that we want to introduce some randomness to the result instead of running into the risk of always using the same word after another.</p>
+
+<h4 id="computing-the-loss-function">Computing the loss function</h4>
+
+<p>To compute loss between predictions and target labels, we call <code>tf.contrib.seq2seq.sequence_loss</code> that computes cross-entropy loss for a sequence of logits:</p>
+
+<pre><code class="language-python"># Reshape logits to be 3-D tensor for sequence loss
+logits = tf.reshape(logits, [batch_size, num_steps, vocab_size])
+
+loss = tf.contrib.seq2seq.sequence_loss(
+  logits,  # shape: [batch_size, num_steps, vocab_size]
+  targets,  # shape: [batch_size, num_steps]; represents the true class at each step
+  tf.ones([batch_size, num_steps], dtype=tf.float32),  # weights (all set to 1 here)
+  average_across_timesteps=False,
+  average_across_batch=True)
+
+# Compute the total loss and update the cost variables
+cost = tf.reduce_sum(loss)
+</code></pre>
+
+<h4 id="optimizing-using-gradient-descent">Optimizing using gradient descent</h4>
+
+<p>First, we need to initialize the optimizer using <code>tf.train.GradientDescentOptimizer</code>, which requires us to specify a learning rate:</p>
+
+<pre><code class="language-python">optimizer = tf.train.GradientDescentOptimizer(learning_rate)
+</code></pre>
+
+<p>As mentioned in TensorFlow&rsquo;s <a href="https://www.tensorflow.org/versions/r0.12/api_docs/python/train/decaying_the_learning_rate">website</a>, &ldquo;when training a model, it is often recommended to lower the learning rate as the training progresses,&rdquo; and normally we can just call the <code>tf.train.exponential_decay</code> function directly to specify the initial learning rate, decay steps, and decay rate. However, in this tutorial code that I adapted, it decided to have more control over how learning rate decays and chose to update it itself when running the model (as we&rsquo;ll see later on). Regardless, the idea is the same.</p>
+
+<p>Next, we compute gradients of the cost with respect to all the trainable variables (e.g, weights, embeddings):</p>
+
+<pre><code class="language-python">tvars = tf.trainable_variables()  # this literally returns all trainable variables in a list
+grads = tf.gradients(cost, tvars)  # compute partial derivatives of `cost` w.r.t. each `tvars`
+grads, _ = tf.clip_by_global_norm(grads, max_grad_norm)  # cap gradients at `max_grad_norm` to prevent them from exploding
+</code></pre>
+
+<p>Finally, we apply the gradients to trainable variable using <code>apply_gradients()</code>:</p>
+
+<pre><code class="language-python">global_step = tf.contrib.framework.get_or_create_global_step()
+optimizer = optimizer.apply_gradients(zip(grads, tvars), global_step=global_step)
+</code></pre>
+
+<p>This concludes the model definition process. In the code, these steps are defined in class <code>Model</code> and executed when a <code>session.run</code> is called.</p>
+
+<h3 id="running-an-epoch">Running an epoch</h3>
+
+<p>Recall that during an <em>epoch</em>, we feed the entire input data, batches by batches, into the model, and it takes <code>epoch_size</code> iterations to complete. While in an epoch, the costs and states are not reset and are accumulated until the end. Only at the start of the next epoch do they get reset again.</p>
+
+<p>The steps of running an epoch are defined in function <code>run_epoch</code> and are executed in a running session. Here I&rsquo;ll just go through some key steps below:</p>
+
+<h4 id="initializing-costs-and-states">Initializing costs and states</h4>
+
+<p>The following snippet initializes <code>costs</code> to 0 and returns the zero <code>initial_state</code>:</p>
+
+<pre><code class="language-python"># Initialize costs to 0
+costs = 0.0
+
+# Initialize state values to 0s
+# In class `Model`, states are initialized to 0s using:
+# `initial_state = stacked_lstm.zero_state(batch_size, tf.float32)`
+state = session.run(model.initial_state)
+
+# Initialize counter to  0
+# To be used to compute average cost later
+iters = 0
+</code></pre>
+
+<p>Next, we determine what we want to retrieve from the model after each successful run of a batch: for all sessions, we retrieve the final <code>cost</code> and <code>state</code> to update the current values; for training sessions, we also retrieve the <code>optimizer</code> object to trigger gradient descent.</p>
+
+<pre><code class="language-python"># Determine what to return from each iteration
+# These become the starting costs and states for the next iteration
+fetches = {
+  &quot;cost&quot;: model.cost,
+  &quot;final_state&quot;: model.final_state,
+}
+
+# If in a training session, also return `optimizer` to trigger gradient descent
+if optimizer is not None:
+  fetches[&quot;optimizer&quot;] = optimizer
+</code></pre>
+
+<h4 id="iterating-through-an-epoch">Iterating through an epoch</h4>
+
+<p>After initialization, we start the iteration, one <code>epoch_size</code> at a time, to scan through the whole dataset and feed it to the model sequentially:</p>
+
+<pre><code class="language-python">for step in range(model.input.epoch_size):
+  # To update state values
+  feed_dict = {}
+  
+  # Recall that `initial_state` is a list of `num_layers` tensors
+  # Each is a tuple of (`c_state`, `h_state`)
+  for i, (c, h) in enumerate(model.initial_state):
+    feed_dict[c] = state[i].c
+    feed_dict[h] = state[i].h
+  
+  # Kick off a session run with new states
+  vals = session.run(fetches, feed_dict)
+  
+  # Upon finishing, extract cost and final_state after the current step,
+  # which become the new initial cost and state for the next step
+  cost = vals[&quot;cost&quot;]
+  state = vals[&quot;final_state&quot;]
+  
+  # Compute average cost up to the current step
+  costs += cost
+  iters += model.input.num_steps
+  perplexity = np.exp(costs / iters)
+</code></pre>
+
+<p>When I first read this part in the tutorial code, I was very confused as to how states are updated and how data is fed into the model. After a lot of Google searches, I now have a better understanding. I&rsquo;ll try to explain it here in case you have the same questions:</p>
+
+<p>We mentioned above that, in class <code>Model</code>, we initialize <code>initial_state</code> to be all 0s - what we really did there is initialize a list of <code>num_layers</code> tuples, <code>(cell_state, cell_output)</code>, to 0s, so when we <code>enumerate</code> this list here, we are fetching the tuples one by one and putting them temporarily in <code>(c, h)</code>.<sup class="footnote-ref" id="fnref:c-and-h-stand-fo"><a rel="footnote" href="#fn:c-and-h-stand-fo">8</a></sup></p>
+
+<p>Then, we use <code>feed_dict</code> to tell the model in the next run to replace these initial values with the new ones stored in <code>state</code>, which are the previous <code>final_state</code> that we requested the model to return.<sup class="footnote-ref" id="fnref:Note-in-the-firs"><a rel="footnote" href="#fn:Note-in-the-firs">9</a></sup> It&rsquo;s a bit confusing here because <code>state</code> is a named tuple whose names are also <code>c</code> and <code>h</code>, and they have nothing to do with the initial state tuple <code>(c, h)</code> that are returned from <code>enumerate</code>.</p>
+
+<p>As for how batches are fed into the model, I was confused at first because, in all Udacity&rsquo;s assignments, they are fed through <code>feed_dict</code> into a <code>tf.placeholder</code> object that is declared when defining the model graph. However, in this tutorial code, <code>feed_dict</code> only includes state updates, so how does the model receive the data?</p>
+
+<p>It turns out that, in the function to generate batches, we defined a queue using the following code:</p>
+
+<pre><code class="language-python"># From function `batch_producer`
+i = tf.train.range_input_producer(epoch_size, shuffle=False).dequeue()
+
+x = tf.strided_slice(data, [0, i * num_steps], [batch_size, (i + 1) * num_steps])
+x.set_shape([batch_size, num_steps])
+
+y = tf.strided_slice(data, [0, i * num_steps + 1], [batch_size, (i + 1) * num_steps + 1])
+y.set_shape([batch_size, num_steps])
+</code></pre>
+
+<p>Before going into the detail of <code>tf.train.range_input_producer</code>, let&rsquo;s first just assume it&rsquo;s a sequence number ranging from 0 to <code>epoch_size - 1</code>, and imagine there is a <code>for</code> loop somewhere that uses it to slice <code>data</code> to produce <code>x</code> and <code>y</code>, the training input and the target labels, iteratively. Even though <code>tf.strided_slice</code> is a TensorFlow function, it&rsquo;s equivalent to Numpy&rsquo;s indexing and all it does is to carve out a sequence of length <code>num_steps</code> from each slice.<sup class="footnote-ref" id="fnref:In-fact-the-oper"><a rel="footnote" href="#fn:In-fact-the-oper">10</a></sup></p>
+
+<p>But how does <code>tf.train.range_input_producer(epoch_size, shuffle=False).dequeue()</code> really work? There is no such a <code>for</code> loop in function <code>run_epoch</code>. it turns out the <code>dequeue()</code> operation, as well as the subsequent slicing, is triggered whenever a session is kicked off (e.g., using <code>session.run</code> as in <code>run_epoch</code>) that demands a return value involving a data operation. To illustrate the point, in <code>run_epoch</code>, there are two places where we trigger a <code>session.run</code>:</p>
+
+<pre><code class="language-python"># Initialization
+state = session.run(model.initial_state)
+# ...
+
+# Iterate over `epoch_size`
+for step in range(model.input.epoch_size):
+  # ...
+  vals = session.run(fetches, feed_dict)
+</code></pre>
+
+<p>In the first place above, we trigger a session run to return the initial state and because, for the model to compute and return this value, it doesn&rsquo;t need any actual input data (all it needs to do is set everything to 0), the <code>dequeue()</code> operation is not triggered, meaning our cursors have not moved.</p>
+
+<p>In the second place, we ask the model to return <code>fetches</code>, which is a dictionary of <code>cost</code> and <code>final_state</code>, and to do that, the model has to actually find the input data and set RNN to run. Hence, in this case, <code>dequeue()</code> is triggered, data is sliced, and the cursors have moved.</p>
+
+<p>To summarize, the model is defined with an input data object, which includes a queue of word sequences ready to be fed into the model whenever a session that requires them is kicked off.</p>
+
+<h3 id="generating-text">Generating text</h3>
+
+<p>The last piece we need to implement before putting everything together is to generate text. This part is omitted from the original tutorial code and my implementation is based on this very helpful blog <a href="http://deeplearningathome.com/2016/10/Text-generation-using-deep-recurrent-neural-networks.html">post</a>. The function is very similar to <code>run_epoch</code> in structure with a few exceptions:</p>
+
+<p>First of all, we need the model to return the <code>logits_sample</code> value to use as the prediction and the input to the next iteration, so we add that to our wishlist <code>fetches</code>:<sup class="footnote-ref" id="fnref:Note-we-omitted"><a rel="footnote" href="#fn:Note-we-omitted">11</a></sup></p>
+
+<pre><code class="language-python">fetches = {
+  &quot;final_state&quot;: model.final_state,
+  &quot;logit_sample&quot;: model.logits_sample
+}
+</code></pre>
+
+<p>Next, we choose a seed word for the model to start with and define the length of the text we want to generate. In my implementation, I tried various subject pronouns as the seed and chose to output a text of 500 words:</p>
+
+<pre><code class="language-python"># Use various pronouns as the start of each text
+feeds = ['he', 'she', 'it', 'mr', 'mrs', 'miss']
+feeds = [word_to_id[w] for w in feeds]
+
+# Define sentence length
+text_length = 500
+</code></pre>
+
+<p>To pass the seed and the subsequent predictions into the model, we can&rsquo;t use a pre-defined data object anymore because we don&rsquo;t have a sequence yet - it&rsquo;s what we are trying to generate! Hence, in this case, we&rsquo;ll have to rely on <code>feed_dict</code> to send words into the model one at a time:</p>
+
+<pre><code class="language-python"># `feed` is the seed word and is the beginning of the text to be generated
+generated_text = [feed]
+
+for i in range(text_length):
+  feed_dict = {}
+  feed_dict[model.input_data] = feed
+  
+  for i, (c, h) in enumerate(model.initial_state):
+    feed_dict[c] = state[i].c
+    feed_dict[h] = state[i].h
+  
+  vals = session.run(fetches, feed_dict)
+  
+  # Extract final state and sampled logit after the current step,
+  # which become the new initial state and feed for the next step
+  state = vals[&quot;final_state&quot;]
+  feed = vals[&quot;logit_sample&quot;]
+  
+  # Append generated text
+  generated_text.append(feed)
+</code></pre>
+
+<p>Note because we are feeding a single word at a time instead of a word sequence like we do in training, we don&rsquo;t need multiple LSTM units anymore, so in the configuration, we set <code>num_steps</code> to 1. However, it doesn&rsquo;t mean the model only makes predictions based on one word only. As shown in the snippet above, it still keeps a cumulative <code>state</code> object until an epoch is completed.</p>
+
+<h3 id="putting-it-all-together">Putting it all together</h3>
+
+<p>With everything in place, we are ready to run it all! Like all TensorFlow models, we need to first define a model graph. To save space, I&rsquo;m only including the definition of the training model, which is reused for validation, test, and text-generation purposes, and the text-generation model here:</p>
+
+<pre><code class="language-python">with tf.Graph().as_default():
+  # Initializer to initialize all variables defined in the `Model` object
+  initializer = tf.random_uniform_initializer(-init_scale, init_scale)
+  
+  # Define training model using training data
+  with tf.name_scope(&quot;Train&quot;):
+    train_input = ModelInput(config=config, data=train_data, name=&quot;TrainInput&quot;)
+    with tf.variable_scope(&quot;Model&quot;, reuse=None, initializer=initializer):
+      m = Model(is_training=True, config=config, input_=train_input)
+  
+  # Omitting models for validation and testing...
+  
+  # Define model for text generations (reusing training model)
+  # No input data given here as we are going to dynamically generate input later
+  with tf.name_scope(&quot;Feed&quot;):
+    with tf.variable_scope(&quot;Model&quot;, reuse=True, initializer=initializer):
+      mfeed = Model(is_training=False, config=eval_config)
+</code></pre>
+
+<p>In short, the <code>initializer</code> object is used to initialize all variables defined in the model (e.g., weights, embeddings) using a uniform distribution in a pre-defined scale. Compared to the training model object <code>m</code>, the text-generation model <code>mfeed</code> is told to reuse the training model (i.e., reusing the trained weights, biases, etc.) and is defined without a <code>train_input</code> because, aside from the seed word, we are creating it on the fly. Also it is given a different <code>config</code> object because we set both <code>batch_size</code> and <code>num_steps</code> to 1.</p>
+
+<p>Next, we open a session and call <code>run_epoch</code> to set things to run. In the code below, there are two badly-named hyperparameters: <code>max_max_epoch</code> and <code>max_epoch</code>, and they refer to the total number of <code>epoch</code> we want to run and the number of <code>epoch</code> we want to wait until we start decaying learning rate. In my implementation, I set them to be 20 and 6, respectively.</p>
+
+<pre><code class="language-python">sv = tf.train.Supervisor(logdir=save_path)
+  with sv.managed_session() as session:
+    for i in range(max_max_epoch):
+      # Update learning_rate if `i` &gt;= `max_epoch`
+      lr_decay = lr_decay**max(i + 1 - max_epoch, 0.0)
+      m.assign_lr(session, learning_rate * lr_decay)
+      
+      # Train model and compute training data perplexity
+      train_perplexity = run_epoch(session, m, optimizer=m.optimizer, verbose=True)
+      
+      # Omitting validation and testing...
+</code></pre>
+
+<h3 id="generating-text-1">Generating text!</h3>
+
+<p>Finally, after <code>max_max_epoch</code>,<sup class="footnote-ref" id="fnref:Seriously-this-i"><a rel="footnote" href="#fn:Seriously-this-i">12</a></sup> we can now generate text using the trained model! For demonstration purposes, I&rsquo;m showing below two different &ldquo;paragraphs&rdquo; of 500 words generated using &ldquo;he&rdquo; and &ldquo;she&rdquo;, respectively, with my favorite part bolded and commented in the footnotes :-)</p>
+
+<h4 id="starting-with-he">Starting with &ldquo;he&rdquo;</h4>
+
+<blockquote>
+<p><span style="font-family: times; font-size: 13pt">he has introduced to everybody herself. <strong>we may have himself with more governed beauty than in conversation</strong><sup class="footnote-ref" id="fnref:I-know-this-sent"><a rel="footnote" href="#fn:I-know-this-sent">13</a></sup> - who scrap this attitude that little herself has been. but one animality though i am tempted to keep about it. would you come across the company? i declare what you think dorian. he has a rough wire, and <strong>giving me much noise instead of bread</strong>.<sup class="footnote-ref" id="fnref:I-know-exactly-w"><a rel="footnote" href="#fn:I-know-exactly-w">14</a></sup> it is one who to know it was what he had. you know my husband &ldquo; s lack of uneasiness that would rue. <strong>i have been all great exquisite ideas</strong>.<sup class="footnote-ref" id="fnref:I-m-going-to-sta"><a rel="footnote" href="#fn:I-m-going-to-sta">15</a></sup> but here! in fact, my services to your great youth is quite well correct. i shall find the separation in the being it to nothing. <strong>advice is a love, but no more, in fact, the name may cease if i have no chance about beholding for any body a genuine bit of great indifference,</strong><sup class="footnote-ref" id="fnref:This-sentence-so"><a rel="footnote" href="#fn:This-sentence-so">16</a></sup> that can not be quite popular. you find nothing of your personal reflection if my comfortable; that other parties i call, for all the land of life, <strong>they are twenty series of remarks and old and ugly benevolence</strong>:<sup class="footnote-ref" id="fnref:This-is-a-very-s"><a rel="footnote" href="#fn:This-is-a-very-s">17</a></sup> listen, at all, what shall your account of it merely? do i remember it, i am not charmed and and common? little child and friendship you know the same thing that has implies this society of it. and in letters i have told you that over business is not so popular and mental. <strong>nothing matters, upon art, and through a great change if you will have our noble greatest stupid designs.</strong><sup class="footnote-ref" id="fnref:I-hope-the-model"><a rel="footnote" href="#fn:I-hope-the-model">18</a></sup> but we like so well that happiness is simply coming to be kept on the room. only so well ago, he wrote it. you do not realise sibyl whibley no beauty that those who have failed to understand? at last i have explained you upon the same writer in a different hand, and where is necessarily ugly at your houses, before with the story of the great world and metaphysics, that this is my chief principle as it meant, and how sincerely i absolutely admit to you, the whole world one must be killed, and <strong>athens, who are a man of pain and the temper of a lull, has clothed the beauty of his life.</strong><sup class="footnote-ref" id="fnref:Again-I-m-not-po"><a rel="footnote" href="#fn:Again-I-m-not-po">19</a></sup> i was all and wrong when to begin within one few ivory figures. we were at once seen at all, which, after mr. mahaffy, with the true secrets of shakespeare, for both type and epithet. in these volumes it is the true effect; how near the work will show; and by the artist he knows to me so, and to less can have loved st. hermann matthews, whose lives interest what is</span></p>
+</blockquote>
+
+<h4 id="starting-with-she">Starting with &ldquo;she&rdquo;</h4>
+
+<blockquote>
+<p><span style="font-family: times; font-size: 13pt"><strong>she was a very pleasing girl. no doubt, but his wife has destroyed her secretary,</strong><sup class="footnote-ref" id="fnref:This-escalated-q"><a rel="footnote" href="#fn:This-escalated-q">20</a></sup> which respect one most than she had not been rough. <strong>as if you were in the age of disliking life,</strong><sup class="footnote-ref" id="fnref:Hmm-the-age-of-a"><a rel="footnote" href="#fn:Hmm-the-age-of-a">21</a></sup> mrs. bellamy, his dear lord arthur, <strong>we must have felt much as a second company upon the ungrateful and staffordshire;</strong><sup class="footnote-ref" id="fnref:In-case-you-wond"><a rel="footnote" href="#fn:In-case-you-wond">22</a></sup> the most important som&rsquo;n for the friendship of humanity, power, for all us a few thousand months protested, when no one cares in an invaluable, am always going on any professions of dealing with person by a certain subject of literature in the world. for christ, too, tuesday is mr. otis nowadays, as he was annoyed. nay, basil, <strong>this question has precedence to be found popular,</strong><sup class="footnote-ref" id="fnref:Ooh-I-want-to-kn"><a rel="footnote" href="#fn:Ooh-I-want-to-kn">23</a></sup> for beginning to make a commonplace good good common view against love, she ought to produce an euphrates, and, though it is impossible, it is a capital meal in rain and secondly. it has nancy believed, whether all personalities were generally needed as his own manner. it is too late to give milton day to reply before the brawling change in which the intellect was placed with herself. <strong>it was not an imaginary madness to point out from the picture things by conversation, but in the early conception of that one, the great masterpieces of jealousy will share its tyranny away, in their stages of gladness.</strong><sup class="footnote-ref" id="fnref:Too-many-quotabl"><a rel="footnote" href="#fn:Too-many-quotabl">24</a></sup> the true legion, the spirit of hand and the passion, may take from future. bookkeeper is too noble for his own, but the closest mood, a fresh element - fresh a vision to prevail on keble, <strong>crowded beauty</strong><sup class="footnote-ref" id="fnref:A-strong-follow"><a rel="footnote" href="#fn:A-strong-follow">25</a></sup>, less than some else in one common health. that he is once trying to recognise himself; and nothing flashes from revellers, and so can. they are so kind, but combines each need. the time and the temper of its effect are not furies, and you must know what word is to suffer to fret, or only subtly well, in such sanguinely, that there is its hearts, you kissed us. we live there. <strong>that is a wretched costume of genius.</strong><sup class="footnote-ref" id="fnref:My-interpretatio"><a rel="footnote" href="#fn:My-interpretatio">26</a></sup> the narrow limits: in course, in the beautiful - arched cliffs, they think how well i saw and as art is drops up, all others are beautiful. it is the gay summer as the iron macerated almond - tree, and not sometimes who have lost a little boy, when any judgment felt there. <strong>the seasons are crowded with white lips and dim butterflies.</strong><sup class="footnote-ref" id="fnref:This-could-make"><a rel="footnote" href="#fn:This-could-make">27</a></sup> the emperies does not believe how. it does not appear more; and on interference of life, there is no literary pencil in whatever other horrible fiction:</span></p>
+</blockquote>
+
+<h4 id="final-judgment">Final judgment</h4>
+
+<p>Overall, although it managed to get many grammar points and sentence structure correct, the generated text still doesn&rsquo;t quite make sense. It reminded me of reading English novels when I was still learning English - it all reads like real sentences but, put together, it registers nothing with me.</p>
+
+<p>That said, I&rsquo;m still left somewhat impressed with the performance given that I didn&rsquo;t go crazy with the training setup (e.g., I could&rsquo;ve added more hidden units and training iterations), and, by some stretched imagination, I can indeed recognize some of the original authors&rsquo; styles, especially Fitzgerald&rsquo;s. In hindsight, I might have confused the model and doomed its performance by giving it works of such distinctively different styles and periods,<sup class="footnote-ref" id="fnref:The-downloaded-w"><a rel="footnote" href="#fn:The-downloaded-w">28</a></sup> which made it hard to recognize common word patterns and minimize the loss function. But with such a fun opportunity to bring my favorite authors together, how can I resist?</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Like-this-projec">Like this <a href="https://runze.github.io/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/">project</a> I did using Twitter&rsquo;s live stream data and the accompanying R Shiny <a href="https://runzemc.shinyapps.io/sentiment/">app</a> that surprisingly still runs <a class="footnote-return" href="#fnref:Like-this-projec"><sup>[return]</sup></a></li>
+<li id="fn:Like-this-simple">Like this simple <a href="https://runze.github.io/2014/10/04/building-a-book-recommender/">book recommender</a> I built by clustering book descriptions scraped from Goodreads and recommends books by applying the trained model to the description of a new book. <a class="footnote-return" href="#fnref:Like-this-simple"><sup>[return]</sup></a></li>
+<li id="fn:I-have-uploaded">I have uploaded my class notes and assignments to this <a href="https://github.com/Runze/ud730-deep-learning-class-notes">repo</a>. <a class="footnote-return" href="#fnref:I-have-uploaded"><sup>[return]</sup></a></li>
+<li id="fn:There-is-just-so">There is just something in those overly sensitive but outwardly indifferent characters. <a class="footnote-return" href="#fnref:There-is-just-so"><sup>[return]</sup></a></li>
+<li id="fn:tidytext-is-a-ve"><code>tidytext</code> is a very useful package for doing text mining in R. To learn more about it, refer to Silge and Robinson&rsquo;s book <a href="http://tidytextmining.com/"><em>Text Mining with R</em></a>. <a class="footnote-return" href="#fnref:tidytext-is-a-ve"><sup>[return]</sup></a></li>
+<li id="fn:It-s-called-num">It&rsquo;s called <code>num_steps</code> because it&rsquo;s referring to the unrolling of the LSTM cells into a sequence of steps that is of the same length as the input word sequence. <a class="footnote-return" href="#fnref:It-s-called-num"><sup>[return]</sup></a></li>
+<li id="fn:Described-is-a-s">Described is a skip-gram model; there is another way of generating word embeddings called Continuous Bag of Words (&ldquo;CBOW&rdquo;) which, instead of using a given word to predict its context, it predicts a word using its context. <a class="footnote-return" href="#fnref:Described-is-a-s"><sup>[return]</sup></a></li>
+<li id="fn:c-and-h-stand-fo"><code>c</code> and <code>h</code> stand for <code>cell_state</code> and <code>hidden_state</code>, respective. <code>hidden_state</code> is just <code>cell_output</code>. <a class="footnote-return" href="#fnref:c-and-h-stand-fo"><sup>[return]</sup></a></li>
+<li id="fn:Note-in-the-firs">Note in the first iteration, we are simply updating the initial 0 states with themselves (because we did <code>state = session.run(model.initial_state)</code> in the beginning); only until the later iterations does this update actually become meaningful. <a class="footnote-return" href="#fnref:Note-in-the-firs"><sup>[return]</sup></a></li>
+<li id="fn:In-fact-the-oper">In fact, the operation is equivalent to <code>data[0:batch_size:1, i * num_steps:(i + 1) * num_steps:1]</code> in Numpy array. <a class="footnote-return" href="#fnref:In-fact-the-oper"><sup>[return]</sup></a></li>
+<li id="fn:Note-we-omitted">Note we omitted <code>cost</code> here because we don&rsquo;t need to compute any loss anymore. <a class="footnote-return" href="#fnref:Note-we-omitted"><sup>[return]</sup></a></li>
+<li id="fn:Seriously-this-i">Seriously, this is very bad naming, Tutorial. <a class="footnote-return" href="#fnref:Seriously-this-i"><sup>[return]</sup></a></li>
+<li id="fn:I-know-this-sent">I know this sentence doesn&rsquo;t make sense but I just love the phrase &ldquo;governed beauty,&rdquo; which made me think the model is trying too hard to become Fitzgerald. It would&rsquo;ve been perfect if it&rsquo;s &ldquo;we may have in himself more governed beauty than in conversation,&rdquo; whatever that means. <a class="footnote-return" href="#fnref:I-know-this-sent"><sup>[return]</sup></a></li>
+<li id="fn:I-know-exactly-w">I know exactly what you mean. <a class="footnote-return" href="#fnref:I-know-exactly-w"><sup>[return]</sup></a></li>
+<li id="fn:I-m-going-to-sta">I&rsquo;m going to start saying this myself. <a class="footnote-return" href="#fnref:I-m-going-to-sta"><sup>[return]</sup></a></li>
+<li id="fn:This-sentence-so">This sentence sounds rather profound and kudos for using &ldquo;genuine&rdquo; and &ldquo;indifference&rdquo; in the same phrase. <a class="footnote-return" href="#fnref:This-sentence-so"><sup>[return]</sup></a></li>
+<li id="fn:This-is-a-very-s">This is a very sharp piece of criticism. <a class="footnote-return" href="#fnref:This-is-a-very-s"><sup>[return]</sup></a></li>
+<li id="fn:I-hope-the-model">I hope the model was trying to be sarcastic. <a class="footnote-return" href="#fnref:I-hope-the-model"><sup>[return]</sup></a></li>
+<li id="fn:Again-I-m-not-po">Again I&rsquo;m not positive I understand what it means, but it sounds very elegant. <a class="footnote-return" href="#fnref:Again-I-m-not-po"><sup>[return]</sup></a></li>
+<li id="fn:This-escalated-q">This escalated quickly. <a class="footnote-return" href="#fnref:This-escalated-q"><sup>[return]</sup></a></li>
+<li id="fn:Hmm-the-age-of-a">Hmm, the age of adolescence? <a class="footnote-return" href="#fnref:Hmm-the-age-of-a"><sup>[return]</sup></a></li>
+<li id="fn:In-case-you-wond">In case you wondered, Staffordshire is a county in England that appeared in Austen&rsquo;s novels and has absolutely nothing to do with &ldquo;the ungrateful.&rdquo; <a class="footnote-return" href="#fnref:In-case-you-wond"><sup>[return]</sup></a></li>
+<li id="fn:Ooh-I-want-to-kn">Ooh, I want to know that. <a class="footnote-return" href="#fnref:Ooh-I-want-to-kn"><sup>[return]</sup></a></li>
+<li id="fn:Too-many-quotabl">Too many quotable phrases here: &ldquo;an imaginary madness&rdquo;, &ldquo;the great masterpieces of jealousy will share its tyranny&rdquo;, and &ldquo;in their stages of gladness.&rdquo; <a class="footnote-return" href="#fnref:Too-many-quotabl"><sup>[return]</sup></a></li>
+<li id="fn:A-strong-follow">A strong follow-up to &ldquo;governed beauty&rdquo; above. <a class="footnote-return" href="#fnref:A-strong-follow"><sup>[return]</sup></a></li>
+<li id="fn:My-interpretatio">My interpretation is that the model is criticising someone for being a pseudo-intellectual. <a class="footnote-return" href="#fnref:My-interpretatio"><sup>[return]</sup></a></li>
+<li id="fn:This-could-make">This could make a great line of song lyrics. <a class="footnote-return" href="#fnref:This-could-make"><sup>[return]</sup></a></li>
+<li id="fn:The-downloaded-w">The downloaded works also include several literary reviews. <a class="footnote-return" href="#fnref:The-downloaded-w"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../technical-posts/an-analysis-of-foreign-language-learning-using-duolingo-data/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../technical-posts/an-analysis-of-foreign-language-learning-using-duolingo-data/">An analysis of foreign language learning using Duolingo&#39;s data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="../../technical-posts/first-attempt-at-building-a-language-translator/">First attempt at building a language translator</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="../../technical-posts/first-attempt-at-building-a-language-translator/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="../../js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

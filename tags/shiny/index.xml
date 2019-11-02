@@ -13,37 +13,37 @@
     
     <item>
       <title>Filtering twitter timeline</title>
-      <link>/2014/08/12/filtered-twitter-timeline/</link>
+      <link>/technical-posts/filtered-twitter-timeline/</link>
       <pubDate>Tue, 12 Aug 2014 06:49:26 +0000</pubDate>
       
-      <guid>/2014/08/12/filtered-twitter-timeline/</guid>
+      <guid>/technical-posts/filtered-twitter-timeline/</guid>
       <description>Ever felt your twitter newsfeed has too much going on that you don&amp;rsquo;t have time to read them all, let alone digest? I certainly do, even though I only follow like 20 people. Whenever I open the app, I was &amp;ldquo;bombarded&amp;rdquo; by all the new tweets and, even after scrolling through all of them (as I feel obligated to), I don&amp;rsquo;t feel I have actually taken any new information in. How nice would it be if someone handpicked and highlighted all the useful information for us?</description>
     </item>
     
     <item>
       <title>Location search using Factual and interactive maps using Leaflet</title>
-      <link>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
+      <link>/technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/</link>
       <pubDate>Fri, 01 Aug 2014 06:27:32 +0000</pubDate>
       
-      <guid>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
+      <guid>/technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/</guid>
       <description>Leaflet is a popular javascript library for making interactive maps. Don&amp;rsquo;t know how to code in js? No problem, thanks to Ramnath Vaidyanathan, you can now use rCharts to do it in R! Now that we have R Shiny, it just seems a natural thing to combine the two together to make Shiny apps for interactive maps. If that doesn&amp;rsquo;t motivate you, take a look at these cool examples and roll up your sleeves and make one yourself (example1, example2)!</description>
     </item>
     
     <item>
       <title>State sentiment analysis using twitter live stream and R</title>
-      <link>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
+      <link>/technical-posts/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
       <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
       
-      <guid>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
+      <guid>/technical-posts/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
       <description>This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
     </item>
     
     <item>
       <title>No more finding out about a concert too late</title>
-      <link>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</link>
+      <link>/technical-posts/no-more-finding-out-about-a-concert-too-late/</link>
       <pubDate>Tue, 01 Jul 2014 06:40:44 +0000</pubDate>
       
-      <guid>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</guid>
+      <guid>/technical-posts/no-more-finding-out-about-a-concert-too-late/</guid>
       <description>After the numerous times of finding out about a concert too late and ending up either paying a premium or not being able to go, I finally decided to do something about it, and this is what I came up with.
 https://runzemc.shinyapps.io/pitchfork/
 This R Shiny app I made pulls data from pitchfork automatically every time it&amp;rsquo;s open and shows the upcoming shows per city and per artist (indie artist, to be precise).</description>
@@ -51,10 +51,10 @@ This R Shiny app I made pulls data from pitchfork automatically every time it&am
     
     <item>
       <title>An analysis of the most played artists on KCRW</title>
-      <link>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</link>
+      <link>/technical-posts/an-analysis-of-the-most-played-artists-on-kcrw/</link>
       <pubDate>Sun, 22 Jun 2014 04:32:24 +0000</pubDate>
       
-      <guid>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</guid>
+      <guid>/technical-posts/an-analysis-of-the-most-played-artists-on-kcrw/</guid>
       <description>R Shiny is an R package that is designed to easily create and deploy pretty web apps all in the nifty RStudio. Right now, it may not be able to make sophisticated or aesthetically pleasing web apps like d3.js, but, by leveraging R&amp;rsquo;s powerhouse analytical capability, I believe it has great potentials. One possible application I can think of is education. Take this k-means app for instance, I wish I had a chance to play with this interactive app when learning about the algorithm myself.</description>
     </item>
     

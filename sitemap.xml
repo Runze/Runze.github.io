@@ -2,62 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2018/12/31/it-s-the-end-of-the-year-let-me-talk-about-myself/</loc>
+    <loc>/other-musings/my-month-of-unemployment/</loc>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/other-musings/intended-obliviousness-and-unintended-consequences/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/other-musings/the-education-system-in-china/</loc>
+    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/other-musings/it-s-the-end-of-the-year-let-me-talk-about-myself/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/12/19/do-i-really-need-attention/</loc>
+    <loc>/technical-posts/do-i-really-need-attention/</loc>
     <lastmod>2018-12-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/11/26/second-language-acquisition-modeling/</loc>
+    <loc>/technical-posts/second-language-acquisition-modeling/</loc>
     <lastmod>2018-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/10/03/les-lobbys-aux-etats-unis/</loc>
-    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/09/21/le-projet-de-cr%C3%A9dit-social-en-chine/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/09/09/l-assimilation-vs-le-multiculturalisme/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/05/06/la-joie-d-%C3%AAtre-%C3%A9tranger/</loc>
-    <lastmod>2018-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/04/08/syndrome-de-l-imposteur/</loc>
-    <lastmod>2018-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2017/09/07/second-attempt-at-building-a-language-translator/</loc>
+    <loc>/technical-posts/second-attempt-at-building-a-language-translator/</loc>
     <lastmod>2017-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/08/14/first-attempt-at-building-a-language-translator/</loc>
+    <loc>/technical-posts/first-attempt-at-building-a-language-translator/</loc>
     <lastmod>2017-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</loc>
+    <loc>/technical-posts/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</loc>
     <lastmod>2017-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/07/02/an-analysis-of-foreign-language-learning-using-duolingo-data/</loc>
+    <loc>/technical-posts/an-analysis-of-foreign-language-learning-using-duolingo-data/</loc>
     <lastmod>2017-07-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -67,68 +57,74 @@
   </url>
   
   <url>
-    <loc>/2014/12/30/predicting-yelp-ratings-using-textual-reviews/</loc>
+    <loc>/technical-posts/predicting-yelp-ratings-using-textual-reviews/</loc>
     <lastmod>2014-12-30T02:04:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/11/15/notes-to-machine-learning/</loc>
+    <loc>/technical-posts/notes-to-machine-learning/</loc>
     <lastmod>2014-11-15T22:21:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/11/15/answer_classification/</loc>
+    <loc>/technical-posts/answer_classification/</loc>
     <lastmod>2014-11-15T22:15:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/10/04/building-a-book-recommender/</loc>
+    <loc>/technical-posts/building-a-book-recommender/</loc>
     <lastmod>2014-10-04T20:53:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/09/26/analyzing-chinas-post-80s/</loc>
+    <loc>/technical-posts/analyzing-chinas-post-80s/</loc>
     <lastmod>2014-09-26T17:31:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/09/02/what-mining-my-own-emails-told-me-about-myself/</loc>
+    <loc>/technical-posts/what-mining-my-own-emails-told-me-about-myself/</loc>
     <lastmod>2014-09-02T02:05:07+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/08/19/random-acts-of-pizza/</loc>
+    <loc>/technical-posts/random-acts-of-pizza/</loc>
     <lastmod>2014-08-19T06:22:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/08/12/filtered-twitter-timeline/</loc>
+    <loc>/technical-posts/filtered-twitter-timeline/</loc>
     <lastmod>2014-08-12T06:49:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/08/01/location-search-using-factual-and-interactive-maps-using-leaflet/</loc>
+    <loc>/technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/</loc>
     <lastmod>2014-08-01T06:27:32+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</loc>
+    <loc>/technical-posts/state-sentiment-analysis-using-twitter-live-stream-and-r/</loc>
     <lastmod>2014-07-07T03:33:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/07/01/no-more-finding-out-about-a-concert-too-late/</loc>
+    <loc>/technical-posts/no-more-finding-out-about-a-concert-too-late/</loc>
     <lastmod>2014-07-01T06:40:44+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/06/22/an-analysis-of-the-most-played-artists-on-kcrw/</loc>
+    <loc>/technical-posts/an-analysis-of-the-most-played-artists-on-kcrw/</loc>
     <lastmod>2014-06-22T04:32:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2014/05/07/an-analysis-of-artsy-s-twitter-followers/</loc>
+    <loc>/technical-posts/an-analysis-of-artsy-s-twitter-followers/</loc>
     <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ai/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -144,19 +140,13 @@
   
   <url>
     <loc>/tags/china/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/coursera/</loc>
     <lastmod>2014-07-07T03:33:22+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/culture/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -179,20 +169,20 @@
   </url>
   
   <url>
+    <loc>/tags/education/</loc>
+    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/essay/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/factual/</loc>
     <lastmod>2014-08-01T06:27:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/french/</loc>
-    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,24 +195,6 @@
   <url>
     <loc>/tags/gmail/</loc>
     <lastmod>2014-09-02T02:05:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/history/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/immigration/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/impostor-syndrome/</loc>
-    <lastmod>2018-04-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -258,7 +230,7 @@
   
   <url>
     <loc>/tags/life-story/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,20 +253,14 @@
   </url>
   
   <url>
+    <loc>/other-musings/</loc>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/pitchfork/</loc>
     <lastmod>2014-07-01T06:40:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/politics/</loc>
-    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -342,13 +308,19 @@
   
   <url>
     <loc>/tags/society/</loc>
-    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2014-10-04T20:53:36+00:00</lastmod>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/technical-posts/</loc>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -371,12 +343,6 @@
   </url>
   
   <url>
-    <loc>/tags/usa/</loc>
-    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/weibo/</loc>
     <lastmod>2014-09-26T17:31:57+00:00</lastmod>
     <priority>0</priority>
@@ -384,7 +350,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

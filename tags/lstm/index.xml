@@ -13,28 +13,28 @@
     
     <item>
       <title>Second attempt at building a language translator</title>
-      <link>/2017/09/07/second-attempt-at-building-a-language-translator/</link>
+      <link>/technical-posts/second-attempt-at-building-a-language-translator/</link>
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/09/07/second-attempt-at-building-a-language-translator/</guid>
+      <guid>/technical-posts/second-attempt-at-building-a-language-translator/</guid>
       <description>Background A few weeks ago, I experimented with building a language translator using a simple sequence-to-sequence model. Since then, I had been itchy to add an extra attention layer to it that I had been reading so much about. After many, many research, I came across (quite accidentally) this MOOC series offered by fast.ai, where on Lesson 13, instructor Jeremy Howard walked the students through a practical implementation of the attention mechanism using PyTorch.</description>
     </item>
     
     <item>
       <title>First attempt at building a language translator</title>
-      <link>/2017/08/14/first-attempt-at-building-a-language-translator/</link>
+      <link>/technical-posts/first-attempt-at-building-a-language-translator/</link>
       <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/08/14/first-attempt-at-building-a-language-translator/</guid>
+      <guid>/technical-posts/first-attempt-at-building-a-language-translator/</guid>
       <description>Background After having tried my hands on LSTM and built a text generater, I became interested in the sequence-to-sequence models, particularly their applications in language translations. It all started with this TensorFlow tutorial where the authors demonstrated how they built an English-to-French translator using such a model and successfully translated &amp;ldquo;Who is the president of the United States?&amp;rdquo; into French with the correct grammar (&amp;ldquo;Qui est le président des États-Unis?</description>
     </item>
     
     <item>
       <title>When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</title>
-      <link>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</link>
+      <link>/technical-posts/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</link>
       <pubDate>Thu, 27 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/27/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</guid>
+      <guid>/technical-posts/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/</guid>
       <description>Background Lately I&amp;rsquo;ve been spending a lot of time learning about deep learning, particularly its applications in natural language processing, a field I have been immensely interested in. Before deep learning, my foray into NLP has been mainly about sentiment analysis1 and topic modeling.2 These projects are fun but they are all limited in analyzing an existing corpus of text whereas I&amp;rsquo;m also interested in applications that generate texts themselves.</description>
     </item>
     

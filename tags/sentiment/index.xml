@@ -13,10 +13,10 @@
     
     <item>
       <title>State sentiment analysis using twitter live stream and R</title>
-      <link>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
+      <link>/technical-posts/state-sentiment-analysis-using-twitter-live-stream-and-r/</link>
       <pubDate>Mon, 07 Jul 2014 03:33:22 +0000</pubDate>
       
-      <guid>/2014/07/07/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
+      <guid>/technical-posts/state-sentiment-analysis-using-twitter-live-stream-and-r/</guid>
       <description>This week I started taking this Coursera class called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&amp;rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction here and clone the git here (I believe you can access it without signing up for the class, but the course is free anyway).</description>
     </item>
     

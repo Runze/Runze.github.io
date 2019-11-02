@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>Do I really need attention in my seq2seq model? &middot; What I talk about when I don&#39;t talk about me</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<head>
+  <link rel="stylesheet" href="../../css/github-gist.css">
+  <script src="../../js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../other-musings/">Other Musings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.linkedin.com/in/runze-wang-413a091a/">LinkedIn</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Do I really need attention in my seq2seq model?</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018-12-19</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../tags/deep-learning">Deep Learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/nlp">NLP</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/rnn">RNN</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <script src="../../rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="../../rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="../../rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="../../rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="../../rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="../../rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<div id="background" class="section level3">
+<h3>Background</h3>
+<p>Since the origin of the idea of attention (Bahdanau et al., 2015), it has become a norm to try to insert it in a seq2seq model, especially in translations. It is such an intuitive and powerful idea (not to mention the added benefit of peaking into an otherwise blackbox model) that many tutorials and blog posts made it sound like one should not even bother with a model without it as the results would for sure be inferior. (Truthfully, even working on my own <a href="https://runze.github.io/2017/09/07/second-attempt-at-building-a-language-translator/">post</a> on this topic earlier, I completely skipped the simpler approach too.) However, is it really the case? Does the added complexity introduced by an extra layer really translate into a significantly superior performance? In this post, I set off to construct a controlled experiment to estimate the exact benefit of using attentions in a seq2seq-based translation model.</p>
+<p>Before going into the details of the case study, it is worth emphasizing that there is really no general answer or silver bullet to the above question as there are just too many factors that can change the results (e.g., the dataset, the model architecture, just to name a few). Hence, such questions should always be evaluated on a case-by-case basis and the goal of this post is by no means to offer any general advice. Rather, the goal is to show the importance of experimentation and of <em>always</em> starting with a baseline.</p>
+<p>In the following sections, I’ll describe the key components of the models used in the experiment and present the results in the end. My complete code for this project is hosted <a href="https://github.com/Runze/seq2seq-translation-attention/blob/master/translate-keras.ipynb">here</a>.</p>
+</div>
+<div id="data" class="section level3">
+<h3>Data</h3>
+<p>Ideally, to make the study useful, I should run the experiment on a variety of datasets and report the results for all of them. However, due to time constraint, I have only tested it on one parallel English-French dataset provided by the <a href="http://www.manythings.org/anki/">Tatoeba Project</a>. The dataset originally have 155K bilingual pairs. After removing duplicate pairs and limiting to sentences that are shorter than 20 tokens (by removing less than 1% of the data), I ended up with 154K pairs.</p>
+<p>At this point, I noticed that there are two interesting “traps” in the data.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> First, there are far more duplicate English sentences than duplicate French. In particular, 95% of the French sentences are unique but only 70% of English are. Based on my spot check, this is mainly due to the more complex verb conjugations in French than in English. For example, simply translating the sentence “run!” to French doubles the sample size as one can say either “cours !” or “courez !”. This interesting linguistic phenomenon influenced my decision whether I should train an English-to-French translator or vice versa. If I had gone with the former, I would have risked making the model harder to learn because the same input can be mapped to different outputs, which is not a big problem if I have enough data but it’s not my case here. Hence, in the end, I went with translating French to English to minimize the risk, which also makes the human evaluations easier.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>Another “trap” is that the dataset contains many recurring themes. For example, there is a big cluster of sentences that teaches users to say “you’d better go” in various situations, ranging from simply “you’d better go”, “I think you’d better go”, to “it’s getting dark. you’d better go home.” If the model learns enough of them in the training data, it is perhaps too easy for it to translate its variations in the test set, which makes us prone to overestimate its ability to generalize to the unseen data. In other words, we have a data leakage problem here (although not as serious as having the exact same copy of input and output in both training and testing). One way to minimize the risk is splitting the data based on the <em>unique</em> clusters so that sentences from the same cluster cannot appear in both training and testing. Once again, due to time constraint, I did not do any of that.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Instead, I simply split the data based on the <em>unique</em> English sentences, which essentially “clusters” the data based on the exact string matching. Why English not French? This is because there are more duplicates in English so I’m more likely to capture the high-level clusters by splitting on them. Obviously, this did not solve the “you’d better go” problem described earlier where the sentences are not exact duplicates and can still appear in both sets. Yeah, that’s true.</p>
+<p>Lastly, keeping all tokens in the training data, I have an English vocabulary of 13K tokens and a French one of 22K. The tokenizations were done using the English and French tokenizers provided by <a href="https://spacy.io/">spaCy</a>.</p>
+</div>
+<div id="models" class="section level3">
+<h3>Models</h3>
+<p>To make sure the results are comparable, I created two models with the exact same architecture with the only difference being an extra attention layer in one of them. Specifically,</p>
+<ul>
+<li><p>The encoders in both cases are exactly the same (although trained separately). Simply put, each embedded input token from the source language (i.e., French) is processed by a single-layer, unidirectional LSTM with a hidden size of 256.</p></li>
+<li><p>In the model without attention, the decoder is just another single-layer, unidirectional LSTM (also of size 256) that takes its initial states from the encoder final states and, in a teacher-forcing fashion, takes its input from the embedded true target (i.e., English).</p></li>
+<li><p>In the model with attention, at each decoding step, the decoder consults an extra attention layer that computes a weighted average of the encoder outputs at all timesteps (with the weight representing the amount of “attention” the decoder should pay to each of them, respectively) and combines that with the current decoder input to generate a prediction. Theoretically, in doing so, instead of cramming all encoded information into the initial states, the decoder has access to all of them at all times, <em>and</em> in an intelligent fashion. In particular, the attention layer I implemented in this experiment is exactly the same as the one I described in my previous <a href="https://runze.github.io/2017/09/07/second-attempt-at-building-a-language-translator/#attention-layer">post</a>. Aside from this extra layer, the decoder is also a single-layer unidirection LSTM, trained with teacher-forcing.</p></li>
+</ul>
+<p>Both the source’s and the target’s embedding layers are initialized by <a href="https://fasttext.cc/">the fasttext embeddings</a> in the respective languages. Based on my experiment, using these pre-trained embeddings doesn’t do much to decrease the validation loss but makes it easier for the attention layer to find the right place to attend. In terms of model size, both models have about 15M parameters, of which 70% come from the two embedding layers. The one with attention has 100K more parameters.</p>
+</div>
+<div id="training" class="section level3">
+<h3>Training</h3>
+<p>Both models were trained using the Adam optimizer and early stopping that was monitored on the validation cross-entropy loss. In both models, it took 6-7 epochs to see the validation loss plateau. On a per-epoch basis, the one with attention took almost twice as long to run.</p>
+</div>
+<div id="results" class="section level3">
+<h3>Results</h3>
+<p>The results from the two models are first evaluated quantitatively using <a href="https://en.wikipedia.org/wiki/BLEU">the BLEU score</a>, which essentially measures the amount of overlaps of n-grams between the actual and predicted translations. The results, computed using 4-grams, are shown below (on a scale of 0-1):<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2"],["No","Yes"],[0.634,0.636]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>With attention<\/th>\n      <th>BLEU<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-center","targets":1},{"className":"dt-right","targets":2},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>It looks like, in aggregate, the model with attention led to an only slightly higher BLEU score. But given the benefit of attention, did it do noticeably better with long sentences? To test the hypothesis, I grouped the sentence pairs by the source length and re-computed the scores per group below:</p>
+<p><img src="https://raw.githubusercontent.com/Runze/seq2seq-translation-attention/master/illustrations/bleu_by_len.png" alt="alt text" width="500"></p>
+<p>Again, the “uplift” is rather underwhelming. In the longest sentence group above (13-20 tokens), the uplift is only 1% relatively.</p>
+<p>But is BLEU really a good metric? Yes, it’s useful as a scalable quantitative measure but n-gram overlaps don’t always translate directly into translation quality. To get a better sense, it is often necessary to review some of the translations manually, and this is where <a href="https://twitter.com/jadorelacouture/status/912175822613524480">my expert French skills</a> come to shine! In particular, I reviewed 100 randomly sampled predictions from the two models and compared them with the source and the actual target to determine whether they are good or not. In the table below, I present my results in the last two columns (1 if a translation is considered good):</p>
+<div id="htmlwidget-2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100"],["tom passait une mauvaise journée .","je suis saoul .","je suis du genre qui aime réfléchir très attentivement aux choses .","je le fais presque toujours l'après-midi .","elles n' y arriveront pas .","je sais tout ce que je dois savoir .","quel est ton mot préféré ?","peu m' importe ce que vous pensez .","je ne comprends vraiment pas la sculpture moderne .","qui êtes - vous , exactement ?","que veux - tu faire demain ?","jour après jour , le chien était assis en attendant son maître face à la station .","tom l' a - t - il trouvée ?","nous t' avons attrapée .","je dois partir maintenant .","il faut bien commencer .","je ne suis pas intéressée par une relation .","ils m' accusèrent d' être un menteur .","lorsque j' entends cette chanson , je pense à l' endroit où j' ai grandi .","les femmes en sont friandes .","ne voyez-vous pas ce que vous êtes devenus ?","si vous ne disposez pas d' assez d' argent , je vous en prêterai .","lequel est le numéro de ma chambre ?","tom a mis le panneau au mur .","je me suis mise à pleurer .","aimes - tu écrire ?","qu' importe la manière dont tu considères la chose , les probabilités s' accumulent contre nous .","il n' a rien fait à part rester au lit toute la journée .","certains hommes asiatiques mettent du maquillage .","on m' a dit que je me suis mal comporté .","commençons notre travail immédiatement .","je suis certain que tu réussiras .","ils ont accès à la bibliothèque .","sont - ils tous vos amis ?","je pense que je suis prête à partir .","je ne changerai jamais d' avis .","j' ai entendu que tu avais été malade .","il est impatient de te voir .","tu vas rater le train .","nous vous expédierons le produit immédiatement après avoir reçu votre commande .","aidez - moi à trouver une cravate qui va avec cet ensemble .","où as - tu appris à faire des pizzas ?","je dois faire mes tâches ménagères .","nous n' avons vu personne .","je crois qu' elles nous apprécient .","les oiseaux font leurs nids dans les arbres .","j' ai fait beaucoup d' erreurs dans ma vie .","connaissez - vous quelqu'un en australie ?","je ne l' ai pas enfreint .","arrête de me crier dans l' oreille .","s' il n' est pas riche , il est en tous cas heureux .","tu trouves pas que tom et john se ressemblent ?","j' en ai fait deux .","elle émergea de la cuisine .","je me sentis trompé .","si tu ne te dépêches pas , tu n' y seras pas avant la nuit .","tom vit encore chez ses parents .","nous errâmes sans but autour du quartier commerçant .","après dîner , amène ta guitare et nous chanterons .","qu' as - tu pensé de la fête ?","le train part d' ici à 9h00 du matin .","tom fait des grimaces .","ce n' est pas logique .","je ne pense pas que vous ayez fait ceci par vous-mêmes .","je n' en suis plus sûre .","qu' est -ce que tu apprends à l' école ?","merci pour tout le poisson !","tu as été prévenu .","laissez tom répondre .","combien de hot dogs as - tu vendus aujourd'hui ?","l' incendie s' étend .","je suis célibataire .","j' ai entendu une voix que je n' ai pas reconnue .","eh bien , avez - vous décidé ?","l' arbre s' abattit .","ses sœurs , tout comme lui , vivent maintenant à kyoto .","les réponses sont toutes deux incorrectes .","je cherche mes mots .","le film préféré de tom est dumbo .","nous l' avons toutes vu .","il m' a ému .","ce n' est plus drôle .","il a deux chiens .","le mauvais temps a retardé le départ de l' avion de deux heures .","je pense que tu ferais mieux de t' en aller .","vous êtes toutes invitées .","je m' intéresse au violoncelle et au piano .","tom a refusé de me parler .","je ne veux vraiment pas quoi que ce soit à manger pour l' instant .","vous devez être amoureux .","tout le monde s' est moqué de moi .","à qui est ce livre ?","je sais ce qu' ils pensent .","tom s' est fait tirer dessus .","y a -t -il des réactions de la partie adverse ?","je suis réellement fière de vous .","j' ai dormi trop longtemps donc je suis arrivé en retard à l' école .","tu aurais dû voir ce qu' a fait tom .","sauve tom .","je détesterais devenir juste une femme au foyer ."],["tom was having a bad day .","i 'm loaded .","i 'm the type who likes to think things over very carefully .","i almost always do that in the afternoon .","they wo n't make it .","i know all i need to know .","what 's your favorite word ?","i do n't care what you think .","i really ca n't understand modern sculpture .","just who are you ?","what do you want to do tomorrow ?","day after day , the dog sat waiting for his master in front of the station .","did tom find it ?","we caught you .","i have got to go now .","everyone has to start somewhere .","i 'm not interested in a relationship .","they accused me of being a liar .","when i hear that song , i think about the place where i grew up .","it 's popular with women .","do n't you see what you 've become ?","if you do n't have enough money , i 'll lend you some .","what 's my room number ?","tom put the sign to the wall .","i started crying .","do you like writing ?","no matter how you look at it , the odds are stacked against us .","he did nothing but lie in bed all day .","some asian men wear makeup .","i 've been told that i behaved badly .","let 's begin our work at once .","i 'm confident that you 'll succeed .","they have access to the library .","are all of them your friends ?","i think i 'm ready to leave .","i will never change my mind .","i 've heard you 've been sick .","he ca n't wait to see you .","you 'll miss the train .","we will ship the product immediately after receiving your order .","help me pick out a tie to go with this suit .","where did you learn to make pizza ?","i 've got to do my chores .","we did n't see anybody .","i think they like us .","birds make their nests in trees .","i have made many mistakes in my lifetime .","do you know anyone in australia ?","i did n't break it .","stop yelling in my ear .","he 's not rich , but he 's happy .","do n't you think tom and john look alike ?","i made two .","she emerged from the kitchen .","i felt cheated .","if you do n't hurry , you wo n't get there before dark .","tom still lives at home .","we wandered aimlessly around the shopping district .","after dinner , bring your guitar along and we 'll sing .","what did you think of the party ?","the train departs here at 9:00 a.m.","tom is making faces .","it 's not logical .","i do n't think you did this by yourself .","i 'm not sure anymore .","what do you learn at school ?","thanks for all the fish .","you have been warned .","let tom answer .","how many hot dogs have you sold today ?","the fire is spreading .","i 'm single .","i heard a voice i did n't recognize .","well , have you decided ?","the tree fell down .","his sisters as well as he are now living in kyoto .","the answers are both incorrect .","i am at a loss for words .","tom 's favorite movie is dumbo .","we 've all seen it .","he touched me .","this is n't funny anymore .","he has two dogs .","the bad weather delayed the plane 's departure by two hours .","i think you 'd better go .","you 're all invited .","i am interested in the cello and the piano .","tom refused to talk to me .","i really do n't want anything to eat right now .","you must be in love .","everyone made fun of me .","whose book is that ?","i know what they are thinking .","tom was shot .","is there any adverse reaction ?","i 'm really proud of you .","i overslept so i was late to school .","you should 've seen what tom did .","save tom .","i would hate to become just a housewife ."],["tom was a bad day .","i 'm drunk .","i 'm kind of things to know who she has n't like to be busy .","i always do this afternoon .","they wo n't do it .","i know everything i should 've got .","what 's your favorite type ?","i do n't care what you think .","i do n't really understand the dark .","who 're you exactly ?","what do you want to do tomorrow ?","every day was a quiet student i was walking in front of the front of the station .","did tom find it ?","we got caught .","i have to go now .","we have to start .","i 'm not interested in a great deal .","they accused me of being a liar .","when i hear that song , i 'm wearing , i 'm interested in this area .","women are in love .","do n't you see what the last you went ?","if you have enough money , i do n't want to pay .","which is my room number ?","tom put the wall on his suitcase .","i began to cry .","do you like writing ?","most of the matter of the matter of us are usually out of the following you are gay .","he kept quite at a long time in bed .","some people usually live on .","i was told me that i 'm guilty .","let 's start at our work immediately .","i 'm sure you will succeed .","they have access to the library .","are they all friends ?","i think i 'm ready to go .","i 'll never forget to change .","i heard you were sick .","he is impatient to see you .","you 'll miss the train .","we remember the right thing you had dinner .","help me out for a tie .","where did you learn to eat the rest ?","i must do my own .","we have seen anybody .","i think they like them .","birds are flying in the trees ' crops .","i made a lot of making mistakes in my own business .","do you know someone in australia ?","i did n't give it up .","stop screaming in my throat .","if he 's not rich , he is in all happy .","you 're tom or what 's a busy and start ?","i 've been both .","she cooks for the kitchen .","i felt awful .","if you do n't hurry up , you wo n't finish it , you went home .","tom still lives home without his parents .","we were able to reach around here .","after eating your lunch and sit down .","what did you think of the party ?","the train is about here a morning station .","tom is missing .","this is n't logical .","i do n't think you have this by yourself .","i 'm not sure anymore .","what are you learning at school ?","thank you for all the fish .","you 've been warned .","let tom answer .","how many calories have you eaten today ?","the fire went crazy .","i 'm single .","i heard a noise because i were n't a song .","well , have you decided ?","the tree has cut down .","every student she has lived in love , do n't like it .","these both answers are already .","i 'm looking for my words .","the plan you is a fun .","we 've seen all that .","he stole my cousin .","this is no longer funny .","he has two dogs .","the weather delayed on the plane for two hours a traffic jam .","i think you 'd better go .","you 're all over .","i have a chain and france in the piano .","tom refused to talk .","i really do n't want to eat anything now .","you must be in love .","everyone made fun of me .","who is this book ?","i know what they 're thinking .","tom made a shot .","is there any purpose of the fridge ?","i 'm really proud of you .","i 've been too sleepy so i stayed at home late .","you should have done what tom has done .","tom out .","i 'm being just a woman at home ."],["tom was a bad day .","i 'm drunk .","i 'm kind of things that i 'm looking forward to hearing .","i always do it almost the afternoon .","they wo n't be there .","i know everything i know .","what 's your favorite song ?","i do n't care what you think .","i really do n't really modern modern .","who are you exactly ?","what do you want to do tomorrow ?","after the day that day , he closed the bus closed the bus to the bar .","did he find it ?","we 've caught .","i have to leave now .","we have to start .","i 'm not interested in a relationship .","they accused me of a liar .","when i hear this place , i saw it , i 'm a love place .","women are spoken with them .","do n't you see what you saw ?","if you do n't have enough money , i 'll lend you .","which number is my room ?","tom put on the wall .","i started crying .","do you like to write ?","the matter how important you say the world will make you agree with the internet .","he did nothing but to stay in bed all day .","some men usually wear masks and clothing .","i was told my story .","let 's finish the work immediately .","i 'm sure that you will succeed .","they have access to the library .","are they all your friends ?","i think i 'm ready to leave .","i 'll never change my mind .","i heard you were sick .","he is eager to see you .","you 'll miss the train .","we 'll catch the right after you immediately .","give tom to write a tie with tom 's a date .","where did you learn to learn the violin ?","i have to do my watch .","we did n't see anybody .","i think they love us .","birds are flying in the trees .","i 've made a lot of my life .","do you know someone in australia ?","i did n't get it .","stop screaming in touch .","as he is rich , he 's rich .","what do you think tom and tom are in blue ?","i did two .","she cooks now .","i felt confused .","if you do n't want to be able to go unless you closed the night .","tom lives still his parents at home .","we will be a cheap building in the neighborhood .","after eating your lunch and we went to eat .","what did you think of the party ?","the train leaves here in the morning .","tom is making the sale .","it 's not logical .","i do n't think you did this by yourself .","i 'm not sure about this .","what are you learning at school ?","thanks for the whole thing of the world .","you 've been warned .","let 's answer .","how many tractors did you build today ?","the fire started fire .","i 'm a bachelor .","i heard a heard of calling i was n't .","well , you have decided ?","the tree fell down .","her brother can see her living in kyoto .","the two are all alike .","i are looking for my words .","tom 's favorite movie 's favorite .","we all saw it .","he made me up .","it 's not funny .","he 's both dogs .","the weather delayed the weather delayed the day at nine o'clock .","i think you 'd better go .","you 're all gone .","i have interested in cello and piano .","tom refused to talk to me .","i do n't really want to be anything here to eat it now .","you must be in love .","everybody made fun of me .","whose book is this ?","i know what they think .","tom shot on .","is there oak cars ?","i 'm really proud of you .","i slept too late for hours , so i went to school .","you should 've seen what tom did .","tom 's going .","i 'm just going to be a decent in the lobby ."],[null,1,null,null,null,null,null,1,null,1,1,null,1,null,1,1,null,1,null,null,null,null,1,null,1,1,null,null,null,null,1,1,1,null,1,null,1,1,1,null,null,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,null,null,1,null,null,1,null,1,1,1,1,1,null,null,1,null,1,null,null,null,1,null,null,null,1,1,null,1,null,null,null,1,1,1,null,1,null,null,1,null,null,null,null],[null,1,null,null,null,null,null,1,null,1,1,null,null,null,1,1,1,null,null,null,null,null,1,null,1,1,null,1,null,null,null,1,1,1,1,1,1,1,1,null,null,null,null,1,1,null,null,1,null,null,null,null,1,null,null,null,null,null,null,1,null,null,1,1,null,1,null,1,null,null,null,null,null,1,1,null,null,1,null,1,null,null,null,null,1,null,1,1,null,1,1,1,1,null,null,1,null,1,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>source<\/th>\n      <th>true_target<\/th>\n      <th>pred_wo_attn<\/th>\n      <th>pred_w_attn<\/th>\n      <th>good_wo_attn<\/th>\n      <th>good_w_attn<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p>In aggregate, the predictions from the no-attention model are deemed good 37% of the time and those from the attention model are good 41%. The difference is not statistically significant (p-value = 0.66), which shows that the added attention layer, once again, did not significantly improve the translation quality.</p>
+<p>While reviewing these translations myself, I noticed the notorious “<a href="https://arxiv.org/abs/1809.02156">hallucination</a>” problem that plagues the image caption models where the model generates pieces of information that are not present in the source. For example, in the 7th example above, the correct translation is “what’s your favorite word?” but neither predictions got the “word” correct and decided to completely invent something new that did not exist in the source sentence (one says “type” and the other says “song”). This phenomenon is likely due to bias in the language priors (the decoder is a language model after all), which makes me wonder whether those pre-trained language models, despite having been shown to significantly improve many downstream tasks, can potentially exacerbate this particular problem.</p>
+<p>Furthermore, I suspect many of the perfect translations are in fact at least partially due to the data leakage problem described in the beginning and cannot be attributed to the model itself. In the cases where an input sentence, along with all of its variations, has never been seen in the training data, the model usually falls apart and generates something that is completely irrelevant.</p>
+<p>Comparisons aside, I was also curious to see whether the learned attention weights could show that the decoder was at least paying attention to the “right” places from the encoder outputs. To get an idea visually, I randomly sampled 9 translations that match the true target exactly and visualized their attention weights below. (The horizontal axis is the source and the vertical is the target. The whiter a cell is, the heavier its attention weight is.) After seeing the results, I can only say… well, kind of.</p>
+<p><img src="https://raw.githubusercontent.com/Runze/seq2seq-translation-attention/master/illustrations/attn_weights.png" alt="alt text" width="800"></p>
+<p>First of all, as shown above, unlike the crisp, precise pattern shown in the original paper, my attention weights are often spreaded out horizontally, meaning that the decoder did not have a good idea where to look at exactly. For example, in the first plot above, when generating “do”, “n’t”, and “know”, theoretically the decoder just needs to pay attention to the input “ignore” but in reality, it also consults a couple irrelevant words afterwards. There are also misalignment. In the same plot, when outputting “i”, the decoder completely ignores the corresponding input “j’” and skips forward instead. Secondly, the attention weights usually fade out as the decoding timestep increases (i.e., as we move up vertically in the matrix). This is worrisome because it implies that the translations at the later timesteps received little help from the attention layer, which is ironically what the layer is for in the first place. Hence, all things considered, despite increasing the model size and making the training step longer, the attention layer in this case was still under-trained and did not offer too much help in the end.😔</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>In this project, I tried to estimate the effect of the attention layer in a seq2seq translation model by performing a simple controlled experiment. After having compared the BLEU scores, manually reviewed a sample of the results, and visualized the learned attention weights, I unfortunately did not find any evidence suggesting any added benefit from the extra layer.</p>
+<p>That said, as mentioned in the beginning of this post, a <em>big</em> caveat of this study is that the above results are based on this particular dataset and these particular model architectures only. For example, the way I implemented the attention layer is only one of the many ways of doing so and there are <em>many</em> other approaches out there ranging from simple dot products between the previous hidden state and each of the encoder outputs to this rather peculiar way of only using the previous hidden state and the current decoder input as implemented in this PyTorch <a href="https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html#attention-decoder">tutorial</a>.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> Hence, without experimenting with any alternative architectures (or tuning the various hyperparameters), the goal of this project is not at all to say an attention layer is not necessary. Rather, my goal is simply to urge practitioners to always build a <em>solid</em>, albeit boring, baseline first before venturing into a much more complicated solution. What you find may very well surprise you, as it did here for me.🙂</p>
+</div>
+<div id="references" class="section level3">
+<h3>References</h3>
+<p>Bahdanau, D., Cho, K., &amp; Bengio, Y. (2015). Neural Machine Translation by Jointly Learning to Align and Translate. In ICLR 2015.</p>
+<p>Dichao Hu (2018). An Introductory Survey on Attention Mechanisms in NLP Problems.</p>
+<p>Anna Rohrbach, Lisa Anne Hendricks, Kaylee Burns, Trevor Darrell, Kate Saenko (2018). Object Hallucination in Image Captioning.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Okay, I did not notice them until much later.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Not that I don’t speak French, mind you.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>It was during the holiday season after all.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>When constructing the references for each predicted translation, I took advantage of the fact that the dataset has multiple target sentences for a single source sentence, so each prediction is evaluated against all available references.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>This survey <a href="https://arxiv.org/abs/1811.05544v1">paper</a> is a good starting point to learn about the different common implementations of the attention layers.<a href="#fnref5">↩</a></p></li>
+</ol>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../post/second-language-acquisition-modeling/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../post/second-language-acquisition-modeling/">Second Language Acquisition Modeling using Duolingo&#39;s Data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="../../js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

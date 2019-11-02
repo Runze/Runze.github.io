@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>State sentiment analysis using twitter live stream and R &middot; What I talk about when I don&#39;t talk about me</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<head>
+  <link rel="stylesheet" href="../../css/github-gist.css">
+  <script src="../../js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../technical-posts/">Technical Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../other-musings/">Other Musings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.linkedin.com/in/runze-wang-413a091a/">LinkedIn</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>State sentiment analysis using twitter live stream and R</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014-07-07</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../tags/coursera">Coursera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/sentiment">Sentiment</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/shiny">Shiny</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/twitter">Twitter</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>This week I started taking this Coursera <a href="https://class.coursera.org/datasci-002">class</a> called Introduction to Data Science taught by Bill Howe from University of Washington. Although there has only been one lesson so far, my experience has been quite positive particularly due to the interesting programing assignment, which is to use twitter&rsquo;s live stream data to analyze tweet sentiment. If you are interested and want to try yourself, you can read the very helpful instruction <a href="https://class.coursera.org/datasci-002/assignment/view?assignment_id=3">here</a> and clone the git <a href="https://class.coursera.org/datasci-002/wiki/GithubInstructions">here</a> (I believe you can access it without signing up for the class, but the course is free anyway). The assignment is given in Python, and, despite a few wrapper functions, students are required to write the majority of the code, which, needless to say, was a very good exercise to me (and to anyone who&rsquo;s learning Python).</p>
+
+<p>Okay, so much for the class itself. One particular assignment that prompted me to start this project and write this post is the one about estimating the overall sentiment of people from different states based on the messages they tweet and finding the happiest state. To complete this task, we were given a list of positive words and a list of negative ones along with their individual scores indicating certain words are more positive/negative than the others (the lists are included in the git). Then for each tweet, we were asked to calculate the total score for it based on the matches from the 2 lists, and sum up all the scores for each state to determine the &ldquo;happiest&rdquo; state corresponding to the highest score. A pretty simple idea, and it turns out you can do a lot of interesting research based on this approach (or some variations of it), and draw a lot of good insights from it. For example, the course website links to this <a href="http://www.ccs.neu.edu/home/amislove/twittermood/">research</a> performed by researchers at Northeastern and Harvard University, which shows the mood of the Americans throughout a day. If you don&rsquo;t want to read the whole thing, at least watch this <a href="https://www.youtube.com/watch?v=ujcrJZRSGkg">video</a> they made showing the mood evolvement. It&rsquo;s very, very interesting.</p>
+
+<p>Therefore, I decided to do something similar myself, and because I&rsquo;m very into R Shiny lately, I made a web app showing the realtime changes in sentiment using the twitter live stream data. And here it is (it&rsquo;s a bit slow to open):</p>
+
+<p><a href="https://runzemc.shinyapps.io/sentiment/">https://runzemc.shinyapps.io/sentiment/</a></p>
+
+<p>Essentially, the app looks for geocoded tweets originated from the U.S. every 6 seconds and collects them for 5 seconds. Then it parses them and extracts the state information (based on the embedded coordinates) and the tweets themselves. A simple algorithm is run to calculate the sentiment scores, which are finally aggregated on the state level and are charted. 3 charts are made (using ggplot2): 2 showing the mood evolvement on a U.S. map and 1 showing the changes on a line chart (screenshots are attached below).</p>
+
+<p><strong>Methodology</strong></p>
+
+<p>Thanks to the awesome <a href="http://cran.r-project.org/web/packages/streamR/streamR.pdf">streamR</a> package, I was able to collect tweets easily and keep the whole project in R (yay!). What I particularly appreciated is its parseTweets function that quickly parses out the json data and stores the result in an R data.frame (how nice!). Furthermore, to restrict the tweets to only those tweeted by English-speaking Americans (the positive/negative dictionary is in English), I used the filterStream function and set the coordinate range to (-124, 23, -67, 50), which should cover all the lower 48 states (if it doesn&rsquo;t, well, I&rsquo;m not from here).</p>
+
+<p>Speaking of coordinates, to translate them to state names, I referred to this stackoverflow <a href="http://stackoverflow.com/questions/8751497/latitude-longitude-coordinates-to-state-code-in-r">post</a> and used the spatial mapping provided in the <a href="http://cran.r-project.org/web/packages/sp/sp.pdf">sp</a> package (in the Coursera class, we were instructed to not rely on any online sources, so here is the <a href="http://alienryderflex.com/polygon/">algorithm</a> many of us used instead to determine if a point lies within a polygon).</p>
+
+<p>To estimate the sentiment scores, I found this <a href="https://sites.google.com/site/miningtwitter/questions/sentiment">tutorial</a> particularly helpful. It covers 3 approaches and I picked the first one (note that the R sentiment package mentioned in the 2nd method is no longer available). The simple algorithm, presented by Jeffrey Breen, counts all the positive and negative words within a tweet and subtracts the latter from the former to derive the sentiment score.  You can download the dictionaries of positive and negative words it uses <a href="https://sites.google.com/site/miningtwitter/questions/sentiment/analysis">here</a> and read Jeffrey&rsquo;s sample R code <a href="http://jeffreybreen.wordpress.com/2011/07/04/twitter-text-mining-r-slides/">here</a>. Note this is a little different from the method introduced the Coursera class in that we are not assigning any scores to the words themselves; instead, we are simply counting the occurrences. If you want to take into account the different sentiment of the words used, you can easily expand the algorithm to do that as well (with a different dictionary).</p>
+
+<p>After calculating sentiment scores for each tweet, we now need to aggregate them on the state level (or any other level you desire to). In the Coursera assignment, we are instructed to simply add up all the scores originated from the same state. However, that depends on how many tweets per state one gets. Because we are not getting the equal amount of tweets from each state (we are simply collecting whatever tweets people has just tweeted in the last 5 seconds), we may run into issues where we get erratic and unrepresentative results based on the small sample size for certain states (e.g., a very grumpy person might be the only one from that state that tweeted). Therefore, we need to scale the scores somehow. Here is my approach:</p>
+
+<p>overall sentiment in state 1 = sum of positive scores / sum of all absolute scores</p>
+
+<p>To illustrate, if we received 3 tweets from a state and the sentiment scores for them are -1, 0, and 2 (0 being neutral). Using the above formula, we get an overall sentiment of 2 / 3 = 0.67, showing a slightly higher sentiment than neutral due to the tweet that scored 2. If we simply averaging over the 3 scores (either including or excluding the neutral tweet), the result we get is still not scaled and may vary a lot from state to state, whereas the good thing about using a percentage approach as shown above is that the result is bounded within [0, 1], with 0.5 indicating neutral. Another thing I tried is discard the scores themselves and just divide the number of positive tweets by the number of non-neutral tweets. It&rsquo;s slightly simpler but I don&rsquo;t like that it discards the sentiment scores in total. The result did not differ that much though.</p>
+
+<p><strong>Charting</strong></p>
+
+<p>Now we have all the data to present the results. I first created 2 heat maps showing 1) the sentiment changes in the 5-second interval and 2) the cumulative sentiment calculated with all the tweets gathered so far. Below are the 2 charts after I had it run for 14 minutes:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/twitter_sentiment/master/screenshot.png" alt="alt text" width="700"></p>
+
+<p>The cumulative chart is more immune to the small sample problem and it gives a nice stable picture as the anomalies are gradually drowned out. As a result, you can see what states are really happy (I&rsquo;m moving to South Dakota). However, it doesn&rsquo;t show any fluctuation of the moods throughout the time, which the left graph does. To be honest, the 5-second interval may be a bit too short to generalize (I get on average 150 tweets per each interval), but for web display purposes, a longer wait period may bore the users instead.</p>
+
+<p>The drawback of the 2 charts above is that it doesn&rsquo;t explicit show any historical movement. Therefore, I made this line chart in addition that plots the scores calculated using the tweets collected in each 5-second interval (i.e., all the data that are used to make the chart on the left above). Instead of charting them on the state level, I decided to chart them on the time zone level instead hoping to futher reduce the noise and see how the mood changes for people who are all at the same time of a day. However, this is to ignore the interstate variance within a single time zone. Below is the result after I let it run for over 30 minutes:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/twitter_sentiment/master/screenshot_2.png" alt="alt text" width="700"></p>
+
+<p>The loess-smoothed lines are shown along with the raw data points to indicate the general trend. It seems that, despite a few small swings, the trends are generally flat and centered around the neutral. This may be due to 1) the short time period (it is unlikely to see a big overarching mood swing within half an hour), 2) the sample size (not all the tweets are geo-coded; in fact, I think only a small amount are), 3) the way I estimate sentiment scores for individual tweets and the whole region, and/or 4) the neighborhood size that loess takes to build the weighted regression model (the default span value of 0.75 was selected). Due to the limitation of the live web app, I&rsquo;m planning to rerun the analysis but first collect all the tweets for a whole week (excluding late nights and early mornings). Hopefully, I can get some cool clear trends like those shown in the research linked above.</p>
+
+<p>Finally, a technical note: to automatically pull and update data after a set interval, I used Shiny&rsquo;s reactiveTimer and autoInvalidate functions. You can see an example in this stackoverflow post <a href="http://stackoverflow.com/questions/18302579/r-shiny-update-graph-plot-with-fixed-interval-of-time">here</a>.</p>
+
+<p>Stay happy!</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../technical-posts/no-more-finding-out-about-a-concert-too-late/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../technical-posts/no-more-finding-out-about-a-concert-too-late/">No more finding out about a concert too late</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="../../technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/">Location search using Factual and interactive maps using Leaflet</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="../../technical-posts/location-search-using-factual-and-interactive-maps-using-leaflet/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="../../js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

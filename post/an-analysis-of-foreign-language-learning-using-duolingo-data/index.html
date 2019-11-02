@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  <title>An analysis of foreign language learning using Duolingo&#39;s data &middot; What I talk about when I don&#39;t talk about me</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="../../css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="../../css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<head>
+  <link rel="stylesheet" href="../../css/github-gist.css">
+  <script src="../../js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../">Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../other-musings/">Other Musings</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../about/">About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://github.com/Runze">GitHub</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.linkedin.com/in/runze-wang-413a091a/">LinkedIn</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://twitter.com/runze_w">Twitter</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small></small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>An analysis of foreign language learning using Duolingo&#39;s data</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017-07-02</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="../../tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/duolingo">Duolingo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="../../tags/languages">Languages</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h3 id="background">Background</h3>
+
+<p>Earlier this year, I decided to learn French, something I&rsquo;ve been thinking about for a long time. Foreign language learning has always been something magical to me: I had a great time learning English when I was at school (my mother tongue is Mandarin Chinese), so much that I would devote all my time to it and ignore my other subjects (not recommended). Hence, when I signed up for a beginner&rsquo;s class in my local <a href="http://afsf.com/">Alliance Française</a> and started taking classes regularly, it felt homecoming to me. However, once I was hooked, meeting once a week quickly became too little for me, so I started to look for and adopt additional means to aid my study. Among them, <a href="https://www.duolingo.com/">Duolingo</a> is one.<sup class="footnote-ref" id="fnref:Without-turning"><a rel="footnote" href="#fn:Without-turning">1</a></sup></p>
+
+<p>To those who are not familiar with it, Duolingo is an app that uses gamification, beautiful designs, and the <a href="https://en.wikipedia.org/wiki/Spaced_repetition">spaced repetion</a> technique to teach users foreign languages. Personally, I found it most helpful in growing my vocabulary but not so much in developing the listening and speaking skills (at least not yet; the app does have a lot of new innovations coming out, such as a <a href="http://bots.duolingo.com/">chatbot</a>, that aim to bridge the gap). That said, I do laud the app&rsquo;s effort and contributions in making language learning so easily accessible and I&rsquo;m excited and eager for its future innovations.</p>
+
+<h3 id="data-from-duolingo">Data from Duolingo</h3>
+
+<p>A couple months ago, I came across this blog <a href="http://making.duolingo.com/how-we-learn-how-you-learn">post</a> and the accompanying <a href="https://github.com/duolingo/halflife-regression/blob/master/settles.acl16.pdf">paper</a> written by Duolingo&rsquo;s research team (Settles and Meeder 2016) on how they developed <em>half-life regression</em> to model the forgetting curve for each user and each word in order to decide when to show a certain word to help people remember it. Along with the blog post, the team released the <a href="https://github.com/duolingo/halflife-regression">data</a> they used in the research, which contains &ldquo;the 13 million Duolingo student learning traces used in [their] experiments.&rdquo; In particular, each record represents a word being shown to a given user in a given learning session and includes various features for this pair such as the attributes of the word itself (e.g., language, part-of-speech tagging) and the user (e.g., the learner&rsquo;s track record related to this particular word), as well as whether the user was able to correctly recall this word at the moment. For more information, you can refer to the data dictionary posted on the repo&rsquo;s readme page.</p>
+
+<p>As a data scientist and a language learner myself, this dataset is extremely interesting to me and reading the paper alone is not enough to sate my curiosity, so I decided to download the data and play around with it myself, which resulted in the following analysis and this blog post.</p>
+
+<h3 id="analysis-goal">Analysis goal</h3>
+
+<p>The goal of my analysis is to understand and model what drives a word to be correctly recalled. The factors I considered mainly come from three categories:</p>
+
+<ol>
+<li>The word: including which language it comes from, what function it serves in a sentence, and how different it is from its root (e.g., <em>went</em> vs. <em>go</em> in English).</li>
+<li>The user: how motivated the user is (as evidenced by the number of exercises he/she has completed before the current lesson) and how good he/she is at recalling a word in general (based on his/her historical track record).</li>
+<li>The user and the word: these are basically features related to the forgetting curve, including when the user saw the word last time, how many times he/she has seen it, and how many times he/she was able to recall it correctly.</li>
+</ol>
+
+<p>In the section below, I&rsquo;m going to explore each of these categories in detail, but first I need to determine what my response variable is, i.e., what I should use to define if a word is recalled correctly.</p>
+
+<p>In the dataset from Duolingo, there is a variable called <code>p_recall</code> which is computed as the % of time a given word is correctly recalled in a given session (i.e., <code>session_correct / session_seen</code>). However, I am not convinced that this is an accurate measure of a person&rsquo;s likelihood of correctly recalling a word because the metric is contaminated by the short-term reinforcement. For example, if a person incorrectly recalls a word for the first time in the current session, Duolingo is likely to show it again at the end, and if he/she gets it right this time, the <code>p_recall</code>, which is calculated <em>at the end of the lesson</em>, would be 0.5. However, what I&rsquo;m more interested in is the user&rsquo;s ability to recall it <em>before</em> the session so that I would know whether to show it to the user or not, which has no direct relationship with this 0.5 except it should also be less than 1.</p>
+
+<p>Because of that, I decided to turn <code>p_recall</code> into a binary variable to indicate whether the user is able to correctly recall a given word the first time it is shown in a given lesson. The dataset doesn&rsquo;t have a column indicating the first response but in my experience, if a word is correctly recalled in a review session, it will not be shown again. Hence, I assume a perfect recall rate (i.e., <code>p_recall = 1</code>) indicates the person got it right the first time.<sup class="footnote-ref" id="fnref:I-also-tried-to"><a rel="footnote" href="#fn:I-also-tried-to">2</a></sup></p>
+
+<pre><code class="language-r"># create boolean variable to indicate whether a word is recalled correctly without making any mistake
+duo = duo %&gt;%
+  mutate(no_mistake = p_recall == 1)
+
+mean(duo$no_mistake)  # 83.8%
+</code></pre>
+
+<p>As shown above, in the dataset, 84% of the words are correctly recalled at the first attempt - nice work!</p>
+
+<p>Next, I split the dataset into training and testing sets and performed the following exploratory analysis using the training set only.</p>
+
+<pre><code class="language-r"># split into training and test sets and perform all exploratory analysis on the training set only
+set.seed(123456)
+ix = caret::createDataPartition(duo$no_mistake, p = .7, list = F)
+
+duo_train = duo[ix, ]
+duo_test = duo[-ix, ]
+</code></pre>
+
+<h3 id="exploratory-analysis">Exploratory analysis</h3>
+
+<h4 id="the-words">The words</h4>
+
+<p>First, let&rsquo;s analyze the correct rate for each word and get a sense of what makes a word easy to recall. To do that, let&rsquo;s start with the learning languages.</p>
+
+<p>The following plot shows the number of users learning each language and the distribution of the number of exercises per user (measured by the row count, not accounting for the reinforcement of the same word in the same session). Based on the data, English is the most popular language to learn, followed by Spanish and French, and French learners seem to do fewer exercises than the others:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_lang_vs_users_plt.png" alt="alt text" width="700"></p>
+
+<p>It&rsquo;s also interesting to see what languages different language speakers study, which we can tell by creating a cross tabulation between <code>ui_language</code> and <code>learning_language</code> like below:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_leanring_ui_lang_plt.png" alt="alt text" width="600"></p>
+
+<p>As expected, English is being learned exclusively by non-English speakers but, a bit surprisingly (at least to me), the other languages are only being learned by English speakers. However, this may not reflect the current landscape given that we don&rsquo;t know how the sample was selected and that the data is dated 4 years ago.</p>
+
+<p>Now let&rsquo;s look at the rate of successfully recalling a word per each language. As shown in the following plot, although all pretty close, Italian speakers appear to be the best in learning English and English speakers also happen to learn Italian the best, in addition to Portuguese, and struggle the most in French, which may explain the fewer number of exercises completed:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_learning_en_and_ui_en_plt.png" alt="alt text" width="700"></p>
+
+<p>Moving on to the actual words being learned, my question for this is, aside from the language itself, what makes a word hard or easy to learn. To do that, I need to first parse out the word (<code>surface_form</code>), the root (<code>lemma</code>), and the part-of-speech tagging (<code>pos</code>) from the column <code>lexeme_string</code>:</p>
+
+<pre><code class="language-r">## `lexeme_string`
+### parse out `surface_form` and `lemma`
+duo_train = duo_train %&gt;%
+  mutate(surface_form_lemma_pos = sub('^(.*?/.*?&lt;.*?)&gt;.*$', '\\1', lexeme_string),
+         surface_form_lemma_pos = gsub('&lt;([^*]*)$', ';\\1', surface_form_lemma_pos)) %&gt;%
+  separate(surface_form_lemma_pos, into = c('surface_form', 'lemma', 'pos'), sep = '/|;', remove = F) %&gt;%
+  mutate(pos = ifelse(grepl('@', pos), 'missing', pos))
+
+### for `surface_form` wildcards, assume it is the same as `lemma`
+duo_train = duo_train %&gt;%
+  mutate(surface_form = ifelse(grepl('&lt;.+&gt;', surface_form), lemma, surface_form))
+</code></pre>
+
+<p>Note in doing so, I made an assumption about the wildcard <code>surface_form</code> which the data dictionary describes as &ldquo;refer[ing] to a &lsquo;generic&rsquo; lexeme without any specific surface form.&rdquo; Without a better understanding of what they really are, I assume they are exactly the same as their roots, <code>lemma</code>.</p>
+
+<p>After parsing out the <code>surface_form</code>, for each of them, I first computed its rate of being correctly recalled:</p>
+
+<pre><code class="language-r">### compute no mistake rate per word
+surface_forms = duo_train %&gt;%
+  group_by(learning_language, surface_form_lemma_pos, surface_form, lemma, pos) %&gt;%
+  summarise(n = n(),
+            no_mistake = sum(no_mistake)) %&gt;%
+  mutate(prc_no_mistake = no_mistake / n)
+</code></pre>
+
+<p>However, the problem of using the raw rate as is is that there are a lot of words that have only a few observations and, for them, I simply don&rsquo;t have enough evidence to determine if the observed rate is trustworthy or not (e.g., a word that has only appeared once in the dataset can only have a rate of either 0 or 1). To deal with the issue, I used David Robinson&rsquo;s handy package <a href="https://github.com/dgrtwo/ebbr"><code>ebbr</code></a> to fit a beta distribution to the data using only words with at least 50 observations<sup class="footnote-ref" id="fnref:50-because-based"><a rel="footnote" href="#fn:50-because-based">3</a></sup> and use it as the prior to compute the posterior estimate of the success rate. Because beta is the conjugate prior to the binomial distribution, the posterior estimate also follows a beta distribution with a mean of</p>
+
+<p>$$\frac{\text{number of times the word is correctly recalled} + \alpha}{\text{number of times the word is shown} + \alpha + \beta}$$</p>
+
+<p>Where $\alpha$ and $\beta$ are the two shape parameters estimated in the first step. This technique is called Empirical Bayes and you can read more about it in David&rsquo;s awesome blog <a href="http://varianceexplained.org/statistics/beta_distribution_and_baseball/">series</a> and his accompanying <a href="https://gumroad.com/l/empirical-bayes">book</a> (David Robinson 2017).</p>
+
+<p>Below is my implementation using <code>ebbr</code>:</p>
+
+<pre><code class="language-r">### function to fit a beta prior to each language's rate of no mistake
+fit_beta_prior = function(df, x = 'no_mistake', n = 'n') {
+  # filter to subjects (e.g., words, users) with at least 50 occurrences
+  # (based on EDA, this is enough to create a smooth distribution)
+  df = df %&gt;%
+    mutate_('no_mistake' = x,
+            'n' = n) %&gt;%
+    filter(n &gt;= 50) %&gt;%
+    mutate(prc_no_mistake = no_mistake / n)
+  
+  return_values = list()
+  
+  # fit prior
+  return_values$prior = df %&gt;%
+    ebb_fit_prior(no_mistake, n)
+  
+  # extract prior mean
+  return_values$prior_mean = return_values$prior$parameters$alpha / (return_values$prior$parameters$alpha + return_values$prior$parameters$beta)
+  
+  # visualize the fit
+  label = paste0(
+    'alpha: ', round(return_values$prior$parameters$alpha, 2),
+    '\nbeta: ', round(return_values$prior$parameters$beta, 2),
+    '\nprior mean: ', round(return_values$prior_mean, 2),
+    '\n'
+  )
+  
+  return_values$fit_plt =
+    ggplot(df) +
+    geom_histogram(aes(x = prc_no_mistake, y = ..density..), alpha = .5) +
+    stat_function(fun = function(x) dbeta(x, return_values$prior$parameters$alpha, return_values$prior$parameters$beta), colour = 'red', size = 1) +
+    annotate(geom = 'text', x = 0, y = 0, label = label, hjust = 0, vjust = 0) +
+    better_theme()
+  
+  return_values
+}
+</code></pre>
+
+<p>Applying the above function to the data per language:</p>
+
+<pre><code class="language-r">### nest by language and fit a beta prior per language
+surface_forms_ns_by_lang = surface_forms %&gt;%
+  group_by(learning_language) %&gt;%
+  nest() %&gt;%
+  mutate(prior = map(data, fit_beta_prior))
+</code></pre>
+
+<p>First, let&rsquo;s examine how good the fit is. The following plot shows the distribution of the raw success rate per language computed in the beginning (using words with at least 50 records) and the fitted beta prior. Overall, it looks like the fit is able to capture the shape of the raw data decently:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_no_mistake_per_word_prior_fit_plt.png" alt="alt text" width="700"></p>
+
+<p>Next, I applied the fitted prior to the whole dataset (including words with fewer than 50 records) to estimate the mean and the credible interval of the posterior success rate:</p>
+
+<pre><code class="language-r">### apply the prior to the data to estimate the posterior no mistake rate
+surface_forms_ns_by_lang = surface_forms_ns_by_lang %&gt;%
+  mutate(data = map2(data, prior, function(df, prior) augment(prior$prior, df)))
+</code></pre>
+
+<p>Using the posterior estimates, we can now get a better sense of how hard or easy a word is. To illustrate, I plotted the 10 hardest and 10 easiest words to learn per language based on the posterior mean (like the raw data, each word in the plot is represented as <code>surface_form/lemma;pos</code>):</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_easiest_hardest_words_plt.png" alt="alt text" width="800"></p>
+
+<p>A few interesting things I noticed are:</p>
+
+<ol>
+<li>In general, the hardest words have a wider credible interval than the easiest ones, which indicates that they have fewer observations and, thereby, fewer people have attempted at them. If I have to guess, some of these are probably words from the more advanced part of a course and are more difficult by nature (e.g., the imperfect form <em>aviez</em> in French).</li>
+<li>Comparing <code>surface_form</code> with its <code>lemma</code>, I found that many of the easiest words have the same form with its root (or are wildcards, which I assume is the same case in my analysis) whereas many of the hardest ones have different forms from their root.</li>
+<li>Related to the previous observation, there are more nouns in the easiest category while there are more verbs, propositions, and words with abstract meanings in the hardest one.</li>
+</ol>
+
+<p>The first observation, although interesting, is not very actionable unless we know the course structure, which I don&rsquo;t. Simply relying on the amount of records we have for each word is problematic because, when a new word is added, we can&rsquo;t just assume it is difficult. However, if we know it is meant to be added to the later part of a course, we can reasonably assume it is one of the harder ones. By contrast, the other two observations are more useful in my analysis and are further explored below.</p>
+
+<p>Using the mean of the posterior estimate per word, I set to explore what makes a word hard or easy to learn, which would inform my model training later on. First, I tried to see if the length of a word has anything to do with its difficulty. The following plot shows the distribution of the posterior mean per word length. It looks like, aside from English and Spanish, for which a longer word length is somewhat associated with a higher success rate, the relationship is not very clear:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_by_surface_form_len_plt.png" alt="alt text" width="700"></p>
+
+<p>Next, I explored the second observation above and found that 74% of the words are exactly the same as their root (i.e., <code>surface_form == lemma</code> or are wildcards). Given the prevalence, I didn&rsquo;t feel the need to compute a further fine-grained similarity metric and simply compared the success rate between words that are and are not exactly the same as their roots. As shown below, the former indeed has a higher recall rate:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_surface_form_eq_lemma_plt.png" alt="alt text" width="700"></p>
+
+<p>Lastly, I analyzed the impact each POS has on the success rate and found that, in general, interjections (e.g., <em>hello</em> and <em>bye</em> in English) and nouns are the easiest to learn across all languages, which makes sense because those are usually the first things we learn, whereas the different verb forms are the hardest:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_by_pos_plt.png" alt="alt text" width="800"></p>
+
+<p>Above is all the analysis I did for the words themselves. Next, let&rsquo;s move on to the users.</p>
+
+<h4 id="the-users">The users</h4>
+
+<p>For each user, I was mainly interested in measuring how motivated he/she is in learning a language, as evidenced by the number of completed exercises, and how good he/she is in general, as reflected by his/her historical success rate across all words. As the goal is still to predict a user&rsquo;s performance in the current session, I computed these metrics <em>prior to</em> a given session:<sup class="footnote-ref" id="fnref:Using-only-the-d"><a rel="footnote" href="#fn:Using-only-the-d">4</a></sup></p>
+
+<pre><code class="language-r">### count the number of exercises a user has done and the success rate before the current session
+duo_train_per_user_per_session = duo_train %&gt;%
+  group_by(learning_language, user_id, timestamp) %&gt;%
+  summarise(n = n(),
+            no_mistake = sum(no_mistake)) %&gt;%
+  arrange(learning_language, user_id, timestamp) %&gt;%
+  mutate(prior_exercises_per_user = lag(cumsum(n)),
+         prior_no_mistake_per_user = lag(cumsum(no_mistake)),
+         prior_exercises_per_user = ifelse(is.na(prior_exercises_per_user), 0, prior_exercises_per_user),
+         prior_no_mistake_per_user = ifelse(is.na(prior_no_mistake_per_user), 0, prior_no_mistake_per_user))
+</code></pre>
+
+<p>For the prior success rate, we run into the same problem as before in that some users do not have enough prior history for us to assess their track records reliably (for some, we don&rsquo;t even have any). Hence, I used Empirical Bayes again to adjust the raw previous success rate (code omitted). For those we don&rsquo;t have any prior information on, this defaults to the prior mean, which I think is a reasonable assumption.</p>
+
+<p>Using the prior number of exercises and the adjusted prior success rate, I analyzed how they impact a user&rsquo;s performance in the current session and found that there is indeed an increasing relationship, particularly from the latter:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_prior_per_user_plt.png" alt="alt text" width="700"></p>
+
+<h4 id="the-users-and-the-words">The users and the words</h4>
+
+<p>In the final section of the exploratory analysis, I&rsquo;ll explore how a user&rsquo;s past interaction with a given word impacts his/her ability of correctly recalling it in the current session.</p>
+
+<p>First, I analyzed how such ability declines with time. As shown in the plot below, there is a sharp drop at day 1 but remains rather flat afterwards. Note it is possible that this curve is influenced by Duolingo&rsquo;s existing spaced-repetition algorithm at that time and does not reflect a user&rsquo;s true forgetting curve (e.g., words that have not been shown for a long time might be the easy ones and have high success rates).</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_delta_plt.png" alt="alt text" width="600"></p>
+
+<p>Next, I wanted to see how a user&rsquo;s historical track record with a particular word impacts his/her current performance using the columns <code>history_seen</code> and <code>history_correct</code>. The former is straightforward,<sup class="footnote-ref" id="fnref:I-noticed-that-t"><a rel="footnote" href="#fn:I-noticed-that-t">5</a></sup> for the latter, I could use <code>history_correct</code> to compute the historical accuracy rate directly or use Empirical Bayes again to adjust the rate by incorporating the correct rate of all the words in a given language. I was a bit torn here because I can see the benefit from both sides: let&rsquo;s say a person has only seen a word once before and has gotten it wrong, it might be harsh to assume his/her accuracy rate for this word is 0 but one can also argue we should show the word again soon given that he/she hasn&rsquo;t had enough practice with it yet (to be conservative, we would use the unadjusted rate of 0 here); on the other hand, it is also hard to say if a score of 1 indicates true knowledge or simply luck (in this case, to be conservative, we would instead adjust it down to the global average). In this analysis, I opted to using the adjusted rate in the end but actually found the similar results using the unadjusted too.</p>
+
+<p>As shown below, the number of times a user has seen the word actually shows a slightly negative correlation with the current recall rate - this seemingly contradictory result may be because that Duolingo would repeatedly show a word if it has been shown difficult to remember for a given user. The historical correct rate, on the other hand, is more straightforward, that is, a user&rsquo;s past ability to recall a word strongly correlates with his/her future performance on the same word:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/eda_history_correct_plt.png" alt="alt text" width="700"></p>
+
+<h3 id="model-training">Model training</h3>
+
+<p>Based on the exploratory analysis above, I extracted the following 9 features for model training:</p>
+
+<ol>
+<li><code>ui_learning_language</code> (<code>ui_language</code> and <code>learning_language</code> pair)</li>
+<li><code>surface_form_len</code></li>
+<li><code>surface_form_eq_lemma</code> (whether a <code>surface_form</code> is exactly the same as its <code>lemma</code>)</li>
+<li><code>pos_binned</code> (<code>pos</code> with the minority categories grouped together)</li>
+<li><code>log_prior_exercises_per_user</code></li>
+<li><code>prior_no_mistake_rate_per_user</code></li>
+<li><code>log_delta_days</code></li>
+<li><code>log_history_seen</code></li>
+<li><code>history_correct_rate</code></li>
+</ol>
+
+<p>As for the actual model, I tried a linear model (logistic regression) and a tree-based one (gradient boost trees):</p>
+
+<pre><code class="language-r"># train models
+## 5-fold cv
+ctrl = trainControl(method = 'cv', number = 5, classProbs = T,
+                    summaryFunction = twoClassSummary)
+
+## logistic regression
+duo_train_logit = train(x = duo_train_X, y = duo_train_Y,
+                        method = 'glm', family = 'binomial',
+                        metric = 'ROC', trControl = ctrl)
+
+## ROC: 0.64
+
+## gradient boost trees
+duo_train_gbm = train(x = duo_train_X, y = duo_train_Y,
+                      method = 'gbm', metric = 'ROC',
+                      trControl = ctrl, verbose = F)
+
+## ROC: 0.65
+</code></pre>
+
+<p>Based on cross-validation results, the two models show a similar performance in terms of AUC under ROC (0.64-0.65). Hence, I opted in for the simpler solution, logistic regression, in the end.</p>
+
+<p>Besides the model performance, it is interesting to see the feature importance based on the statistical significance estimated by the logistic regression. As expected, the most important variables are a user&rsquo;s prior success rate in general, his/her historical success rate for a given word in particular,<sup class="footnote-ref" id="fnref:prior-no-mistake"><a rel="footnote" href="#fn:prior-no-mistake">6</a></sup> the number of prior exercises he/she has completed, time since the word is last seen, and its part-of-speech tagging:<sup class="footnote-ref" id="fnref:The-base-level-f"><a rel="footnote" href="#fn:The-base-level-f">7</a></sup></p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/train_logit_coefs_plt.png" alt="alt text" width="700"></p>
+
+<h3 id="model-testing">Model testing</h3>
+
+<p>In this final section, I&rsquo;m going to apply the trained model to the test data I set aside in the beginning to see how the model performs against it.</p>
+
+<pre><code class="language-r"># apply the trained model
+duo_test_no_mistake_pred = predict(duo_train_logit, newdata = duo_test_X, type = 'prob')
+duo_test$no_mistake_pred = duo_test_no_mistake_pred$TRUE.
+</code></pre>
+
+<p>As illustrated below, the AUC under ROC is also 0.64, the same as the cross-validation result above, and the AUC under Precision-Recall is 0.89. The reason the latter is so high while the former is not so great is because 84% of the records have a positive outcome, which makes scoring a high precision ($P(\text{actually positive}|\text{predicted to be positive})$) and a high recall/sensitivity ($P(\text{predicted to be positive}|\text{actually positive})$) easy. In the most extreme case, if I just blindly predict every instance to be true, I would end up with a 100% recall rate and a 84% precision, which is still pretty good. However, in this case, it is hard to achieve a high specificity ($P(\text{predicted to be negative}|\text{actually negative})$) because the negative instances are rare,<sup class="footnote-ref" id="fnref:Also-P-text-actu"><a rel="footnote" href="#fn:Also-P-text-actu">8</a></sup> which drags the ROC down.</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/test_logit_auc_plt.png" alt="alt text" width="700"></p>
+
+<p>To illustrate the point further, the following plot shows the three metrics along with the F1 score per threshold - you can see how it takes a very high threshold for specificity to take off. Shown alongside is the distribution of the predicted probabilities, which is heavily left skewed due to the prevalence of the positive class and explains why the left plot stays rather flat for the lower values:</p>
+
+<p><img src="https://raw.githubusercontent.com/Runze/duolingo-analysis/master/plots/test_logit_metrics_per_threshold_plt.png" alt="alt text" width="700"></p>
+
+<p>That said, instead of generating binary predictions, the model is perhaps more useful in ranking words given the finite number of words that can be shown in a lesson.</p>
+
+<h3 id="future-improvements">Future improvements</h3>
+
+<p>There is more we can do with the words themselves. For example, it would be interesting to examine the relationship between a word in the learning language with the words in the learners&rsquo; native languages to see if the similarity between the two help the users remember the word or not. The relationship may not be straightforward because, although Latin-based languages share many similar words, there are also a lot of <a href="https://en.wikipedia.org/wiki/False_friend">&ldquo;false friends.&rdquo;</a> If there is a scalable way to measure both the degree of being a &ldquo;true friend&rdquo; and a &ldquo;false friend&rdquo; for a given word, it may shed more light on understanding how one learns a foreign word and help predict the rate of correctly remembering it. Word similarity can measure the general similarity (e.g., <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a>), but it is blind to whether it is a true friend or not.</p>
+
+<h3 id="references">References</h3>
+
+<p>Settles, B., and B. Meeder. 2016. “A Trainable Spaced Repetition Model for Language Learning.” <em>In Proceedings of the Association for Computational Linguistics (Acl), 1848–58. ACL.</em></p>
+
+<p>David Robinson. 2017. <em>Introduction to Empirical Bayes: Examples from Baseball Statistics.</em> <a href="https://gumroad.com/l/empirical-bayes">https://gumroad.com/l/empirical-bayes</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Without-turning">Without turning this post into a collection of language studying advice, the tools/resources I have tried and have found success in are (in addition to Duolingo) <a href="https://www.italki.com/home">italki</a>, <a href="https://www.memrise.com/home/">Memrise</a>, <a href="http://readlang.com/">Readlang</a>, <a href="http://apprendre.tv5monde.com/fr">TV5Monde</a>, <a href="https://speechling.com/">Speechling</a>, <a href="www.coffeebreakfrench.com">Coffee Break French</a>, <a href="https://www.youtube.com/user/learnfrenchwithalexa">Learn French with Alexa</a>, and the classic <a href="https://www.learner.org/resources/series83.html">French in Action</a> series. <a class="footnote-return" href="#fnref:Without-turning"><sup>[return]</sup></a></li>
+<li id="fn:I-also-tried-to">I also tried to only use features <em>prior to</em> a given session in my analysis, which means not using either <code>session_seen</code> or <code>session_correct</code>. <a class="footnote-return" href="#fnref:I-also-tried-to"><sup>[return]</sup></a></li>
+<li id="fn:50-because-based">50 because based on the histogram, 50 per word is enough to create a smooth distribution. <a class="footnote-return" href="#fnref:50-because-based"><sup>[return]</sup></a></li>
+<li id="fn:Using-only-the-d">Using only the data I have, I assume a user&rsquo;s entire history is covered, which may not be true. <a class="footnote-return" href="#fnref:Using-only-the-d"><sup>[return]</sup></a></li>
+<li id="fn:I-noticed-that-t">I noticed that the minimum of <code>history_seen</code> is 1, indicating the first time a word is shown, i.e., the learning session, is removed. <a class="footnote-return" href="#fnref:I-noticed-that-t"><sup>[return]</sup></a></li>
+<li id="fn:prior-no-mistake"><code>prior_no_mistake_rate_per_user</code> and <code>history_correct_rate</code> are not very correlated: the correlation is 0.38. <a class="footnote-return" href="#fnref:prior-no-mistake"><sup>[return]</sup></a></li>
+<li id="fn:The-base-level-f">The base level for <code>pos_binned</code> is <code>adj</code> and that for <code>ui_learning_language</code> is <code>en_de</code>. <a class="footnote-return" href="#fnref:The-base-level-f"><sup>[return]</sup></a></li>
+<li id="fn:Also-P-text-actu">Also $P(\text{actually negative}|\text{predicted to be negative})$, although it&rsquo;s not reflected in either curve. <a class="footnote-return" href="#fnref:Also-P-text-actu"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="../../post/predicting-yelp-ratings-using-textual-reviews/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="../../post/predicting-yelp-ratings-using-textual-reviews/">Predicting Yelp ratings using textual reviews</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="../../post/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/">When Jane Austen, Oscar Wilde, and F. Scott Fitzgerald walk into a bar</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="../../post/when-jane-austen-oscar-wilde-and-f-scott-fitzgerald-walk-into-a-bar/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="../../js/ui.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+</body>
+</html>

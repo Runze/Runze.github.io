@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Aws</title>
+      <link>/tags/aws/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Books</title>
       <link>/tags/books/</link>
       <pubDate>Sat, 04 Oct 2014 20:53:36 +0000</pubDate>
@@ -50,7 +59,7 @@
     <item>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
-      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/deep-learning/</guid>
       <description></description>
@@ -176,7 +185,7 @@
     <item>
       <title>Nlp</title>
       <link>/tags/nlp/</link>
-      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/nlp/</guid>
       <description></description>

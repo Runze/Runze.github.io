@@ -6,10 +6,19 @@
     <description>Recent content in Nlp on What I talk about when I don&#39;t talk about me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building a story-telling Twitter bot</title>
+      <link>/technical-posts/building-a-story-telling-twitter-bot/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/technical-posts/building-a-story-telling-twitter-bot/</guid>
+      <description>Background Recently, I came across this blog post written by Vicki Boykis in which she documented her process of building a Twitter bot that tweets Soviet artworks in scheduled intervals. Inspired by the idea (and motivated by boredom), I decided to build a Twitter bot myself that tells questionably coherent stories through a series of tweets. I loved this idea because first of all, I love literature, especially the classics.</description>
+    </item>
     
     <item>
       <title>Do I really need attention in my seq2seq model?</title>
